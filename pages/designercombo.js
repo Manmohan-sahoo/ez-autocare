@@ -21,8 +21,8 @@ import CabinFilter from '../public/Designer combo packages/air-car-lifter.png';
 import carwire from '../public/Designer combo packages/car-electrical-wiring-line-icon.png';
 import rearBreak from '../public/Designer combo packages/brake-icon.png';
 import batteryWater from '../public/Designer combo packages/battery-water-topup.png';
-import carClean from '../public/Designer combo packages/battery-water-topup.png';
-import tyrePolish from '../public/Designer combo packages/battery-water-topup.png';
+import carClean from '../public/Designer combo packages/istockphoto.png';
+import tyrePolish from '../public/Designer combo packages/wheel-polish.png';
 import minorScartch from '../public/Designer combo packages/scuff-mark-minor-scrat.png';
 
 export default class designercombo extends Component {
@@ -90,17 +90,143 @@ export default class designercombo extends Component {
         {/* speed combo section */}
         <div className="speed_combo_container">
           <h3>Speed Combo</h3>
-          <div className="d-flex">
+          <div className={styles.engineOilDiv}>
             <div className={styles.image1}>
               <img
                 src={engineOil.src}
                 alt=""
-                width="20px"
-                height="20px"
-                style={{ background: 'black' }}
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
               />
             </div>
-            Engine Oil Replacement
+            <div className={styles.engine_div}>Engine Oil Replacement</div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}></div>
+            <div className={styles.engine_div}>
+              Heater/Spark Plug Checking & Cleaning
+            </div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={oilFilter.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>Oil Filter Replacment</div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={fuelFilter.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>Fuel Filter Checking</div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={CabinFilter.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>
+              Cabin Filter/AC Filter Checking & Cleaning
+            </div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={carwire.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>
+              Car Electrical Wiring Checking
+            </div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={rearBreak.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>Rear Break Pads Servicing</div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}></div>
+            <div className={styles.engine_div}>
+              Front Break Pads ServicingHeater
+            </div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={batteryWater.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>Battery Water Topup </div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={carClean.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>Car Cleaning</div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={tyrePolish.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>
+              Tyre & Alloy Dressing & Polishing
+            </div>
+          </div>
+          <div className={styles.engineOilDiv}>
+            <div className={styles.image1}>
+              <img
+                src={minorScartch.src}
+                alt=""
+                width="60px"
+                height="60px"
+                className={styles.engine_oil_icon}
+              />
+            </div>
+            <div className={styles.engine_div}>Minor Scratch Removal</div>
           </div>
         </div>
 

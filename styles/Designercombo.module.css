@@ -84,3 +84,34 @@
 .icon {
   color: #d6d6d6;
 }
+
+.engineOilDiv {
+  display: flex;
+  width: 749px;
+  height: 98px;
+  background: #eaeaea;
+  box-shadow: 1px 2px 12px -1px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.image1 {
+  width: 88px;
+  height: 98px;
+  background: #545454;
+  box-shadow: 1px 2px 12px -1px rgba(0, 0, 0, 0.25);
+}
+
+.engine_div {
+  margin-left: 30px;
+}
+
+.engine_oil_icon {
+  transform: translate(20%, 30%);
+}
