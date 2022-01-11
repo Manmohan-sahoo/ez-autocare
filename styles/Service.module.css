@@ -1,0 +1,165 @@
+.h1 {
+  font-size: 32px;
+}
+.desiredContainer {
+  margin-top: 35px;
+}
+
+.istockphoto {
+  width: 100%;
+  height: 630px;
+}
+
+#desiredServicesRow {
+  padding: 20px;
+}
+
+.acfilterrepair {
+  border: none;
+  width: 560px;
+  height: 60px;
+  background: #ebebeb;
+  font-size: 22px;
+}
+.tagContainer {
+  width: 560px;
+  background: #ececec;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  height: 127px;
+  padding: 15px;
+}
+.tagContainer a:hover {
+  color: white;
+}
+.tagContainerPara {
+  padding: 5px;
+  margin: 10px;
+  background: #20adb7;
+  color: #ebebeb;
+  font-weight: 500;
+}
+
+.pricetable {
+  width: 560px;
+}
+.pricetable thead tr th {
+  border: 1px solid #6a6a6a;
+  background: #dadada;
+  height: 50px;
+  font-size: 15px;
+  color: #676767;
+}
+.pricetable tbody tr td {
+  border: 1px solid #6a6a6a;
+  height: 45px;
+}
+#bestTreatContainer {
+  margin-left: 20px;
+  width: 533px;
+  height: 1152px;
+  background: #ffffff;
+  box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.25);
+}
+
+#dropdownBasic {
+  width: 481px;
+  height: 40px;
+  background: none;
+  border: 0.7px solid #000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.selectBrand {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.downIcon {
+  margin-left: 75%;
+}
+.fueldownIcon {
+  margin-left: 70%;
+}
+.addNewCarButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 481px;
+  height: 40px;
+  background: #20adb7;
+  border: none;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+}
+.addNewCarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#addNewCarRow {
+  width: 481px;
+  height: 109px;
+
+  background: #f3f3f3;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+#imageCol {
+  background: white;
+}
+.goldPackContainer {
+  width: 481px;
+  height: 77px;
+  background: #edecec;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#goldPackRow {
+  margin-left: 15px;
+}
+.grandTotalContainer {
+  border-top: 1px solid #000000;
+  width: 481px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rupee {
+  display: block;
+  margin-left: auto;
+}
+#grandTotalRow {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.singinCheckoutButton {
+  width: 481px;
+  height: 50px;
+  border: none;
+  background: #e11d1d;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+.routineServices {
+  width: 480px;
+  height: 44px;
+  background: #edecec;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#routineServicestext {
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+  padding: 10px;
+}

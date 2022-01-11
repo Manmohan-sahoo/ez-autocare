@@ -1,0 +1,28 @@
+.subHeader {
+  background: black;
+  height: 30px;
+}
+#subHeaderRow {
+  color: white;
+  display: flex;
+  margin-left: 20px;
+}
+#subHeaderIcon {
+  display: block;
+  margin-left: auto;
+}
+.select {
+  color: #000000;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 15px;
+}
+#ul {
+  font-weight: 600;
+  font-size: 15px;
+  gap: 32px;
+  margin-left: 30px;
+}
+.signin {
+  background: #000000;
+}

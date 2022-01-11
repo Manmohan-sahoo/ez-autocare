@@ -1,0 +1,198 @@
+.imageContainer {
+}
+.luxcareImage {
+  width: 100%;
+}
+#serviceCategoriesContainer {
+  margin-top: 70px;
+}
+#serviceCategory {
+  column-gap: 40px;
+  margin-top: 40px;
+}
+#scCard {
+  background: #f8ecad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 111px;
+}
+#scBattery {
+  background: #d6d6d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 111px;
+}
+.servicecard {
+  width: 168px;
+  left: 76px;
+  top: 1272px;
+  background: #fff9d8;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.25);
+}
+.rightIcon {
+  background: #f8ecad;
+  width: 50px;
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  color: #000000;
+}
+.servicePackagesContainer {
+  margin-top: 30px;
+}
+#spContainer {
+  background: #edecec;
+  width: 750px;
+  height: 1630px;
+  padding: 5px;
+  margin-left: 20px;
+}
+#servicePackageRow {
+  margin-top: 30px;
+}
+#spRow {
+  width: 665px;
+  height: 360px;
+  background: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+.topImageContainer {
+  position: relative;
+  text-align: center;
+  top: -14px;
+  margin-left: 80%;
+}
+
+.topImagePara {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: white;
+  width: 50px;
+}
+.buttoncontainer {
+  margin-left: 100%;
+}
+.sbutton {
+  background: #ffffff;
+  border: 1.5px solid #20adb7;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #1cadb6;
+  margin-left: 10px;
+}
+#bestTreatContainer {
+  margin-left: 20px;
+  width: 533px;
+  height: 1002px;
+  background: #ffffff;
+  box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.25);
+}
+#careh2 {
+  font-weight: 700;
+}
+#carepara {
+  font-size: 25px;
+}
+#dropdownBasic {
+  width: 481px;
+  height: 40px;
+  background: none;
+  border: 0.7px solid #000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.selectBrand {
+  display: flex;
+  padding: 5px;
+}
+
+.downIcon {
+  margin-left: auto;
+}
+.fueldownIcon {
+  margin-left: auto;
+}
+.addNewCarButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 481px;
+  height: 40px;
+  background: #20adb7;
+  border: none;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+}
+
+.goldPackContainer {
+  width: 481px;
+  height: 77px;
+  background: #edecec;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+#goldPackRow {
+  display: flex;
+}
+
+#priceSide {
+  display: block;
+  margin-left: auto;
+}
+.priceSidePara {
+  text-align: right;
+}
+.priceTag {
+}
+.grandTotalContainer {
+  border-top: 1px solid #000000;
+  width: 481px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.rupee {
+  display: block;
+  margin-left: auto;
+}
+#grandTotalRow {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.singinCheckoutButton {
+  width: 481px;
+  height: 50px;
+  border: none;
+  background: #e11d1d;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
