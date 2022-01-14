@@ -58,6 +58,10 @@ import dentiingpainting from '../public/Our services/Denting-&-Painting-01-01.pn
 import Ceramic_Coating from '../public/Our services/Ceramic Coating.png';
 import wheelicon from '../public/Our services/wheels_icon.png';
 import enginecoating from '../public/Our services/engine_coating.png';
+import performance_car from '../public/Designer combo packages/performance-car.png';
+import carside_view from '../public/Designer combo packages/car-side-view.png';
+import car_tyre from '../public/Designer combo packages/car tyre.png';
+import battery_check_thumb from '../public/Designer combo packages/battery-check-thumb 1.png';
 
 import Image from 'next/image';
 import { NavDropdown, Button, Card } from 'react-bootstrap';
@@ -70,7 +74,7 @@ export default class index extends Component {
       <div id={styles.body}>
         {/* slider */}
         <div>
-          <Carousel>
+          <Carousel autoPlay="true" infiniteLoop="true">
             <div>
               <img src={header1.src} alt="image1" />
             </div>
@@ -157,6 +161,7 @@ export default class index extends Component {
           </div>
         </div>
 
+        {/* Why EzautoCare container */}
         <div className="container">
           <h1>Why EZ AutoCare</h1>
           <div className="container">
@@ -251,6 +256,7 @@ export default class index extends Component {
             </div>
           </div>
         </div>
+        {/* Why EzautoCare container */}
 
         {/* our services container */}
 
@@ -258,11 +264,11 @@ export default class index extends Component {
           <h1>Our Services</h1>
 
           <Tabs
-            defaultActiveKey="profile"
+            defaultActiveKey="All Services"
             id="uncontrolled-tab-example"
             className="mb-3"
           >
-            <Tab eventKey="All Services" title="All Services" active>
+            <Tab eventKey="All Services" title="All Services">
               <div className="container d-flex justify-content-between">
                 <div id={styles.carwashRow}>
                   <div className="row">
@@ -427,15 +433,181 @@ export default class index extends Component {
                   </div>
                 </div>
               </div>
-              <a className="text-primary d-flex flex-row-reverse" href="">
+              <a
+                id={styles.seeMore}
+                className="text-primary d-flex flex-row-reverse"
+                href=""
+              >
                 See More
               </a>
             </Tab>
             <Tab eventKey="Doorstep Service" title="Doorstep Service">
-              <h1>doorstep service comming soon!</h1>
+              <div className="container d-flex justify-content-between">
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={carwash.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Premium wash & detailing (2 wheeler also)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={battery.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Tyres & batteries
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={dentiingpainting.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Denting & Painting
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={antiRrust.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Anti Rust Coating
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={carservice.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Car Service & Repair
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Tab>
             <Tab eventKey="Workstation servies" title="Workstation servies">
-              <h1> Workstation cards comming soon!</h1>
+              <div className="container d-flex justify-content-between ">
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={carAcService.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Car AC Service
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={wheelicon.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Wheel Alignment & Balancing
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={enginecoating.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Engine Coating
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={caraccess.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Car Accessories
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id={styles.carwashRow}>
+                  <div className="row">
+                    <div className="col">
+                      <div className="row" id={styles.carwashimageRow}>
+                        <img
+                          src={Ceramic_Coating.src}
+                          alt="carwash"
+                          className={styles.carwashImage}
+                        />
+                      </div>
+                      <div className="row" id={styles.carwashtextRow}>
+                        Ceramic Coating
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Tab>
           </Tabs>
         </div>
@@ -454,72 +626,156 @@ export default class index extends Component {
 
         {/* ez autocare luxcare container */}
 
-        <div className="container">
-          <h1>EZ AutoCare Luxe Care</h1>
-          <p>Elegant services for your luxury car</p>
-          <div className="row">
-            <div className="col">
-              <Image src={rolls} alt="custom" />
-
-              <p>
-                Rolls-Royce <FontAwesomeIcon icon={faAngleRight} />
-              </p>
+        <div className={styles.lux_care_container}>
+          <h1 className={styles.lux_care_h1}>EZ AutoCare Luxe Care</h1>
+          <p className={styles.elegant_service}>
+            Elegant services for your luxury car
+          </p>
+          <div className="row" id={styles.luxury_car_row}>
+            <div className="col-sm">
+              <div id={styles.luxury_card}>
+                <img
+                  src={rolls.src}
+                  alt="custom"
+                  className={styles.luxury_image}
+                />
+                <div className={styles.luxury_text}>
+                  <span>Rolls-Royce</span>
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className={styles.angle_right}
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col">
-              <Image src={bmw} alt="custom" />
+            <div className="col-sm">
+              <div id={styles.luxury_card}>
+                <img
+                  src={bmw.src}
+                  alt="custom"
+                  className={styles.luxury_image}
+                />
+                <div className={styles.luxury_text}>
+                  <span>BMW</span>
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className={styles.angle_right}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-sm">
+              <div id={styles.luxury_card}>
+                <img
+                  src={audi.src}
+                  alt="custom"
+                  className={styles.luxury_image}
+                />
+                <div className={styles.luxury_text}>
+                  <span>Audi</span>
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className={styles.angle_right}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-sm">
+              <div id={styles.luxury_card}>
+                <img
+                  src={rangerover.src}
+                  alt="custom"
+                  className={styles.luxury_image}
+                />
+                <div className={styles.luxury_text}>
+                  <span>Range Rover</span>
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className={styles.angle_right}
+                  />
+                </div>
+              </div>
+            </div>
 
-              <p>
-                BMW <FontAwesomeIcon icon={faAngleRight} />
-              </p>
-            </div>{' '}
-            <div className="col">
-              <Image src={audi} alt="custom" />
-
-              <p>
-                Audi <FontAwesomeIcon icon={faAngleRight} />
-              </p>
-            </div>{' '}
-            <div className="col">
-              <Image src={rangerover} alt="custom" />
-
-              <p>
-                Range Rover <FontAwesomeIcon icon={faAngleRight} />
-              </p>
-            </div>{' '}
+            <div className="col-sm" id={styles.icon_div}>
+              <a href="#" className={styles.rightIcon}>
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className={styles.icon}
+                />
+              </a>
+            </div>
           </div>
-          <a href="#" className={styles.rightIcon}>
-            <FontAwesomeIcon icon={faChevronRight} className={styles.icon} />
-          </a>
         </div>
 
         {/* ez autocare luxcare container */}
 
         {/* Trending Service section */}
 
-        <div className="container">
-          <h1>Trending Services</h1>
-          <p>Most popular services in your city</p>
-          <div className="row">
-            <div className="col">
-              <Image src={group3} alt="custom" />
-              <Button>Car Service & Repair</Button>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className={styles.trending_container}>
+          <h1 className={styles.lux_care_h1}>Trending Services</h1>
+          <p className={styles.elegant_service}>
+            Most popular services in your city
+          </p>
+          <div className="row" id={styles.car_service_row}>
+            <div className="col" id={styles.car_service_col}>
+              <div className={styles.car_service_div}>
+                <img src={group3.src} alt="custom" />
+                <Button className={styles.car_button}>
+                  Car Service & Repair
+                </Button>
+                <p className={styles.car_p_tag}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
             </div>
-            <div className="col">
-              <Image src={group2} alt="custom" />
-              <Button>Car AC Service </Button>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>{' '}
-            <div className="col">
-              <Image src={group1} alt="custom" />
-              <Button>Car ACCESSORIES </Button>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>{' '}
-            <div className="col">
-              <Image src={group4} alt="custom" />
-              <Button>tyres & batteries</Button>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>{' '}
+            <div className="col" id={styles.car_service_col}>
+              <div className={styles.car_service_div}>
+                <img src={group2.src} alt="custom" />
+                <Button className={styles.car_button}>Car AC Service</Button>
+                <p className={styles.car_p_tag}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div className="col" id={styles.car_service_col}>
+              <div className={styles.car_service_div}>
+                <img
+                  src={group1.src}
+                  alt="custom"
+                  width="203px"
+                  height="90px"
+                />
+                <Button className={styles.car_button}>Car ACCESSORIES </Button>
+                <p className={styles.car_p_tag}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div className="col" id={styles.car_service_col}>
+              <div className={styles.car_service_div}>
+                <img
+                  src={group4.src}
+                  alt="custom"
+                  width="201px"
+                  height="90px"
+                />
+                <Button className={styles.car_button}>
+                  tyres & batteries{' '}
+                </Button>
+                <p className={styles.car_p_tag}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div className="col" id={styles.icon_div}>
+              <a href="#" className={styles.rightIcon}>
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className={styles.icon}
+                />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -527,16 +783,18 @@ export default class index extends Component {
 
         {/* Designer Combo Section */}
 
-        <div className="container">
-          <h1>Designer Combo Packages</h1>
-          <p>Personalised Packages offered by expert mechanics</p>
-          <div className="row">
-            <div className="col" id={styles.comboContainer}>
-              <Image src={combo3} alt="custom" />
+        <div className={styles.designer_combo_container}>
+          <h1 className={styles.lux_care_h1}>Designer Combo Packages</h1>
+          <p className={styles.elegant_service}>
+            Personalised Packages offered by expert mechanics
+          </p>
+          <div className="row" id={styles.combo_div}>
+            <div className="col-sm" id={styles.comboContainer}>
+              <img src={combo3.src} alt="custom" />
               <div className={styles.combotext}>
                 <h4 className={styles.comboh4}>WINGS OF FREEDOM</h4>
                 <p className={styles.combopara}>
-                  SPEED COMBO{' '}
+                  SPEED COMBO
                   <FontAwesomeIcon
                     icon={faCaretRight}
                     className={styles.comboIcon}
@@ -544,12 +802,12 @@ export default class index extends Component {
                 </p>
               </div>
             </div>
-            <div className="col" id={styles.comboContainer}>
-              <Image src={combo2} alt="custom" />
+            <div className="col-sm" id={styles.comboContainer}>
+              <img src={combo2.src} alt="custom" />
               <div className={styles.combotext}>
                 <h4 className={styles.comboh4}>ARISTOCRAT</h4>
                 <p className={styles.combopara}>
-                  SHINE COMBO{' '}
+                  SHINE COMBO
                   <FontAwesomeIcon
                     icon={faCaretRight}
                     className={styles.comboIcon}
@@ -557,23 +815,82 @@ export default class index extends Component {
                 </p>
               </div>
             </div>
-            <div className="col" id={styles.comboContainer}>
-              <Image src={combo1} alt="custom" />
+            <div className="col-sm" id={styles.comboContainer}>
+              <img src={combo1.src} alt="custom" />
               <div className={styles.combotext}>
                 <h4 className={styles.comboh4}>WANDERLUST</h4>
                 <p className={styles.combopara}>
-                  ROAD TRIP COMBO{' '}
+                  ROAD TRIP COMBO
                   <FontAwesomeIcon
                     icon={faCaretRight}
                     className={styles.comboIcon}
                   />
                 </p>
               </div>
+            </div>
+            <div className="col-sm" id={styles.icon_div}>
+              <a href="#" className={styles.rightIcon}>
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className={styles.icon}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <div id={styles.performance_car}>
+                <img
+                  src={performance_car.src}
+                  alt=""
+                  className={styles.performance_car_image}
+                />
+                <p className={styles.performance_car_para}>4x Perfomance </p>
+              </div>
+            </div>
+            <div className="col">
+              <div id={styles.performance_car}>
+                <img
+                  src={carside_view.src}
+                  alt=""
+                  width="246px"
+                  height="94px"
+                />
+                <p className={styles.performance_car_para}>No noise combo </p>
+              </div>
+            </div>
+            <div className="col">
+              <div id={styles.performance_car}>
+                <img src={car_tyre.src} alt="" width="107px" height="146px" />
+                <p className={styles.performance_car_para}>Tyre Replacement</p>
+              </div>
+            </div>
+            <div className="col">
+              <div id={styles.performance_car}>
+                <img
+                  src={battery_check_thumb.src}
+                  alt=""
+                  className={styles.performance_car_image}
+                />
+                <p className={styles.performance_car_para}>
+                  Battery Replacement
+                </p>
+              </div>
+            </div>
+            <div className="col" id={styles.icon_div}>
+              <a href="#" className={styles.rightIcon}>
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className={styles.icon}
+                />
+              </a>
             </div>
           </div>
         </div>
 
         {/* Designer Combo Section */}
+
+        {/* our features container */}
 
         <div className="container">
           <h1>Our Features</h1>
@@ -619,7 +936,7 @@ export default class index extends Component {
                   </p>
                 </div>
               </div>
-            </div>{' '}
+            </div>
             <div className="col">
               <div class="card" style={{ width: '19rem' }}>
                 <div class="card-body">
@@ -682,7 +999,7 @@ export default class index extends Component {
                   </p>
                 </div>
               </div>
-            </div>{' '}
+            </div>
             <div className="col">
               <div class="card" style={{ width: '19rem' }}>
                 <div class="card-body">
@@ -708,6 +1025,10 @@ export default class index extends Component {
             </div>
           </div>
         </div>
+
+        {/* our features container */}
+
+        {/* our workshopare covid safe container */}
         <div className={styles.covidContainer}>
           <h2 className={styles.covidh2}>Our workshops are COVID SAFE</h2>
           <p className={styles.covidpara}>
@@ -716,6 +1037,10 @@ export default class index extends Component {
             vivamus rhoncus vel.
           </p>
         </div>
+        {/* our workshopare covid safe container */}
+
+        {/* enquiry  container */}
+
         <div className="container" id={styles.enquierycontainer}>
           <div className="row">
             <div className="col">
@@ -802,6 +1127,11 @@ export default class index extends Component {
             </div>
           </div>
         </div>
+
+        {/* enquiry  container */}
+
+        {/* brands we  container */}
+
         <div className="container">
           <h3>Brands We Serve!</h3>
           <div className="brands_container">
@@ -835,6 +1165,9 @@ export default class index extends Component {
             </div>
           </div>
         </div>
+        {/* brands we  container */}
+
+        {/* increament  container */}
 
         <div class="" style={{ backgroundColor: '#20ADB7' }}>
           <div class="row text-center ">
@@ -884,6 +1217,7 @@ export default class index extends Component {
             </div>
           </div>
         </div>
+        {/* increament  container */}
       </div>
     );
   }

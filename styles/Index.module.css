@@ -1,6 +1,5 @@
 .body {
-  position: relative;
-  text-align: center;
+  padding: 25px;
 }
 #menu {
   background: #e8e8e8;
@@ -106,6 +105,16 @@
   color: #000000;
   background: white;
 }
+
+#seeMore {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 62px;
+  color: #20adb7;
+}
+
 .h3 {
   font-size: 14px;
   font-weight: 700;
@@ -118,6 +127,132 @@
   position: relative;
   text-align: center;
 }
+
+.lux_care_h1 {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.elegant_service {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 22px;
+  color: #939393;
+}
+
+.lux_care_container {
+  margin-top: 66px;
+}
+
+#luxury_car_row {
+  margin-top: 38px;
+}
+
+#luxury_card {
+  width: 291px;
+  height: 268px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+
+.luxury_image {
+  height: 197px;
+  width: 291px;
+  border-radius: 14px 14px 0px 0px;
+}
+
+.luxury_text {
+  padding: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.angle_right {
+  margin-left: 40%;
+}
+
+#icon_div {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.rightIcon {
+  background: #20adb7;
+  width: 50px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: #d6d6d6;
+}
+
+.trending_container {
+  margin-top: 74px;
+  padding: 25px;
+}
+
+#car_service_row {
+  column-gap: 25px;
+  margin-top: 74px;
+}
+
+#car_service_col {
+  width: 292px;
+  height: 339px;
+  background: #f7f7f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.car_service_div {
+  margin-top: 5px;
+  transform: translate(10%, 10%);
+}
+
+.car_button {
+  width: 212px;
+  height: 47px;
+  background: #20adb7;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 66.51px;
+}
+
+.car_p_tag {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  width: 257px;
+  color: #000000;
+  margin-top: 41px;
+  margin-left: -22px;
+}
+
+.designer_combo_container {
+}
+
 .h1container {
   position: absolute;
   bottom: 150px;
@@ -139,29 +274,65 @@
   font-size: 22px;
   font-weight: 600;
 }
+
+#combo_div {
+  margin-top: 60px;
+}
+
 #comboContainer {
   position: relative;
-  text-align: center;
 }
+
 .combotext {
   position: absolute;
   bottom: 40px;
   left: 16px;
 }
+
 .comboh4 {
   color: #e8e8e8;
   font-size: 22px;
   font-weight: 500;
+  text-align: left;
 }
+
 .combopara {
   color: #ffb30d;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
 }
+
 .comboIcon {
   color: #ffffff;
 }
+
+#performance_car {
+  width: 297px;
+  height: 231px;
+  background: #ffffff;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.performance_car_image {
+  width: 293px;
+  height: 123px;
+  margin-top: 37px;
+}
+
+.performance_car_para {
+  width: 297px;
+  height: 42px;
+  background: #d1d1d1;
+  border-radius: 0px 0px 4px 4px;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  margin-top: 29px;
+}
+
 #featureContainer {
   display: flex;
 }
