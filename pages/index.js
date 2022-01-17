@@ -146,7 +146,7 @@ export default class index extends Component {
         </div>
 
         <div className="exciting_container">
-          <h1 className={styles.excitingh1}>Exciting Offers</h1>
+          <h1 className={styles.lux_care_h1}>Exciting Offers</h1>
 
           <div className="d-flex">
             <div className="">
@@ -162,95 +162,78 @@ export default class index extends Component {
         </div>
 
         {/* Why EzautoCare container */}
-        <div className="container">
-          <h1>Why EZ AutoCare</h1>
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <div class="row align-items-center" id={styles.cardcontainer}>
-                  <div class="col-12 col-md-6">
-                    <Image
-                      className={styles.imagecard}
-                      width="120px"
-                      height="120px"
-                      alt="image"
-                      src={image1}
-                    />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <h3 className={styles.h3}>Free Doorstep Pick-up & Drop</h3>
-                    <p className={styles.p}>
-                      No more unnecessary workshop visits!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div class="container">
-                  <div class="row align-items-center" id={styles.cardcontainer}>
-                    <div class="col-12 col-md-6">
-                      <Image
-                        className={styles.imagecard}
-                        width="120px"
-                        height="120px"
-                        alt="image"
-                        src={image2}
-                      />
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <h3 className={styles.h3}>
-                        Upfront & Competitive Pricing
-                      </h3>
-                      <p className={styles.p}>
-                        Save Upto 40% on car’s service.
-                      </p>
-                    </div>
-                  </div>
+        <div className={styles.why_ez_autocare_container}>
+          <h1 className={styles.lux_care_h1}>Why EZ AutoCare</h1>
+
+          <div className="row" id={styles.ez_autocare_first_row}>
+            <div className="col-sm-6">
+              <div className={styles.ez_autcare_div}>
+                <img
+                  className={styles.ez_autcare_img}
+                  src={image1.src}
+                  alt=""
+                />
+                <div className={styles.ez_autcare_text_div}>
+                  <h3 className={styles.ez_autcare_h3}>
+                    Free Doorstep Pick-up & Drop
+                  </h3>
+                  <p className={styles.ez_autcare_p}>
+                    No more unnecessary workshop visits!
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="row" id={styles.rowcard}>
-              <div className="col">
-                <div class="row align-items-center" id={styles.cardcontainer}>
-                  <div class="col-12 col-md-6">
-                    <Image
-                      className={styles.imagecard}
-                      width="120px"
-                      height="120px"
-                      alt="image"
-                      src={image2}
-                    />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <h3 className={styles.h3}>
-                      Network Warranty on Car Service
-                    </h3>
-                    <p className={styles.p}>
-                      1 month/1000kms unconditional warranty on car service. No
-                      questions asked!
-                    </p>
-                  </div>
+            <div className="col-sm-6">
+              <div className={styles.ez_autcare_div}>
+                <img
+                  className={styles.ez_autcare_img}
+                  src={image2.src}
+                  alt=""
+                />
+                <div className={styles.ez_autcare_text_div}>
+                  <h3 className={styles.ez_autcare_h3}>
+                    Upfront & Competitive Pricing
+                  </h3>
+                  <p className={styles.ez_autcare_p}>
+                    Save Upto 40% on car’s service.
+                  </p>
                 </div>
               </div>
-              <div className="col">
-                <div className="container">
-                  <div class="row align-items-center" id={styles.cardcontainer}>
-                    <div class="col-12 col-md-6">
-                      <Image
-                        className={styles.imagecard}
-                        width="120px"
-                        height="120px"
-                        alt="image"
-                        src={image3}
-                      />
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <h3 className={styles.h3}>100% Genuine Spare Parts</h3>
-                      <p className={styles.p}>
-                        Only OEM/OES spare parts used. Quality Assured!
-                      </p>
-                    </div>
-                  </div>
+            </div>
+          </div>
+          <div className="row" id={styles.ez_autocare_second_row}>
+            <div className="col">
+              <div className={styles.ez_autcare_div}>
+                <img
+                  className={styles.ez_autcare_img}
+                  src={image2.src}
+                  alt=""
+                />
+                <div className={styles.ez_autcare_text_div}>
+                  <h3 className={styles.ez_autcare_h3}>
+                    Network Warranty on Car Service
+                  </h3>
+                  <p className={styles.ez_autcare_p}>
+                    1 month/1000kms unconditional warranty on car service. No
+                    questions asked!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className={styles.ez_autcare_div}>
+                <img
+                  className={styles.ez_autcare_img}
+                  src={image3.src}
+                  alt=""
+                />
+                <div className={styles.ez_autcare_text_div}>
+                  <h3 className={styles.ez_autcare_h3}>
+                    100% Genuine Spare Parts
+                  </h3>
+                  <p className={styles.ez_autcare_p}>
+                    Only OEM/OES spare parts used. Quality Assured!
+                  </p>
                 </div>
               </div>
             </div>
@@ -260,13 +243,13 @@ export default class index extends Component {
 
         {/* our services container */}
 
-        <div className="container">
-          <h1>Our Services</h1>
+        <div className={styles.our_service_container}>
+          <h1 className={styles.lux_care_h1}>Our Services</h1>
 
           <Tabs
             defaultActiveKey="All Services"
             id="uncontrolled-tab-example"
-            className="mb-3"
+            className="mb-3 "
           >
             <Tab eventKey="All Services" title="All Services">
               <div className="container d-flex justify-content-between">
@@ -837,45 +820,43 @@ export default class index extends Component {
               </a>
             </div>
           </div>
-          <div className="row">
-            <div className="col">
-              <div id={styles.performance_car}>
-                <img
-                  src={performance_car.src}
-                  alt=""
-                  className={styles.performance_car_image}
-                />
-                <p className={styles.performance_car_para}>4x Perfomance </p>
+          <div className="row" id={styles.performance_car_div}>
+            <div className="col" id={styles.performance_car}>
+              <div className={styles.performance_car_image}>
+                <img src={performance_car.src} alt="" />
               </div>
+              <p className={styles.performance_car_para}>4x Perfomance </p>
             </div>
-            <div className="col">
-              <div id={styles.performance_car}>
+            <div className="col" id={styles.performance_car}>
+              <div className={styles.performance_car_image}>
                 <img
                   src={carside_view.src}
                   alt=""
                   width="246px"
                   height="94px"
                 />
-                <p className={styles.performance_car_para}>No noise combo </p>
               </div>
+
+              <p className={styles.performance_car_para}>No noise combo </p>
             </div>
-            <div className="col">
-              <div id={styles.performance_car}>
+            <div className="col" id={styles.performance_car}>
+              <div className={styles.performance_car_image}>
                 <img src={car_tyre.src} alt="" width="107px" height="146px" />
-                <p className={styles.performance_car_para}>Tyre Replacement</p>
               </div>
+
+              <p className={styles.performance_car_para}>Tyre Replacement</p>
             </div>
-            <div className="col">
-              <div id={styles.performance_car}>
+            <div className="col" id={styles.performance_car}>
+              <div className={styles.performance_car_image}>
                 <img
                   src={battery_check_thumb.src}
                   alt=""
-                  className={styles.performance_car_image}
+                  width="176px"
+                  height="144px"
                 />
-                <p className={styles.performance_car_para}>
-                  Battery Replacement
-                </p>
               </div>
+
+              <p className={styles.performance_car_para}>Battery Replacement</p>
             </div>
             <div className="col" id={styles.icon_div}>
               <a href="#" className={styles.rightIcon}>
@@ -892,8 +873,8 @@ export default class index extends Component {
 
         {/* our features container */}
 
-        <div className="container">
-          <h1>Our Features</h1>
+        <div className="our_features_container">
+          <h1 className={styles.lux_care_h1}>Our Features</h1>
           <div className="row">
             <div className="col">
               <div class="card" style={{ width: '19rem' }}>

@@ -37,19 +37,60 @@
   display: flex;
   flex: 1 1 auto;
 }
-.imagecard {
-  border-radius: 50%;
+
+.why_ez_autocare_container {
+  padding: 20px;
 }
-#cardcontainer {
-  width: 400px;
-  height: 152px;
+
+#ez_autocare_first_row {
+  margin-top: 60px;
+}
+
+.ez_autcare_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 592px;
+  height: 192px;
   background: #ffffff;
   box-shadow: 2px 2px 12px -1px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
 }
-#rowcard {
+
+.ez_autcare_img {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+}
+
+.ez_autcare_text_div {
+  margin-left: 55px;
+}
+
+.ez_autcare_h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.ez_autcare_p {
+  width: 290px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+#ez_autocare_second_row {
   margin-top: 20px;
 }
+
 .allServicesImage {
   width: 50px;
   height: 50px;
@@ -57,9 +98,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .tabCard {
   background: #20adb71a;
 }
+
+.our_service_container Tab {
+  width: 326px;
+  height: 75px;
+  background: #20adb7;
+  border: 1.5px solid #20adb7;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 47px;
+}
+
 #carwashRow {
   width: 202px;
   height: 221px;
@@ -307,8 +360,17 @@
   color: #ffffff;
 }
 
+.performance_car_container {
+  padding: 10px;
+}
+
+#performance_car_div {
+  margin-top: 99px;
+  column-gap: 20px;
+}
+
 #performance_car {
-  width: 297px;
+  width: 290px;
   height: 231px;
   background: #ffffff;
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.25);
@@ -316,13 +378,13 @@
 }
 
 .performance_car_image {
-  width: 293px;
-  height: 123px;
-  margin-top: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .performance_car_para {
-  width: 297px;
+  width: 290px;
   height: 42px;
   background: #d1d1d1;
   border-radius: 0px 0px 4px 4px;
@@ -330,7 +392,11 @@
   font-size: 24px;
   color: #000000;
   text-align: center;
-  margin-top: 29px;
+  margin-left: -12px;
+}
+
+#our_feature_card {
+  
 }
 
 #featureContainer {
