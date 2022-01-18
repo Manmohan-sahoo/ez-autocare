@@ -1,27 +1,30 @@
-import React, { Component } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-import header1 from '../public/Header images/header 1.jpg';
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from 'swiper';
 
-import Carousel from 'react-bootstrap/Carousel';
+// install Swiper modules
+SwiperCore.use([Navigation]);
 
-export default class tab extends Component {
-  render() {
-    return (
-      <div class="container">
-        <Carousel variant="dark">
-          <Carousel.Item>
-            <img src={header1.src} alt="image1" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={header1.src} alt="image1" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={header1.src} alt="image1" />
-          </Carousel.Item>
-        </Carousel>
-      </div>
-    );
-  }
+export default function Tab() {
+  return (
+    <>
+      <Swiper navigation={true} className="mySwiper">
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </>
+  );
 }

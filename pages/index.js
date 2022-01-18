@@ -3,6 +3,16 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import { Tabs, Tab } from 'react-bootstrap';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from 'swiper';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faAngleRight,
@@ -68,6 +78,9 @@ import Countup from 'react-countup';
 import { NavDropdown, Button, Card } from 'react-bootstrap';
 
 import styles from '../styles/Index.module.css';
+
+// install Swiper modules
+SwiperCore.use([Navigation]);
 
 export default class index extends Component {
   render() {
@@ -612,81 +625,208 @@ export default class index extends Component {
           <p className={styles.elegant_service}>
             Elegant services for your luxury car
           </p>
-          <div className="row" id={styles.luxury_car_row}>
-            <div className="col">
-              <div id={styles.luxury_card}>
-                <img
-                  src={rolls.src}
-                  alt="custom"
-                  className={styles.luxury_image}
-                />
-                <div className={styles.luxury_text}>
-                  <span>Rolls-Royce</span>
-                  <FontAwesomeIcon
-                    icon={faAngleRight}
-                    className={styles.angle_right}
-                  />
+          <Swiper navigation={true} className="mySwiper">
+            <div className="row" id={styles.luxury_car_row}>
+              <SwiperSlide className="d-flex m-5 p-2">
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={rolls.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Rolls-Royce</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-sm">
-              <div id={styles.luxury_card}>
-                <img
-                  src={bmw.src}
-                  alt="custom"
-                  className={styles.luxury_image}
-                />
-                <div className={styles.luxury_text}>
-                  <span>BMW</span>
-                  <FontAwesomeIcon
-                    icon={faAngleRight}
-                    className={styles.angle_right}
-                  />
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={rolls.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Rolls-Royce</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-sm">
-              <div id={styles.luxury_card}>
-                <img
-                  src={audi.src}
-                  alt="custom"
-                  className={styles.luxury_image}
-                />
-                <div className={styles.luxury_text}>
-                  <span>Audi</span>
-                  <FontAwesomeIcon
-                    icon={faAngleRight}
-                    className={styles.angle_right}
-                  />
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={rolls.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Rolls-Royce</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-sm">
-              <div id={styles.luxury_card}>
-                <img
-                  src={rangerover.src}
-                  alt="custom"
-                  className={styles.luxury_image}
-                />
-                <div className={styles.luxury_text}>
-                  <span>Range Rover</span>
-                  <FontAwesomeIcon
-                    icon={faAngleRight}
-                    className={styles.angle_right}
-                  />
+                <div className="">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={rolls.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Rolls-Royce</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiper_slide}>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={bmw.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>BMW</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={bmw.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>BMW</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={bmw.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>BMW</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={bmw.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>BMW</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiper_slide}>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={audi.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Audi</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={audi.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Audi</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={audi.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Audi</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="me-2">
+                  <div id={styles.luxury_card}>
+                    <img
+                      src={audi.src}
+                      alt="custom"
+                      className={styles.luxury_image}
+                    />
+                    <div className={styles.luxury_text}>
+                      <span>Audi</span>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className={styles.angle_right}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
             </div>
-
-            <div className="col-sm" id={styles.icon_div}>
-              <a href="#" className={styles.rightIcon}>
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className={styles.icon}
-                />
-              </a>
-            </div>
-          </div>
+          </Swiper>
         </div>
 
         {/* ez autocare luxcare container */}
