@@ -12,6 +12,7 @@ import {
 
 import logo from '../public/headerimg.png';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 import car from '../public/header 7.jpg';
 
@@ -70,9 +71,11 @@ export default function Header() {
       </header>
       <div className={styles.nav_container}>
         <nav className="navbar navbar-expand-lg navbar-light bg-none">
-          <a href="#">
-            <Image src={logo} alt="nav image" height="50%" />
-          </a>
+          <Link href="/">
+            <a>
+              <Image src={logo} alt="nav image" height="50%" />
+            </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -112,29 +115,35 @@ export default function Header() {
                 </div>
               </li>
               <li className="nav-item active">
-                <a className="nav-link text-dark " href="#">
-                  HOME <span className="sr-only">(current)</span>
-                </a>
+                <Link href="/">
+                  <a className="nav-link text-dark ">
+                    HOME <span className="sr-only">(current)</span>
+                  </a>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/service">
+                  <a className="nav-link text-dark ">SERVICE</a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark " href="#">
-                  SERVICE
-                </a>
+                <Link href="/luxcare">
+                  <a className="nav-link text-dark">LUXE CARE</a>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/package">
+                  <a className="nav-link text-dark" href="#">
+                    OFFERS
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark" href="#">
-                  LUXE CARE
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-dark" href="#">
-                  OFFERS
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-dark" href="#">
-                  MEMBERSHIP
-                </a>
+                <Link href="/designercombo">
+                  <a className="nav-link text-dark">MEMBERSHIP</a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-dark" href="#">

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Carousel from 'react-bootstrap/Carousel';
+
 import { Tabs, Tab } from 'react-bootstrap';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faAngleRight,
   faCaretRight,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-
-import { Carousel } from 'react-responsive-carousel';
 
 import header1 from '../public/Header images/header 1.jpg';
 import header2 from '../public/Header images/header 2.jpg';
@@ -64,6 +64,7 @@ import car_tyre from '../public/Designer combo packages/car tyre.png';
 import battery_check_thumb from '../public/Designer combo packages/battery-check-thumb 1.png';
 
 import Image from 'next/image';
+import Countup from 'react-countup';
 import { NavDropdown, Button, Card } from 'react-bootstrap';
 
 import styles from '../styles/Index.module.css';
@@ -74,38 +75,38 @@ export default class index extends Component {
       <div id={styles.body}>
         {/* slider */}
         <div>
-          <Carousel autoPlay="true" infiniteLoop="true">
-            <div>
+          <Carousel variant="dark">
+            <Carousel.Item>
               <img src={header1.src} alt="image1" />
-            </div>
-            <div>
-              <img src={header2.src} alt="image2" />
-            </div>
-            <div>
-              <img src={header3.src} alt="image3" />
-            </div>
-            <div>
-              <img src={header4.src} alt="image3" />
-            </div>
-            <div>
-              <img src={header5.src} alt="image3" />
-            </div>
-            <div>
-              <img src={header6.src} alt="image3" />
-            </div>
-            <div>
-              <img src={header7.src} alt="image3" />
-            </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={header2.src} alt="image1" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={header3.src} alt="image1" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={header4.src} alt="image1" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={header5.src} alt="image1" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={header6.src} alt="image1" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={header7.src} alt="image1" />
+            </Carousel.Item>
           </Carousel>
         </div>
         {/* slider */}
 
         <div className="container" id={styles.menu}>
           <div className="row">
-            <div className="col-sm">
+            <div className="col">
               <Button> Select Car</Button>
             </div>
-            <div className="col-sm">
+            <div className="col">
               <NavDropdown title="Brand" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -116,7 +117,7 @@ export default class index extends Component {
                 </NavDropdown.Item>
               </NavDropdown>
             </div>
-            <div className="col-sm">
+            <div className="col">
               <NavDropdown title="Model" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -128,7 +129,7 @@ export default class index extends Component {
               </NavDropdown>
             </div>
 
-            <div className="col-sm">
+            <div className="col">
               <NavDropdown title="Fuel Type" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -145,28 +146,25 @@ export default class index extends Component {
           </div>
         </div>
 
+        {/* exciting offer container */}
+
         <div className="exciting_container">
           <h1 className={styles.lux_care_h1}>Exciting Offers</h1>
-
-          <div className="d-flex">
-            <div className="">
-              <img id={styles.excitingImgDiv} src={car1.src} alt="nav image" />
-            </div>
-            <div className="">
-              <img id={styles.excitingImgDiv} src={car2.src} alt="nav image" />
-            </div>
-            <div className="">
-              <img id={styles.excitingImgDiv3} src={car3.src} alt="nav image" />
-            </div>
+          <div className="row d-flex">
+            <img id={styles.excitingImgDiv} src={car1.src} alt="nav image" />
+            <img id={styles.excitingImgDiv} src={car2.src} alt="nav image" />
+            <img id={styles.excitingImgDiv3} src={car3.src} alt="nav image" />
           </div>
         </div>
+
+        {/*exciting offer container */}
 
         {/* Why EzautoCare container */}
         <div className={styles.why_ez_autocare_container}>
           <h1 className={styles.lux_care_h1}>Why EZ AutoCare</h1>
 
           <div className="row" id={styles.ez_autocare_first_row}>
-            <div className="col-sm-6">
+            <div className="col">
               <div className={styles.ez_autcare_div}>
                 <img
                   className={styles.ez_autcare_img}
@@ -183,7 +181,7 @@ export default class index extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6">
+            <div className="col">
               <div className={styles.ez_autcare_div}>
                 <img
                   className={styles.ez_autcare_img}
@@ -615,7 +613,7 @@ export default class index extends Component {
             Elegant services for your luxury car
           </p>
           <div className="row" id={styles.luxury_car_row}>
-            <div className="col-sm">
+            <div className="col">
               <div id={styles.luxury_card}>
                 <img
                   src={rolls.src}
@@ -836,7 +834,6 @@ export default class index extends Component {
                   height="94px"
                 />
               </div>
-
               <p className={styles.performance_car_para}>No noise combo </p>
             </div>
             <div className="col" id={styles.performance_car}>
@@ -877,13 +874,13 @@ export default class index extends Component {
           <h1 className={styles.lux_care_h1}>Our Features</h1>
           <div className="row">
             <div className="col">
-              <div class="card" style={{ width: '19rem' }}>
+              <div class="card" id={styles.our_feature_card}>
                 <div class="card-body">
                   <div class="ui-bar-a" id={styles.featureContainer}>
-                    <Image
-                      width={40}
-                      height={40}
-                      src={feature4}
+                    <img
+                      width={60}
+                      height={60}
+                      src={feature4.src}
                       alt="feature1"
                       className={styles.feature4}
                     />
@@ -898,13 +895,13 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" style={{ width: '19rem' }}>
+              <div class="card" id={styles.our_feature_card}>
                 <div class="card-body">
                   <div class="ui-bar-a" id={styles.featureContainer}>
-                    <Image
-                      width={30}
-                      height={10}
-                      src={feature3}
+                    <img
+                      width={60}
+                      height={60}
+                      src={feature3.src}
                       alt="feature3"
                       className={styles.feature4}
                     />
@@ -919,13 +916,13 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" style={{ width: '19rem' }}>
+              <div class="card" id={styles.our_feature_card}>
                 <div class="card-body">
                   <div class="ui-bar-a" id={styles.featureContainer}>
-                    <Image
-                      width={40}
-                      height={40}
-                      src={feature2}
+                    <img
+                      width={60}
+                      height={60}
+                      src={feature2.src}
                       alt="feature1"
                       className={styles.feature4}
                     />
@@ -938,15 +935,15 @@ export default class index extends Component {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row" id={styles.our_feature_card_s_row}>
             <div className="col">
-              <div class="card" style={{ width: '19rem' }}>
+              <div class="card" id={styles.our_feature_card}>
                 <div class="card-body">
                   <div class="ui-bar-a" id={styles.featureContainer}>
-                    <Image
-                      width={40}
-                      height={40}
-                      src={feature4}
+                    <img
+                      width={60}
+                      height={60}
+                      src={feature4.src}
                       alt="feature1"
                       className={styles.feature4}
                     />
@@ -960,13 +957,13 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" style={{ width: '22rem' }}>
+              <div class="card" id={styles.our_feature_card}>
                 <div class="card-body">
                   <div class="ui-bar-a" id={styles.featureContainer}>
-                    <Image
-                      width={30}
-                      height={10}
-                      src={feature1}
+                    <img
+                      width={60}
+                      height={60}
+                      src={feature1.src}
                       alt="feature3"
                       className={styles.feature4}
                     />
@@ -982,13 +979,13 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" style={{ width: '19rem' }}>
+              <div class="card" id={styles.our_feature_card}>
                 <div class="card-body">
                   <div class="ui-bar-a" id={styles.featureContainer}>
-                    <Image
-                      width={40}
-                      height={40}
-                      src={feature1}
+                    <img
+                      width={60}
+                      height={60}
+                      src={feature1.src}
                       alt="feature1"
                       className={styles.feature4}
                     />
@@ -1150,49 +1147,37 @@ export default class index extends Component {
 
         {/* increament  container */}
 
-        <div class="" style={{ backgroundColor: '#20ADB7' }}>
+        <div className={styles.increament_counter}>
           <div class="row text-center ">
             <div class="col">
               <div class="counter">
-                <p>2 million+</p>
-                <h2
-                  class="timer count-title count-number"
-                  data-to="100"
-                  data-speed="1500"
-                ></h2>
+                <h2>
+                  <Countup end={200000} suffix=" +" duration={40} />
+                </h2>
                 <p class="count-text ">Car Serviced</p>
               </div>
             </div>
             <div class="col">
               <div class="counter">
-                <p>1 million+</p>
-                <h2
-                  class="timer count-title count-number"
-                  data-to="1700"
-                  data-speed="1500"
-                ></h2>
+                <h2>
+                  <Countup end={100000} suffix=" +" duration={40} />
+                </h2>
                 <p class="count-text ">Happy Customers</p>
               </div>
             </div>
             <div class="col">
               <div class="counter">
-                <p>4.7</p>
-                <h2
-                  class="timer count-title count-number"
-                  data-to="11900"
-                  data-speed="1500"
-                ></h2>
+                <h2>
+                  <Countup end={4.7} duration={40} decimals={1} />
+                </h2>
                 <p class="count-text ">Average Rating</p>
               </div>
             </div>
             <div class="col">
               <div class="counter">
-                <p>800+</p>
-                <h2
-                  class="timer count-title count-number"
-                  data-to="157"
-                  data-speed="1500"
-                ></h2>
+                <h2>
+                  <Countup end={800} suffix="+" duration={40} />
+                </h2>
                 <p class="count-text ">Touch Points in India</p>
               </div>
             </div>
