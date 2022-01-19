@@ -206,7 +206,7 @@ export default class index extends Component {
                     Upfront & Competitive Pricing
                   </h3>
                   <p className={styles.ez_autcare_p}>
-                    Save Upto 40% on car’s service.
+                    Save Upto 60% on car’s service.
                   </p>
                 </div>
               </div>
@@ -252,6 +252,97 @@ export default class index extends Component {
         </div>
         {/* Why EzautoCare container */}
 
+        {/* enquiry  container */}
+
+        <div className="container" id={styles.enquierycontainer}>
+          <div className="row">
+            <div className="col">
+              <h3 className={styles.enquieryh3}>Enquire Now </h3>
+              <p className={styles.enquierypara}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                iaculis auctor quis velit id pulvinar in.
+              </p>
+              <Image src={enquirycar} alt="enquiry car" />
+            </div>
+            <div className="col mt-5">
+              <form className={styles.enquieryform}>
+                <div class="form-group ">
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="City"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Car"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Request a service"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group ">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="How may we help you?"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        {/* enquiry  container */}
+
         {/* our services container */}
 
         <div className={styles.our_service_container}>
@@ -263,7 +354,10 @@ export default class index extends Component {
             className="mb-3 "
           >
             <Tab eventKey="All Services" title="All Services">
-              <div className="container d-flex justify-content-between">
+              <div
+                className="container d-flex justify-content-between"
+                id={styles.our_service_container_tab}
+              >
                 <div id={styles.carwashRow}>
                   <div className="row">
                     <div className="col">
@@ -345,7 +439,10 @@ export default class index extends Component {
                   </div>
                 </div>
               </div>
-              <div className="container d-flex justify-content-between mt-5">
+              <div
+                className="container d-flex justify-content-between mt-5"
+                id={styles.our_service_container_tab}
+              >
                 <div id={styles.carwashRow}>
                   <div className="row">
                     <div className="col">
@@ -608,6 +705,8 @@ export default class index extends Component {
 
         {/* our services container */}
 
+        {/* custom your own package section */}
+
         <div className={styles.customContainer}>
           <Image src={custom} alt="custom" width="1500px" height="600px" />
           <div className={styles.h1container}>
@@ -617,6 +716,8 @@ export default class index extends Component {
             </button>
           </div>
         </div>
+
+        {/* custom your own package section */}
 
         {/* ez autocare luxcare container */}
 
@@ -838,66 +939,122 @@ export default class index extends Component {
           <p className={styles.elegant_service}>
             Most popular services in your city
           </p>
-          <div className="row" id={styles.car_service_row}>
-            <div className="col" id={styles.car_service_col}>
-              <div className={styles.car_service_div}>
-                <img src={group3.src} alt="custom" />
-                <Button className={styles.car_button}>
-                  Car Service & Repair
-                </Button>
-                <p className={styles.car_p_tag}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
+          <Swiper navigation={true} className="mySwiper">
+            <div className="row" id={styles.car_service_row}>
+              <SwiperSlide className={styles.swiper_slide_trending}>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img src={group3.src} alt="custom" />
+                    <Button className={styles.car_button}>
+                      Car Service & Repair
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img src={group2.src} alt="custom" />
+                    <Button className={styles.car_button}>
+                      Car AC Service
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img
+                      src={group1.src}
+                      alt="custom"
+                      width="203px"
+                      height="90px"
+                    />
+                    <Button className={styles.car_button}>
+                      Car ACCESSORIES{' '}
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img
+                      src={group4.src}
+                      alt="custom"
+                      width="201px"
+                      height="90px"
+                    />
+                    <Button className={styles.car_button}>
+                      tyres & batteries{' '}
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiper_slide_trending}>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img src={group3.src} alt="custom" />
+                    <Button className={styles.car_button}>
+                      Car Service & Repair
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img src={group2.src} alt="custom" />
+                    <Button className={styles.car_button}>
+                      Car AC Service
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img
+                      src={group1.src}
+                      alt="custom"
+                      width="203px"
+                      height="90px"
+                    />
+                    <Button className={styles.car_button}>
+                      Car ACCESSORIES{' '}
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.car_service_col}>
+                  <div className={styles.car_service_div}>
+                    <img
+                      src={group4.src}
+                      alt="custom"
+                      width="201px"
+                      height="90px"
+                    />
+                    <Button className={styles.car_button}>
+                      tyres & batteries{' '}
+                    </Button>
+                    <p className={styles.car_p_tag}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
             </div>
-            <div className="col" id={styles.car_service_col}>
-              <div className={styles.car_service_div}>
-                <img src={group2.src} alt="custom" />
-                <Button className={styles.car_button}>Car AC Service</Button>
-                <p className={styles.car_p_tag}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </div>
-            <div className="col" id={styles.car_service_col}>
-              <div className={styles.car_service_div}>
-                <img
-                  src={group1.src}
-                  alt="custom"
-                  width="203px"
-                  height="90px"
-                />
-                <Button className={styles.car_button}>Car ACCESSORIES </Button>
-                <p className={styles.car_p_tag}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </div>
-            <div className="col" id={styles.car_service_col}>
-              <div className={styles.car_service_div}>
-                <img
-                  src={group4.src}
-                  alt="custom"
-                  width="201px"
-                  height="90px"
-                />
-                <Button className={styles.car_button}>
-                  tyres & batteries{' '}
-                </Button>
-                <p className={styles.car_p_tag}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </div>
-            <div className="col" id={styles.icon_div}>
-              <a href="#" className={styles.rightIcon}>
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className={styles.icon}
-                />
-              </a>
-            </div>
-          </div>
+          </Swiper>
         </div>
 
         {/* Trending Service section */}
@@ -909,108 +1066,202 @@ export default class index extends Component {
           <p className={styles.elegant_service}>
             Personalised Packages offered by expert mechanics
           </p>
-          <div className="row" id={styles.combo_div}>
-            <div className="col-sm" id={styles.comboContainer}>
-              <img src={combo3.src} alt="custom" />
-              <div className={styles.combotext}>
-                <h4 className={styles.comboh4}>WINGS OF FREEDOM</h4>
-                <p className={styles.combopara}>
-                  SPEED COMBO
-                  <FontAwesomeIcon
-                    icon={faCaretRight}
-                    className={styles.comboIcon}
-                  />
-                </p>
-              </div>
+          <Swiper navigation={true} className="mySwiper">
+            <div className="row" id={styles.combo_div}>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={combo3.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>WINGS OF FREEDOM</h4>
+                    <p className={styles.combopara}>
+                      SPEED COMBO
+                      <FontAwesomeIcon
+                        icon={faCaretRight}
+                        className={styles.comboIcon}
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={combo2.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>ARISTOCRAT</h4>
+                    <p className={styles.combopara}>
+                      SHINE COMBO
+                      <FontAwesomeIcon
+                        icon={faCaretRight}
+                        className={styles.comboIcon}
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={combo1.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>WANDERLUST</h4>
+                    <p className={styles.combopara}>
+                      ROAD TRIP COMBO
+                      <FontAwesomeIcon
+                        icon={faCaretRight}
+                        className={styles.comboIcon}
+                      />
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={combo3.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>WINGS OF FREEDOM</h4>
+                    <p className={styles.combopara}>
+                      SPEED COMBO
+                      <FontAwesomeIcon
+                        icon={faCaretRight}
+                        className={styles.comboIcon}
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={combo2.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>ARISTOCRAT</h4>
+                    <p className={styles.combopara}>
+                      SHINE COMBO
+                      <FontAwesomeIcon
+                        icon={faCaretRight}
+                        className={styles.comboIcon}
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={combo1.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>WANDERLUST</h4>
+                    <p className={styles.combopara}>
+                      ROAD TRIP COMBO
+                      <FontAwesomeIcon
+                        icon={faCaretRight}
+                        className={styles.comboIcon}
+                      />
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
             </div>
-            <div className="col-sm" id={styles.comboContainer}>
-              <img src={combo2.src} alt="custom" />
-              <div className={styles.combotext}>
-                <h4 className={styles.comboh4}>ARISTOCRAT</h4>
-                <p className={styles.combopara}>
-                  SHINE COMBO
-                  <FontAwesomeIcon
-                    icon={faCaretRight}
-                    className={styles.comboIcon}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="col-sm" id={styles.comboContainer}>
-              <img src={combo1.src} alt="custom" />
-              <div className={styles.combotext}>
-                <h4 className={styles.comboh4}>WANDERLUST</h4>
-                <p className={styles.combopara}>
-                  ROAD TRIP COMBO
-                  <FontAwesomeIcon
-                    icon={faCaretRight}
-                    className={styles.comboIcon}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="col-sm" id={styles.icon_div}>
-              <a href="#" className={styles.rightIcon}>
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className={styles.icon}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="row" id={styles.performance_car_div}>
-            <div className="col" id={styles.performance_car}>
-              <div className={styles.performance_car_image}>
-                <img src={performance_car.src} alt="" />
-              </div>
-              <p className={styles.performance_car_para}>4x Perfomance </p>
-            </div>
-            <div className="col" id={styles.performance_car}>
-              <div className={styles.performance_car_image}>
-                <img
-                  src={carside_view.src}
-                  alt=""
-                  width="246px"
-                  height="94px"
-                />
-              </div>
-              <p className={styles.performance_car_para}>No noise combo </p>
-            </div>
-            <div className="col" id={styles.performance_car}>
-              <div className={styles.performance_car_image}>
-                <img src={car_tyre.src} alt="" width="107px" height="146px" />
-              </div>
+          </Swiper>
 
-              <p className={styles.performance_car_para}>Tyre Replacement</p>
-            </div>
-            <div className="col" id={styles.performance_car}>
-              <div className={styles.performance_car_image}>
-                <img
-                  src={battery_check_thumb.src}
-                  alt=""
-                  width="176px"
-                  height="144px"
-                />
-              </div>
+          <Swiper navigation={true} className="mySwiper">
+            <div className="row" id={styles.performance_car_div}>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img src={performance_car.src} alt="" />
+                  </div>
+                  <p className={styles.performance_car_para1}>4x Perfomance </p>
+                </div>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img
+                      src={carside_view.src}
+                      alt=""
+                      width="246px"
+                      height="94px"
+                    />
+                  </div>
+                  <p className={styles.performance_car_para2}>
+                    No noise combo{' '}
+                  </p>
+                </div>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img
+                      src={car_tyre.src}
+                      alt=""
+                      width="107px"
+                      height="146px"
+                    />
+                  </div>
 
-              <p className={styles.performance_car_para}>Battery Replacement</p>
+                  <p className={styles.performance_car_para}>
+                    Tyre Replacement
+                  </p>
+                </div>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img
+                      src={battery_check_thumb.src}
+                      alt=""
+                      width="176px"
+                      height="144px"
+                    />
+                  </div>
+
+                  <p className={styles.performance_car_para}>
+                    Battery Replacement
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img src={performance_car.src} alt="" />
+                  </div>
+                  <p className={styles.performance_car_para1}>4x Perfomance </p>
+                </div>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img
+                      src={carside_view.src}
+                      alt=""
+                      width="246px"
+                      height="94px"
+                    />
+                  </div>
+                  <p className={styles.performance_car_para2}>
+                    No noise combo{' '}
+                  </p>
+                </div>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img
+                      src={car_tyre.src}
+                      alt=""
+                      width="107px"
+                      height="146px"
+                    />
+                  </div>
+
+                  <p className={styles.performance_car_para}>
+                    Tyre Replacement
+                  </p>
+                </div>
+                <div className="me-4" id={styles.performance_car}>
+                  <div className={styles.performance_car_image}>
+                    <img
+                      src={battery_check_thumb.src}
+                      alt=""
+                      width="176px"
+                      height="144px"
+                    />
+                  </div>
+
+                  <p className={styles.performance_car_para}>
+                    Battery Replacement
+                  </p>
+                </div>
+              </SwiperSlide>
             </div>
-            <div className="col" id={styles.icon_div}>
-              <a href="#" className={styles.rightIcon}>
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className={styles.icon}
-                />
-              </a>
-            </div>
-          </div>
+          </Swiper>
         </div>
 
         {/* Designer Combo Section */}
 
         {/* our features container */}
 
-        <div className="our_features_container">
+        <div className={styles.our_features_container}>
           <h1 className={styles.lux_care_h1}>Our Features</h1>
           <div className="row">
             <div className="col">
@@ -1157,122 +1408,31 @@ export default class index extends Component {
         </div>
         {/* our workshopare covid safe container */}
 
-        {/* enquiry  container */}
-
-        <div className="container" id={styles.enquierycontainer}>
-          <div className="row">
-            <div className="col">
-              <h3 className={styles.enquieryh3}>Enquire Now </h3>
-              <p className={styles.enquierypara}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-                iaculis auctor quis velit id pulvinar in.
-              </p>
-              <Image src={enquirycar} alt="enquiry car" />
-            </div>
-            <div className="col">
-              <form className={styles.enquieryform}>
-                <div class="form-group ">
-                  <input
-                    type="name"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Full Name"
-                  />
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Phone Number"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Email address"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="State"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="City"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Car"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Request a service"
-                    />
-                  </div>
-                </div>
-
-                <div class="form-group ">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="How may we help you?"
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        {/* enquiry  container */}
-
         {/* brands we  container */}
 
-        <div className="container">
+        <div className="brands_container">
           <h3>Brands We Serve!</h3>
-          <div className="brands_container">
-            <div className="row ">
-              <div className="col mt-3">
+          <Swiper navigation={true} className="mySwiper">
+            <SwiperSlide className={styles.swiper_slide_designer}>
+              <div className="mt-3">
                 <Image src={honda} alt="honda" width="98px" height="80px" />
               </div>
-              <div className="col mt-3">
+              <div className="mt-3">
                 <Image src={nissan} alt="nissan" width="80px" height="73px" />
               </div>
-              <div className="col mt-5">
+              <div className="mt-5">
                 <Image src={maruti} alt="maruti" width="150px" height="38px" />
               </div>
-              <div className="col mt-4">
+              <div className="mt-4">
                 <Image src={jaguar} alt="jaguar" width="116px" height="58px" />
               </div>
-              <div className="col mt-4">
+              <div className="mt-4">
                 <Image src={ford} alt="ford" width="155px" height="62px" />
               </div>
-              <div className="col">
+              <div className="">
                 <Image src={audilogo} alt="audi" width="120px" height="120px" />
               </div>
-              <div className="col ">
+              <div className="">
                 <Image
                   src={bentely}
                   alt="bentely"
@@ -1280,8 +1440,36 @@ export default class index extends Component {
                   height="146px"
                 />
               </div>
-            </div>
-          </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiper_slide_designer}>
+              <div className="mt-3">
+                <Image src={honda} alt="honda" width="98px" height="80px" />
+              </div>
+              <div className="mt-3">
+                <Image src={nissan} alt="nissan" width="80px" height="73px" />
+              </div>
+              <div className="mt-5">
+                <Image src={maruti} alt="maruti" width="150px" height="38px" />
+              </div>
+              <div className="mt-4">
+                <Image src={jaguar} alt="jaguar" width="116px" height="58px" />
+              </div>
+              <div className="mt-4">
+                <Image src={ford} alt="ford" width="155px" height="62px" />
+              </div>
+              <div className="">
+                <Image src={audilogo} alt="audi" width="120px" height="120px" />
+              </div>
+              <div className="">
+                <Image
+                  src={bentely}
+                  alt="bentely"
+                  width="146px"
+                  height="146px"
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
         {/* brands we  container */}
 
@@ -1292,7 +1480,7 @@ export default class index extends Component {
             <div class="col">
               <div class="counter">
                 <h2>
-                  <Countup end={200000} suffix=" +" duration={40} />
+                  <Countup end={200000} suffix=" +" duration={60} />
                 </h2>
                 <p class="count-text ">Car Serviced</p>
               </div>
@@ -1300,7 +1488,7 @@ export default class index extends Component {
             <div class="col">
               <div class="counter">
                 <h2>
-                  <Countup end={100000} suffix=" +" duration={40} />
+                  <Countup end={100000} suffix=" +" duration={60} />
                 </h2>
                 <p class="count-text ">Happy Customers</p>
               </div>
@@ -1308,7 +1496,7 @@ export default class index extends Component {
             <div class="col">
               <div class="counter">
                 <h2>
-                  <Countup end={4.7} duration={40} decimals={1} />
+                  <Countup end={4.7} duration={60} decimals={1} />
                 </h2>
                 <p class="count-text ">Average Rating</p>
               </div>
@@ -1316,7 +1504,7 @@ export default class index extends Component {
             <div class="col">
               <div class="counter">
                 <h2>
-                  <Countup end={800} suffix="+" duration={40} />
+                  <Countup end={800} suffix="+" duration={60} />
                 </h2>
                 <p class="count-text ">Touch Points in India</p>
               </div>
