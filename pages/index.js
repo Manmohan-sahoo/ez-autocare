@@ -120,7 +120,11 @@ export default class index extends Component {
               <button className={styles.carButton}> Select Car</button>
             </div>
             <div className="col">
-              <NavDropdown className={styles.aTag} title="Brand" id="basic-nav-dropdown">
+              <NavDropdown
+                className={styles.aTag}
+                title="Brand"
+                id="basic-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -131,7 +135,11 @@ export default class index extends Component {
               </NavDropdown>
             </div>
             <div className="col">
-              <NavDropdown className={styles.aTag} title="Model" id="basic-nav-dropdown">
+              <NavDropdown
+                className={styles.aTag}
+                title="Model"
+                id="basic-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -143,7 +151,11 @@ export default class index extends Component {
             </div>
 
             <div className="col">
-              <NavDropdown className={styles.aTag} title="Fuel Type" id="basic-nav-dropdown">
+              <NavDropdown
+                className={styles.aTag}
+                title="Fuel Type"
+                id="basic-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -251,97 +263,6 @@ export default class index extends Component {
           </div>
         </div>
         {/* Why EzautoCare container */}
-
-        {/* enquiry  container */}
-
-        <div className="container" id={styles.enquierycontainer}>
-          <div className="row">
-            <div className="col">
-              <h3 className={styles.enquieryh3}>Enquire Now </h3>
-              <p className={styles.enquierypara}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-                iaculis auctor quis velit id pulvinar in.
-              </p>
-              <Image src={enquirycar} alt="enquiry car" />
-            </div>
-            <div className="col mt-5">
-              <form className={styles.enquieryform}>
-                <div class="form-group ">
-                  <input
-                    type="name"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Full Name"
-                  />
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Phone Number"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Email address"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="State"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="City"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Car"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Request a service"
-                    />
-                  </div>
-                </div>
-
-                <div class="form-group ">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="How may we help you?"
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        {/* enquiry  container */}
 
         {/* our services container */}
 
@@ -1396,6 +1317,97 @@ export default class index extends Component {
         </div>
 
         {/* our features container */}
+
+        {/* enquiry  container */}
+
+        <div className="container" id={styles.enquierycontainer}>
+          <div className="row">
+            <div className="col">
+              <h3 className={styles.enquieryh3}>Enquire Now </h3>
+              <p className={styles.enquierypara}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                iaculis auctor quis velit id pulvinar in.
+              </p>
+              <Image src={enquirycar} alt="enquiry car" />
+            </div>
+            <div className="col mt-5">
+              <form className={styles.enquieryform}>
+                <div class="form-group ">
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="City"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Car"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Request a service"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group ">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="How may we help you?"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        {/* enquiry  container */}
 
         {/* our workshopare covid safe container */}
         <div className={styles.covidContainer}>
