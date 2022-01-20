@@ -87,7 +87,7 @@ export default class index extends Component {
     return (
       <div id={styles.body}>
         {/* slider */}
-        <div>
+        <div className={styles.coarousel}>
           <Carousel variant="dark">
             <Carousel.Item>
               <img src={header1.src} alt="image1" />
@@ -117,10 +117,10 @@ export default class index extends Component {
         <div className="container" id={styles.menu}>
           <div className="row">
             <div className="col">
-              <Button> Select Car</Button>
+              <button className={styles.carButton}> Select Car</button>
             </div>
             <div className="col">
-              <NavDropdown title="Brand" id="basic-nav-dropdown">
+              <NavDropdown className={styles.aTag} title="Brand" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -131,7 +131,7 @@ export default class index extends Component {
               </NavDropdown>
             </div>
             <div className="col">
-              <NavDropdown title="Model" id="basic-nav-dropdown">
+              <NavDropdown className={styles.aTag} title="Model" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -143,7 +143,7 @@ export default class index extends Component {
             </div>
 
             <div className="col">
-              <NavDropdown title="Fuel Type" id="basic-nav-dropdown">
+              <NavDropdown className={styles.aTag} title="Fuel Type" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -154,7 +154,7 @@ export default class index extends Component {
               </NavDropdown>
             </div>
             <div className="col">
-              <Button> Find Services</Button>
+              <button className={styles.findButton}> Find Services</button>
             </div>
           </div>
         </div>
