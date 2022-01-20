@@ -75,7 +75,7 @@ import battery_check_thumb from '../public/Designer combo packages/battery-check
 
 import Image from 'next/image';
 import Countup from 'react-countup';
-import { NavDropdown, Button, Card } from 'react-bootstrap';
+import { NavDropdown, Button, Card, Modal } from 'react-bootstrap';
 
 import styles from '../styles/Index.module.css';
 
@@ -83,6 +83,17 @@ import styles from '../styles/Index.module.css';
 SwiperCore.use([Navigation]);
 
 export default class index extends Component {
+  constructor() {
+    super();
+    this.state = {
+      show: false,
+    };
+  }
+
+  handleModal() {
+    this.setState({ show: !this.state.show });
+  }
+
   render() {
     return (
       <div id={styles.body}>
@@ -117,53 +128,90 @@ export default class index extends Component {
         <div className="container" id={styles.menu}>
           <div className="row">
             <div className="col">
-              <button className={styles.carButton}> Select Car</button>
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.carButton}
+              >
+                {' '}
+                Select Car
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
             <div className="col">
-              <NavDropdown
-                className={styles.aTag}
-                title="Brand"
-                id="basic-nav-dropdown"
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.modalButton}
               >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-              </NavDropdown>
+                Brand
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
             <div className="col">
-              <NavDropdown
-                className={styles.aTag}
-                title="Model"
-                id="basic-nav-dropdown"
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.modalButton}
               >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-              </NavDropdown>
+                Model
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
 
             <div className="col">
-              <NavDropdown
-                className={styles.aTag}
-                title="Fuel Type"
-                id="basic-nav-dropdown"
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.modalButton}
               >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-              </NavDropdown>
+                Fuel Type
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
             <div className="col">
               <button className={styles.findButton}> Find Services</button>
@@ -269,359 +317,185 @@ export default class index extends Component {
         <div className={styles.our_service_container}>
           <h1 className={styles.lux_care_h1}>Our Services</h1>
 
-          <Tabs
-            defaultActiveKey="All Services"
-            id="uncontrolled-tab-example"
-            className="mb-3 "
-          >
-            <Tab eventKey="All Services" title="All Services">
-              <div
-                className="container d-flex justify-content-between"
-                id={styles.our_service_container_tab}
-              >
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carwash.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Premium wash & detailing (2 wheeler also)
-                      </div>
+          <div>
+            <div
+              className="container d-flex justify-content-between"
+              id={styles.our_service_container_tab}
+            >
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={carwash.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={battery.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Tyres & batteries
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={dentiingpainting.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Denting & Painting
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={antiRrust.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Anti Rust Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carservice.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Service & Repair
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Premium wash & detailing (2 wheeler also)
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                className="container d-flex justify-content-between mt-5"
-                id={styles.our_service_container_tab}
-              >
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carAcService.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car AC Service
-                      </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={battery.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={wheelicon.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Wheel Alignment & Balancing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={enginecoating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Engine Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={caraccess.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Accessories
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={Ceramic_Coating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Ceramic Coating
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Tyres & batteries
                     </div>
                   </div>
                 </div>
               </div>
-              <a
-                id={styles.seeMore}
-                className="text-primary d-flex flex-row-reverse"
-                href=""
-              >
-                See More
-              </a>
-            </Tab>
-            <Tab eventKey="Doorstep Service" title="Doorstep Service">
-              <div className="container d-flex justify-content-between">
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carwash.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Premium wash & detailing (2 wheeler also)
-                      </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={dentiingpainting.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={battery.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Tyres & batteries
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={dentiingpainting.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Denting & Painting
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={antiRrust.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Anti Rust Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carservice.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Service & Repair
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Denting & Painting
                     </div>
                   </div>
                 </div>
               </div>
-            </Tab>
-            <Tab eventKey="Workstation servies" title="Workstation servies">
-              <div className="container d-flex justify-content-between ">
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carAcService.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car AC Service
-                      </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={antiRrust.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={wheelicon.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Wheel Alignment & Balancing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={enginecoating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Engine Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={caraccess.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Accessories
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={Ceramic_Coating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Ceramic Coating
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Anti Rust Coating
                     </div>
                   </div>
                 </div>
               </div>
-            </Tab>
-          </Tabs>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={carservice.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Car Service & Repair
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="container d-flex justify-content-between mt-5"
+              id={styles.our_service_container_tab}
+            >
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={carAcService.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Car AC Service
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={wheelicon.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Wheel Alignment & Balancing
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={enginecoating.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Engine Coating
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={caraccess.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Car Accessories
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={Ceramic_Coating.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Ceramic Coating
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              id={styles.seeMore}
+              className="text-primary d-flex flex-row-reverse"
+              href=""
+            >
+              See More
+            </a>
+          </div>
         </div>
 
         {/* our services container */}

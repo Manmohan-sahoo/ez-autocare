@@ -71,6 +71,23 @@ $phone: 480px; */
   }
 }
 
+.modalButton {
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #505050;
+  margin-top: 10px;
+}
+
+.modalButton:hover {
+  background: none;
+  color: #505050;
+}
+
 .h1 {
   width: 400px;
 }
