@@ -3,19 +3,59 @@ $laptop: 922px;
 $tablet: 768px;
 $phone: 480px; */
 
+/* carousel */
+
+.coarousel {
+  position: relative;
+  width: 102%;
+  margin-left: -15px;
+  z-index: -1;
+}
+
 #menu {
   background: #e8e8e8;
   border: 0.7px solid #000000;
   border-radius: 10px;
-  width: 710px;
+  width: 55%;
+  height: 50px;
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 25%;
+  left: 22%;
+}
+
+.carButton {
+  background-color: #20ADB7;
+  width: 150px;
+  height: 48px;
+  border: none;
+  border-right: 0.7px solid #000000;
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: -12px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.findButton {
+  background-color: #20ADB7;
+  width: 150px;
+  height: 48px;
+  border: none;
+  border-left: 0.7px solid #000000;
+  color: #ffffff;
+  font-weight: 500;
+  margin-right: -12px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.aTag{
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 480px) {
   #menu {
-    width: 158px;
+    width: 55%;
   }
 }
 

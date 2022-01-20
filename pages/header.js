@@ -21,56 +21,56 @@ export default function Header() {
     <div>
       <header className={styles.subHeader}>
         <div className="" id={styles.subHeaderRow}>
-          <div class="">
+          <div className="">
             <a
               href="https://www.facebook.com/"
               target="_blank"
-              class="me-4 text-reset "
+              className="me-4 text-reset "
             >
               <FontAwesomeIcon icon={faFacebookF} style={{ color: 'white' }} />
             </a>
             <a
               href="https://www.instagram.com/"
               target="_blank"
-              class="me-4 text-reset "
+              className="me-4 text-reset "
             >
               <FontAwesomeIcon icon={faInstagram} style={{ color: 'white' }} />
             </a>
             <a
               href="https://www.linkedin.com/"
               target="_blank"
-              class="me-4 text-reset "
+              className="me-4 text-reset "
             >
               <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white' }} />
             </a>
             <a
               href="https://twitter.com/"
               target="_blank"
-              class="me-4 text-reset "
+              className="me-4 text-reset "
             >
               <FontAwesomeIcon icon={faTwitter} style={{ color: 'white' }} />
             </a>
           </div>
-          <div class="d-flex" id={styles.subHeaderIcon}>
-            <p class="me-5 text-reset">
-              <i class="fa fa-phone"> 0755001292</i>
+          <div className="d-flex" id={styles.subHeaderIcon}>
+            <p className="me-5 text-reset">
+              <i className="fa fa-phone"> 0755001292</i>
             </p>
-            <p class="me-5 text-reset">
-              <i class="fa fa-envelope-o">
+            <p className="me-5 text-reset">
+              <i className="fa fa-envelope-o">
                 <a href="">dm@ezautocare.in</a>
               </i>
             </p>
-            <a href="" class="me-5 text-reset">
+            <a href="" className="me-5 text-reset">
               FAQ
             </a>
-            <a href="" class="me-5 text-reset">
+            <a href="" className="me-5 text-reset">
               BLOGS
             </a>
           </div>
         </div>
       </header>
       <div className={styles.nav_container}>
-        <nav className="navbar navbar-expand-lg navbar-light bg-none">
+        <nav className="navbar  navbar-expand-lg navbar-light bg-none">
           <Link href="/">
             <a>
               <Image src={logo} alt="nav image" height="50%" />
@@ -89,9 +89,9 @@ export default function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav " id={styles.ul}>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  className="nav-link dropdown-toggle text-dark"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -101,15 +101,15 @@ export default function Header() {
                 >
                   Select City
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">
+                  <div className="dropdown-divider"></div>
+                  <a clasName="dropdown-item" href="#">
                     Something else here
                   </a>
                 </div>
