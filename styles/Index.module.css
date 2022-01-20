@@ -11,6 +11,9 @@ $phone: 480px; */
   margin-left: -15px;
   z-index: -1;
 }
+@media screen and (max-width: 480px) {
+  #body {
+  }
 
 #menu {
   background: #e8e8e8;
@@ -108,6 +111,12 @@ $phone: 480px; */
   margin-top: 60px;
 }
 
+@media screen and (max-width: 480px) {
+  #ez_autocare_first_row {
+    gap: 20px;
+  }
+}
+
 .ez_autcare_div {
   display: flex;
   align-items: center;
@@ -119,14 +128,31 @@ $phone: 480px; */
   border-radius: 7px;
 }
 
+@media screen and (max-width: 480px) {
+  .ez_autcare_div {
+    width: 100%;
+  }
+}
+
 .ez_autcare_img {
   width: 116px;
   height: 116px;
   border-radius: 50%;
 }
 
+@media screen and (max-width: 480px) {
+  .ez_autcare_img {
+  }
+}
+
 .ez_autcare_text_div {
   margin-left: 55px;
+}
+
+@media screen and (max-width: 480px) {
+  .ez_autcare_text_div {
+    margin-left: 5px;
+  }
 }
 
 .ez_autcare_h3 {
@@ -153,6 +179,12 @@ $phone: 480px; */
   margin-top: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  #ez_autocare_second_row {
+    gap: 20px;
+  }
+}
+
 .allServicesImage {
   width: 50px;
   height: 50px;
@@ -163,6 +195,14 @@ $phone: 480px; */
 
 .tabCard {
   background: #20adb71a;
+}
+
+@media screen and (max-width: 480px) {
+  #our_service_container_tab {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
 
 .our_service_container Tab {
@@ -325,8 +365,21 @@ $phone: 480px; */
 }
 
 .trending_container {
-  margin-top: 74px;
+  margin-top: 44px;
   padding: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  .trending_container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.swiper_slide_trending {
+  display: flex;
+  padding: 40px;
 }
 
 #car_service_row {
@@ -334,11 +387,23 @@ $phone: 480px; */
   margin-top: 74px;
 }
 
+@media screen and (max-width: 480px) {
+  #car_service_row {
+    gap: 25px;
+  }
+}
+
 #car_service_col {
   width: 292px;
   height: 339px;
   background: #f7f7f7;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 480px) {
+  #car_service_col {
+    width: 392px;
+  }
 }
 
 .car_service_div {
@@ -379,12 +444,29 @@ $phone: 480px; */
   bottom: 150px;
   left: 16px;
 }
+
+@media screen and (max-width: 480px) {
+  .h1container {
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .h1style {
   color: #e8e8e8;
   font-weight: 700;
   font-size: 62px;
   width: 600px;
 }
+
+@media screen and (max-width: 480px) {
+  .h1style {
+    font-size: 32px;
+    width: 300px;
+  }
+}
+
 .buttonstyle {
   width: 432.33px;
   height: 60px;
@@ -396,8 +478,21 @@ $phone: 480px; */
   font-weight: 600;
 }
 
+@media screen and (max-width: 480px) {
+  .buttonstyle {
+    width: 216px;
+    height: 30px;
+    font-size: 11px;
+  }
+}
+
 #combo_div {
   margin-top: 60px;
+}
+
+.swiper_slide_designer {
+  display: flex;
+  padding: 40px;
 }
 
 #comboContainer {
@@ -438,9 +533,13 @@ $phone: 480px; */
 }
 
 #performance_car {
-  width: 290px;
-  height: 231px;
-  background: #ffffff;
+  width: 297px;
+  height: 232px;
+  background: linear-gradient(
+    180deg,
+    #57c9d1 -54.74%,
+    rgba(255, 255, 255, 0) 100%
+  );
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
@@ -452,15 +551,67 @@ $phone: 480px; */
 }
 
 .performance_car_para {
-  width: 290px;
-  height: 42px;
-  background: #d1d1d1;
-  border-radius: 0px 0px 4px 4px;
+  width: 212px;
+  height: 50px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+
   font-family: Roboto;
-  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
   color: #000000;
+  line-height: 50px;
   text-align: center;
-  margin-left: -12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18%;
+}
+
+.performance_car_para1 {
+  width: 212px;
+  height: 50px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+
+.performance_car_para2 {
+  width: 212px;
+  height: 50px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35%;
+}
+
+.our_features_container {
+  margin-top: 65px;
 }
 
 #our_feature_card {
