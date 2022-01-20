@@ -624,6 +624,7 @@ $phone: 480px; */
   padding: 15px;
   height: 392px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .covidh2 {
@@ -659,7 +660,14 @@ $phone: 480px; */
 }
 
 .brands_container {
-  margin-top: 20%;
+}
+
+.swiper_slide_brands {
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .increament_counter {

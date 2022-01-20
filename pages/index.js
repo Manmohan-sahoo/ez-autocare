@@ -1413,7 +1413,7 @@ export default class index extends Component {
         <div className="brands_container">
           <h3>Brands We Serve!</h3>
           <Swiper navigation={true} className="mySwiper">
-            <SwiperSlide className={styles.swiper_slide_designer}>
+            <SwiperSlide className={styles.swiper_slide_brands}>
               <div className="mt-3">
                 <Image src={honda} alt="honda" width="98px" height="80px" />
               </div>
@@ -1441,7 +1441,7 @@ export default class index extends Component {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className={styles.swiper_slide_designer}>
+            <SwiperSlide className={styles.swiper_slide_brands}>
               <div className="mt-3">
                 <Image src={honda} alt="honda" width="98px" height="80px" />
               </div>

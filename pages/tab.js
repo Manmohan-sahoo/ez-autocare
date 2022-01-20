@@ -1,30 +1,41 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Modal, Button } from 'react-bootstrap';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+export default function Tab(props) {
+  const [modalShow, setModalShow] = React.useState(false);
 
-// import Swiper core and required modules
-import SwiperCore, { Navigation } from 'swiper';
-
-// install Swiper modules
-SwiperCore.use([Navigation]);
-
-export default function Tab() {
   return (
-    <>
-      <Swiper navigation={true} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </>
+    <div>
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Modal heading
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
+          </p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+      </Button>
+
+      <Tab show={modalShow} onHide={() => setModalShow(false)} />
+    </div>
   );
 }
