@@ -322,17 +322,13 @@ $phone: 480px; */
 }
 
 .lux_care {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   margin-top: 30px;
   margin-bottom: 50px;
-  margin-left: 30px;
 }
 
 .lux_care_line {
   width: 59px;
-  border: 3px solid #20ADB7; 
+  border: 3px solid #20adb7;
   transform: rotate(90deg);
 }
 
@@ -466,7 +462,7 @@ $phone: 480px; */
   margin-top: 30px;
   margin-bottom: 50px;
   margin-left: -30px;
-} 
+}
 
 .car_service_div {
   margin-top: 5px;

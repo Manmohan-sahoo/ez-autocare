@@ -1,0 +1,14 @@
+.recent_articles_p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #070707;
+  text-align: center;
+  border-bottom: 2px solid #20adb7;
+  width: 301px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -223,8 +223,8 @@ export default class index extends Component {
 
         <div className="exciting_container">
           <div className={styles.lux_care}>
-              <div className={styles.lux_care_line}></div>
-              <h1 className={styles.lux_care_h1}>Exciting Offers</h1>
+            <div className={styles.lux_care_line}></div>
+            <h1 className={styles.lux_care_h1}>Exciting Offers</h1>
           </div>
           <div className={styles.lux_excitingImgDiv}>
             <div className="row d-flex">
@@ -529,15 +529,14 @@ export default class index extends Component {
         {/* ez autocare luxcare container */}
 
         <div className={styles.lux_care_container}>
+          <div className={styles.lux_care_line}></div>
           <div className={styles.lux_care}>
-            <div className={styles.lux_care_line}></div>
             <h1 className={styles.lux_care_h1}>EZ AutoCare Luxe Care</h1>
             <p className={styles.elegant_service}>
               Elegant services for your luxury car
             </p>
           </div>
-          
-          
+
           <Swiper navigation={true} className="mySwiper">
             <div className="row" id={styles.luxury_car_row}>
               <SwiperSlide className="d-flex m-5 p-2">
