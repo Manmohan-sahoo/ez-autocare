@@ -502,7 +502,7 @@ export default class index extends Component {
             </div>
             <a
               id={styles.seeMore}
-              className="text-primary d-flex flex-row-reverse"
+              className="d-flex flex-row-reverse"
               href=""
             >
               See More
@@ -515,7 +515,8 @@ export default class index extends Component {
         {/* custom your own package section */}
 
         <div className={styles.customContainer}>
-          <Image src={custom} alt="custom" width="1500px" height="600px" />
+          <div className={styles.customContainerImage}></div>
+          <Image  src={custom} alt="custom" width="1500px" height="600px" />
           <div className={styles.h1container}>
             <h1 className={styles.h1style}>CUSTOM YOUR OWN PACKAGE</h1>
             <button className={styles.buttonstyle}>
@@ -531,10 +532,12 @@ export default class index extends Component {
         <div className={styles.lux_care_container}>
           <div className={styles.lux_care}>
             <div className={styles.lux_care_line}></div>
-            <h1 className={styles.lux_care_h1}>EZ AutoCare Luxe Care</h1>
-            <p className={styles.elegant_service}>
-              Elegant services for your luxury car
-            </p>
+            <div className={styles.lux_care_internal_div}>
+              <h1 className={styles.lux_care_h1}>EZ AutoCare Luxe Care</h1>
+              <p className={styles.elegant_service}>
+                Elegant services for your luxury car
+              </p>
+            </div>
           </div>
           
           
@@ -747,10 +750,15 @@ export default class index extends Component {
         {/* Trending Service section */}
 
         <div className={styles.trending_container}>
-          <h1 className={styles.lux_care_h1}>Trending Services</h1>
-          <p className={styles.elegant_service}>
-            Most popular services in your city
-          </p>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <div className={styles.lux_care_internal_div}>
+              <h1 className={styles.lux_care_h1}>Trending Services</h1>
+              <p className={styles.elegant_service}>
+                Most popular services in your city
+              </p>
+            </div>
+          </div>
           <Swiper navigation={true} className="mySwiper">
             <div className="row" id={styles.car_service_row}>
               <SwiperSlide className={styles.swiper_slide_trending}>
@@ -874,10 +882,16 @@ export default class index extends Component {
         {/* Designer Combo Section */}
 
         <div className={styles.designer_combo_container}>
-          <h1 className={styles.lux_care_h1}>Designer Combo Packages</h1>
-          <p className={styles.elegant_service}>
-            Personalised Packages offered by expert mechanics
-          </p>
+
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <div className={styles.lux_care_internal_div}>
+              <h1 className={styles.lux_care_h1}>Designer Combo Packages</h1>
+              <p className={styles.elegant_service}>
+                Personalised Packages offered by expert mechanics
+              </p>
+            </div>
+          </div>
           <Swiper navigation={true} className="mySwiper">
             <div className="row" id={styles.combo_div}>
               <SwiperSlide className={styles.swiper_slide_designer}>
@@ -1074,12 +1088,17 @@ export default class index extends Component {
         {/* our features container */}
 
         <div className={styles.our_features_container}>
-          <h1 className={styles.lux_care_h1}>Our Features</h1>
-          <div className="row">
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <div className={styles.lux_care_internal_div}>
+              <h1 className={styles.lux_care_h1}>Our Features</h1>
+            </div>
+          </div>
+          <div className="row" id={styles.initial_state}>
             <div className="col">
-              <div class="card" id={styles.our_feature_card}>
-                <div class="card-body">
-                  <div class="ui-bar-a" id={styles.featureContainer}>
+              <div className="card" id={styles.our_feature_card}>
+                <div className="card-body">
+                  <div className="ui-bar-a" id={styles.featureContainer}>
                     <img
                       width={60}
                       height={60}
@@ -1098,9 +1117,9 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" id={styles.our_feature_card}>
-                <div class="card-body">
-                  <div class="ui-bar-a" id={styles.featureContainer}>
+              <div className="card" id={styles.our_feature_card}>
+                <div className="card-body">
+                  <div className="ui-bar-a" id={styles.featureContainer}>
                     <img
                       width={60}
                       height={60}
@@ -1119,9 +1138,9 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" id={styles.our_feature_card}>
-                <div class="card-body">
-                  <div class="ui-bar-a" id={styles.featureContainer}>
+              <div className="card" id={styles.our_feature_card}>
+                <div className="card-body">
+                  <div className="ui-bar-a" id={styles.featureContainer}>
                     <img
                       width={60}
                       height={60}
@@ -1140,9 +1159,9 @@ export default class index extends Component {
           </div>
           <div className="row" id={styles.our_feature_card_s_row}>
             <div className="col">
-              <div class="card" id={styles.our_feature_card}>
-                <div class="card-body">
-                  <div class="ui-bar-a" id={styles.featureContainer}>
+              <div className="card" id={styles.our_feature_card}>
+                <div className="card-body">
+                  <div className="ui-bar-a" id={styles.featureContainer}>
                     <img
                       width={60}
                       height={60}
@@ -1160,9 +1179,9 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" id={styles.our_feature_card}>
-                <div class="card-body">
-                  <div class="ui-bar-a" id={styles.featureContainer}>
+              <div className="card" id={styles.our_feature_card}>
+                <div className="card-body">
+                  <div className="ui-bar-a" id={styles.featureContainer}>
                     <img
                       width={60}
                       height={60}
@@ -1182,9 +1201,9 @@ export default class index extends Component {
               </div>
             </div>
             <div className="col">
-              <div class="card" id={styles.our_feature_card}>
-                <div class="card-body">
-                  <div class="ui-bar-a" id={styles.featureContainer}>
+              <div className="card" id={styles.our_feature_card}>
+                <div className="card-body">
+                  <div className="ui-bar-a" id={styles.featureContainer}>
                     <img
                       width={60}
                       height={60}
@@ -1192,7 +1211,7 @@ export default class index extends Component {
                       alt="feature1"
                       className={styles.feature4}
                     />
-                    <h4 className={styles.featureh4}>
+                    <h4 className={styles.featureh4_sub}>
                       Luxury Car Services Available
                     </h4>
                   </div>
@@ -1214,7 +1233,10 @@ export default class index extends Component {
         <div className="container" id={styles.enquierycontainer}>
           <div className="row">
             <div className="col">
-              <h3 className={styles.enquieryh3}>Enquire Now </h3>
+              <div className={styles.employee_div}>
+                <div className={styles.employee_line}></div>
+                <h3 className={styles.enquieryh3}>Enquire Now </h3>
+              </div>
               <p className={styles.enquierypara}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
                 iaculis auctor quis velit id pulvinar in.
@@ -1223,20 +1245,20 @@ export default class index extends Component {
             </div>
             <div className="col mt-5">
               <form className={styles.enquieryform}>
-                <div class="form-group ">
+                <div className="form-group ">
                   <input
                     type="name"
-                    class="form-control"
+                    className="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Full Name"
                   />
                 </div>
-                <div class="row">
-                  <div class="col">
+                <div className="row">
+                  <div className="col">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Phone Number"
                     />
                   </div>
@@ -1285,7 +1307,7 @@ export default class index extends Component {
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
-                    rows="3"
+                    rows="5"
                     placeholder="How may we help you?"
                   ></textarea>
                 </div>
