@@ -162,11 +162,16 @@ export default class index extends Component {
         {/* exciting offer container */}
 
         <div className="exciting_container">
-          <h1 className={styles.lux_care_h1}>Exciting Offers</h1>
-          <div className="row d-flex">
-            <img id={styles.excitingImgDiv} src={car1.src} alt="nav image" />
-            <img id={styles.excitingImgDiv} src={car2.src} alt="nav image" />
-            <img id={styles.excitingImgDiv3} src={car3.src} alt="nav image" />
+          <div className={styles.lux_care}>
+              <div className={styles.lux_care_line}></div>
+              <h1 className={styles.lux_care_h1}>Exciting Offers</h1>
+          </div>
+          <div className={styles.lux_excitingImgDiv}>
+            <div className="row d-flex">
+              <img id={styles.excitingImgDiv} src={car1.src} alt="nav image" />
+              <img id={styles.excitingImgDiv} src={car2.src} alt="nav image" />
+              <img id={styles.excitingImgDiv3} src={car3.src} alt="nav image" />
+            </div>
           </div>
         </div>
 
@@ -174,77 +179,81 @@ export default class index extends Component {
 
         {/* Why EzautoCare container */}
         <div className={styles.why_ez_autocare_container}>
-          <h1 className={styles.lux_care_h1}>Why EZ AutoCare</h1>
-
-          <div className="row" id={styles.ez_autocare_first_row}>
-            <div className="col">
-              <div className={styles.ez_autcare_div}>
-                <img
-                  className={styles.ez_autcare_img}
-                  src={image1.src}
-                  alt=""
-                />
-                <div className={styles.ez_autcare_text_div}>
-                  <h3 className={styles.ez_autcare_h3}>
-                    Free Doorstep Pick-up & Drop
-                  </h3>
-                  <p className={styles.ez_autcare_p}>
-                    No more unnecessary workshop visits!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className={styles.ez_autcare_div}>
-                <img
-                  className={styles.ez_autcare_img}
-                  src={image2.src}
-                  alt=""
-                />
-                <div className={styles.ez_autcare_text_div}>
-                  <h3 className={styles.ez_autcare_h3}>
-                    Upfront & Competitive Pricing
-                  </h3>
-                  <p className={styles.ez_autcare_p}>
-                    Save Upto 60% on car’s service.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <h1 className={styles.lux_care_h1}>Why EZ AutoCare</h1>
           </div>
-          <div className="row" id={styles.ez_autocare_second_row}>
-            <div className="col">
-              <div className={styles.ez_autcare_div}>
-                <img
-                  className={styles.ez_autcare_img}
-                  src={image2.src}
-                  alt=""
-                />
-                <div className={styles.ez_autcare_text_div}>
-                  <h3 className={styles.ez_autcare_h3}>
-                    Network Warranty on Car Service
-                  </h3>
-                  <p className={styles.ez_autcare_p}>
-                    1 month/1000kms unconditional warranty on car service. No
-                    questions asked!
-                  </p>
+          <div className={styles.lux_excitingImgDiv}>
+            <div className="row" id={styles.ez_autocare_first_row}>
+              <div className="col">
+                <div className={styles.ez_autcare_div}>
+                  <img
+                    className={styles.ez_autcare_img}
+                    src={image1.src}
+                    alt=""
+                  />
+                  <div className={styles.ez_autcare_text_div}>
+                    <h3 className={styles.ez_autcare_h3}>
+                      Free Doorstep Pick-up & Drop
+                    </h3>
+                    <p className={styles.ez_autcare_p}>
+                      No more unnecessary workshop visits!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className={styles.ez_autcare_div}>
+                  <img
+                    className={styles.ez_autcare_img}
+                    src={image2.src}
+                    alt=""
+                  />
+                  <div className={styles.ez_autcare_text_div}>
+                    <h3 className={styles.ez_autcare_h3}>
+                      Upfront & Competitive Pricing
+                    </h3>
+                    <p className={styles.ez_autcare_p}>
+                      Save Upto 60% on car’s service.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col">
-              <div className={styles.ez_autcare_div}>
-                <img
-                  className={styles.ez_autcare_img}
-                  src={image3.src}
-                  alt=""
-                />
-                <div className={styles.ez_autcare_text_div}>
-                  <h3 className={styles.ez_autcare_h3}>
-                    100% Genuine Spare Parts
-                  </h3>
-                  <p className={styles.ez_autcare_p}>
-                    Only OEM/OES spare parts used. Quality Assured!
-                  </p>
+            <div className="row" id={styles.ez_autocare_second_row}>
+              <div className="col">
+                <div className={styles.ez_autcare_div}>
+                  <img
+                    className={styles.ez_autcare_img}
+                    src={image2.src}
+                    alt=""
+                  />
+                  <div className={styles.ez_autcare_text_div}>
+                    <h3 className={styles.ez_autcare_h3}>
+                      Network Warranty on Car Service
+                    </h3>
+                    <p className={styles.ez_autcare_p}>
+                      1 month/1000kms unconditional warranty on car service. No
+                      questions asked!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className={styles.ez_autcare_div}>
+                  <img
+                    className={styles.ez_autcare_img}
+                    src={image3.src}
+                    alt=""
+                  />
+                  <div className={styles.ez_autcare_text_div}>
+                    <h3 className={styles.ez_autcare_h3}>
+                      100% Genuine Spare Parts
+                    </h3>
+                    <p className={styles.ez_autcare_p}>
+                      Only OEM/OES spare parts used. Quality Assured!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -346,12 +355,15 @@ export default class index extends Component {
         {/* our services container */}
 
         <div className={styles.our_service_container}>
-          <h1 className={styles.lux_care_h1}>Our Services</h1>
+          <div className={styles.service}>
+            <div className={styles.lux_care_line}></div>
+            <h1 className={styles.lux_care_h1}>Our Services</h1>
+          </div>
 
           <Tabs
             defaultActiveKey="All Services"
             id="uncontrolled-tab-example"
-            className="mb-3 "
+            className="mb-3"
           >
             <Tab eventKey="All Services" title="All Services">
               <div
@@ -526,7 +538,7 @@ export default class index extends Component {
               </div>
               <a
                 id={styles.seeMore}
-                className="text-primary d-flex flex-row-reverse"
+                className="d-flex flex-row-reverse"
                 href=""
               >
                 See More
@@ -722,10 +734,15 @@ export default class index extends Component {
         {/* ez autocare luxcare container */}
 
         <div className={styles.lux_care_container}>
-          <h1 className={styles.lux_care_h1}>EZ AutoCare Luxe Care</h1>
-          <p className={styles.elegant_service}>
-            Elegant services for your luxury car
-          </p>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <h1 className={styles.lux_care_h1}>EZ AutoCare Luxe Care</h1>
+            <p className={styles.elegant_service}>
+              Elegant services for your luxury car
+            </p>
+          </div>
+          
+          
           <Swiper navigation={true} className="mySwiper">
             <div className="row" id={styles.luxury_car_row}>
               <SwiperSlide className="d-flex m-5 p-2">
