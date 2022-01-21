@@ -236,7 +236,7 @@ $phone: 480px; */
 .our_service_container {
   margin-top: 4rem;
   width: 90%;
-  margin-left: 60px;
+  margin-left: 80px;
 }
 
 .our_service_container Tab {
@@ -312,18 +312,38 @@ $phone: 480px; */
   font-size: 14px;
   font-weight: 700;
 }
+
 .p {
   font-size: 12px;
 }
+
 .customContainer {
+  width: 101.7%;
+  margin-left: -12px;
   margin-top: 55px;
   position: relative;
   text-align: center;
 }
 
+.customContainerImage {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  background: #20adb7;
+  z-index: 1;
+  opacity: 0.5;
+}
+
 .lux_care {
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.lux_care_internal_div {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .lux_care_line {
@@ -336,7 +356,7 @@ $phone: 480px; */
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 62px;
   line-height: 75px;
   color: #000000;
 }
@@ -345,8 +365,10 @@ $phone: 480px; */
   font-family: Roboto;
   font-style: italic;
   font-weight: normal;
-  font-size: 21px;
+  font-size: 36px;
   line-height: 22px;
+  margin-bottom: -30px;
+  margin-top: 10px;
   color: #939393;
 }
 
@@ -361,20 +383,21 @@ $phone: 480px; */
 }
 
 #luxury_car_row {
-  margin-top: 38px;
+  margin-top: -38px;
 }
 
 #luxury_card {
-  width: 291px;
+  width: 275px;
   height: 268px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
+  margin-right: 15px;
 }
 
 .luxury_image {
   height: 197px;
-  width: 291px;
+  width: 275px;
   border-radius: 14px 14px 0px 0px;
 }
 
@@ -415,7 +438,7 @@ $phone: 480px; */
 
 .trending_container {
   margin-top: 44px;
-  padding: 25px;
+  padding-top: -25px;
 }
 
 @media screen and (max-width: 480px) {
@@ -429,6 +452,7 @@ $phone: 480px; */
 .swiper_slide_trending {
   display: flex;
   padding: 40px;
+  margin-left: 10px;
 }
 
 #car_service_row {
@@ -461,17 +485,23 @@ $phone: 480px; */
   align-items: center;
   margin-top: 30px;
   margin-bottom: 50px;
-  margin-left: -30px;
+  margin-left: -50px;
 }
 
 .car_service_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 5px;
+  margin-left: -50px;
   transform: translate(10%, 10%);
 }
 
 .car_button {
-  width: 212px;
+  width: 65%;
   height: 47px;
+  margin-left: -15px;
   background: #20adb7;
   border-radius: 5px;
   font-family: Roboto;
@@ -499,8 +529,9 @@ $phone: 480px; */
 
 .h1container {
   position: absolute;
-  bottom: 150px;
-  left: 16px;
+  bottom: 15%;
+  left: 5%;
+  z-index: 2;
 }
 
 @media screen and (max-width: 480px) {
@@ -514,7 +545,7 @@ $phone: 480px; */
 .h1style {
   color: #e8e8e8;
   font-weight: 700;
-  font-size: 62px;
+  font-size: 72px;
   width: 600px;
 }
 
@@ -526,14 +557,16 @@ $phone: 480px; */
 }
 
 .buttonstyle {
-  width: 432.33px;
-  height: 60px;
+  width: 70%;
+  height: 100px;
   border: none;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #000000;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
+  margin-left: -70px;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 480px) {
@@ -550,7 +583,7 @@ $phone: 480px; */
 
 .swiper_slide_designer {
   display: flex;
-  padding: 40px;
+  padding: 55px;
 }
 
 #comboContainer {
@@ -606,13 +639,15 @@ $phone: 480px; */
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: -20px;
 }
 
 .performance_car_para {
   width: 212px;
   height: 50px;
   background: #ffffff;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.144);
   border-radius: 9px;
 
   font-family: Roboto;
@@ -672,8 +707,12 @@ $phone: 480px; */
   margin-top: 65px;
 }
 
+#initial_state {
+  margin-left: 40px;
+}
+
 #our_feature_card {
-  width: 396px;
+  width: 90%;
   height: 273px;
   background: #ffffff;
   box-shadow: -1px 4px 13px rgba(0, 0, 0, 0.25);
@@ -690,12 +729,24 @@ $phone: 480px; */
 }
 .featureh4 {
   margin-left: 15px;
+  margin-top: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   text-transform: capitalize;
-  text-align: center;
+  text-align: start;
+  color: #000000;
+}
+.featureh4_sub {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: start;
   color: #000000;
 }
 .cardText {
@@ -711,7 +762,8 @@ $phone: 480px; */
 }
 
 #our_feature_card_s_row {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 .covidContainer {
@@ -738,15 +790,33 @@ $phone: 480px; */
 #enquierycontainer {
   background: #a1d1f9;
   border-radius: 8px;
-  margin-top: 55px;
-  margin-bottom: 35px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.employee_div {
+  margin-top: 53px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.employee_line {
+  width: 59px;
+  border: 3px solid #ffffff;
+  transform: rotate(90deg);
 }
 
 .enquieryh3 {
   color: #ffffff;
   font-weight: 600;
-  font-size: 34px;
-  margin-top: 35px;
+  font-size: 54px;
+}
+
+.enquierypara {
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 62px;
 }
 
 .enquieryform {
