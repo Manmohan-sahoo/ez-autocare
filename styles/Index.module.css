@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* $desktop: 1200px;
 $laptop: 922px;
 $tablet: 768px;
@@ -11,6 +13,7 @@ $phone: 480px; */
   margin-left: -15px;
   z-index: -1;
 }
+
 @media screen and (max-width: 480px) {
   #body {
   }
@@ -122,7 +125,14 @@ $phone: 480px; */
 }
 
 .why_ez_autocare_container {
-  padding: 20px;
+  margin-top: 4rem;
+  margin-bottom: 50px;
+}
+
+.lux_excitingImgDiv {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
 }
 
 #ez_autocare_first_row {
@@ -223,6 +233,12 @@ $phone: 480px; */
   }
 }
 
+.our_service_container {
+  margin-top: 4rem;
+  width: 90%;
+  margin-left: 60px;
+}
+
 .our_service_container Tab {
   width: 326px;
   height: 75px;
@@ -234,21 +250,23 @@ $phone: 480px; */
 }
 
 #carwashRow {
-  width: 202px;
-  height: 221px;
-  left: 88px;
+  width: 212px;
+  height: 261px;
   background: #ffffff;
   box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  margin-right: 20px;
 }
 #rowcar {
-  column-gap: 50px;
+  column-gap: 60px;
 }
 #carwashimageRow {
   background: rgba(32, 173, 183, 0.1);
-  width: 202px;
-  height: 125px;
-  display: block;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -284,8 +302,10 @@ $phone: 480px; */
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 62px;
+  line-height: 42px;
   color: #20adb7;
+  margin-top: 36px;
+  margin-right: 6rem;
 }
 
 .h3 {
@@ -301,10 +321,25 @@ $phone: 480px; */
   text-align: center;
 }
 
+.lux_care {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.lux_care_line {
+  width: 59px;
+  border: 3px solid #20ADB7; 
+  transform: rotate(90deg);
+}
+
 .lux_care_h1 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 45px;
   line-height: 75px;
   color: #000000;
@@ -423,6 +458,15 @@ $phone: 480px; */
     width: 392px;
   }
 }
+
+.service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: -30px;
+} 
 
 .car_service_div {
   margin-top: 5px;
