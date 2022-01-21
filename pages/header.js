@@ -56,7 +56,7 @@ export default function Header() {
               <i className="fa fa-phone"> 0755001292</i>
             </p>
             <p className="me-5 text-reset">
-              <i className="fa fa-envelope-o">
+              <i className="fa fa-envelope-o text-light">
                 <a href="">dm@ezautocare.in</a>
               </i>
             </p>

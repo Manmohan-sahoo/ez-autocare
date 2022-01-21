@@ -31,7 +31,7 @@ $phone: 480px; */
 }
 
 .carButton {
-  background-color: #20ADB7;
+  background-color: #20adb7;
   width: 150px;
   height: 48px;
   border: none;
@@ -44,7 +44,7 @@ $phone: 480px; */
 }
 
 .findButton {
-  background-color: #20ADB7;
+  background-color: #20adb7;
   width: 150px;
   height: 48px;
   border: none;
@@ -56,7 +56,7 @@ $phone: 480px; */
   border-top-right-radius: 10px;
 }
 
-.aTag{
+.aTag {
   margin-top: 5px;
 }
 
@@ -72,6 +72,23 @@ $phone: 480px; */
     margin-top: 50px;
     float: none;
   }
+}
+
+.modalButton {
+  background: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #505050;
+  margin-top: 10px;
+}
+
+.modalButton:hover {
+  background: none;
+  color: #505050;
 }
 
 .h1 {
@@ -707,6 +724,7 @@ $phone: 480px; */
   padding: 15px;
   height: 392px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .covidh2 {
@@ -742,7 +760,14 @@ $phone: 480px; */
 }
 
 .brands_container {
-  margin-top: 20%;
+}
+
+.swiper_slide_brands {
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .increament_counter {

@@ -75,7 +75,7 @@ import battery_check_thumb from '../public/Designer combo packages/battery-check
 
 import Image from 'next/image';
 import Countup from 'react-countup';
-import { NavDropdown, Button, Card } from 'react-bootstrap';
+import { NavDropdown, Button, Card, Modal } from 'react-bootstrap';
 
 import styles from '../styles/Index.module.css';
 
@@ -83,6 +83,17 @@ import styles from '../styles/Index.module.css';
 SwiperCore.use([Navigation]);
 
 export default class index extends Component {
+  constructor() {
+    super();
+    this.state = {
+      show: false,
+    };
+  }
+
+  handleModal() {
+    this.setState({ show: !this.state.show });
+  }
+
   render() {
     return (
       <div id={styles.body}>
@@ -117,41 +128,90 @@ export default class index extends Component {
         <div className="container" id={styles.menu}>
           <div className="row">
             <div className="col">
-              <button className={styles.carButton}> Select Car</button>
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.carButton}
+              >
+                {' '}
+                Select Car
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
             <div className="col">
-              <NavDropdown className={styles.aTag} title="Brand" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-              </NavDropdown>
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.modalButton}
+              >
+                Brand
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
             <div className="col">
-              <NavDropdown className={styles.aTag} title="Model" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-              </NavDropdown>
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.modalButton}
+              >
+                Model
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
 
             <div className="col">
-              <NavDropdown className={styles.aTag} title="Fuel Type" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-              </NavDropdown>
+              <button
+                onClick={() => {
+                  this.handleModal();
+                }}
+                className={styles.modalButton}
+              >
+                Fuel Type
+              </button>
+              <Modal
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                show={this.state.show}
+                onHide={() => {
+                  this.handleModal();
+                }}
+              >
+                <Modal.Header closeButton>Modal Head Part</Modal.Header>
+                <Modal.Body>hi, modal is here</Modal.Body>
+              </Modal>
             </div>
             <div className="col">
               <button className={styles.findButton}> Find Services</button>
@@ -261,97 +321,6 @@ export default class index extends Component {
         </div>
         {/* Why EzautoCare container */}
 
-        {/* enquiry  container */}
-
-        <div className="container" id={styles.enquierycontainer}>
-          <div className="row">
-            <div className="col">
-              <h3 className={styles.enquieryh3}>Enquire Now </h3>
-              <p className={styles.enquierypara}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-                iaculis auctor quis velit id pulvinar in.
-              </p>
-              <Image src={enquirycar} alt="enquiry car" />
-            </div>
-            <div className="col mt-5">
-              <form className={styles.enquieryform}>
-                <div class="form-group ">
-                  <input
-                    type="name"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Full Name"
-                  />
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Phone Number"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Email address"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="State"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="City"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Car"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Request a service"
-                    />
-                  </div>
-                </div>
-
-                <div class="form-group ">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="How may we help you?"
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        {/* enquiry  container */}
-
         {/* our services container */}
 
         <div className={styles.our_service_container}>
@@ -360,359 +329,185 @@ export default class index extends Component {
             <h1 className={styles.lux_care_h1}>Our Services</h1>
           </div>
 
-          <Tabs
-            defaultActiveKey="All Services"
-            id="uncontrolled-tab-example"
-            className="mb-3"
-          >
-            <Tab eventKey="All Services" title="All Services">
-              <div
-                className="container d-flex justify-content-between"
-                id={styles.our_service_container_tab}
-              >
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carwash.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Premium wash & detailing (2 wheeler also)
-                      </div>
+          <div>
+            <div
+              className="container d-flex justify-content-between"
+              id={styles.our_service_container_tab}
+            >
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={carwash.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={battery.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Tyres & batteries
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={dentiingpainting.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Denting & Painting
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={antiRrust.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Anti Rust Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carservice.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Service & Repair
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Premium wash & detailing (2 wheeler also)
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                className="container d-flex justify-content-between mt-5"
-                id={styles.our_service_container_tab}
-              >
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carAcService.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car AC Service
-                      </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={battery.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={wheelicon.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Wheel Alignment & Balancing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={enginecoating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Engine Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={caraccess.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Accessories
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={Ceramic_Coating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Ceramic Coating
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Tyres & batteries
                     </div>
                   </div>
                 </div>
               </div>
-              <a
-                id={styles.seeMore}
-                className="d-flex flex-row-reverse"
-                href=""
-              >
-                See More
-              </a>
-            </Tab>
-            <Tab eventKey="Doorstep Service" title="Doorstep Service">
-              <div className="container d-flex justify-content-between">
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carwash.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Premium wash & detailing (2 wheeler also)
-                      </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={dentiingpainting.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={battery.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Tyres & batteries
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={dentiingpainting.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Denting & Painting
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={antiRrust.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Anti Rust Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carservice.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Service & Repair
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Denting & Painting
                     </div>
                   </div>
                 </div>
               </div>
-            </Tab>
-            <Tab eventKey="Workstation servies" title="Workstation servies">
-              <div className="container d-flex justify-content-between ">
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={carAcService.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car AC Service
-                      </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={antiRrust.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
                     </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={wheelicon.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Wheel Alignment & Balancing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={enginecoating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Engine Coating
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={caraccess.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Car Accessories
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id={styles.carwashRow}>
-                  <div className="row">
-                    <div className="col">
-                      <div className="row" id={styles.carwashimageRow}>
-                        <img
-                          src={Ceramic_Coating.src}
-                          alt="carwash"
-                          className={styles.carwashImage}
-                        />
-                      </div>
-                      <div className="row" id={styles.carwashtextRow}>
-                        Ceramic Coating
-                      </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Anti Rust Coating
                     </div>
                   </div>
                 </div>
               </div>
-            </Tab>
-          </Tabs>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={carservice.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Car Service & Repair
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="container d-flex justify-content-between mt-5"
+              id={styles.our_service_container_tab}
+            >
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={carAcService.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Car AC Service
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={wheelicon.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Wheel Alignment & Balancing
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={enginecoating.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Engine Coating
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={caraccess.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Car Accessories
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id={styles.carwashRow}>
+                <div className="row">
+                  <div className="col">
+                    <div className="row" id={styles.carwashimageRow}>
+                      <img
+                        src={Ceramic_Coating.src}
+                        alt="carwash"
+                        className={styles.carwashImage}
+                      />
+                    </div>
+                    <div className="row" id={styles.carwashtextRow}>
+                      Ceramic Coating
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              id={styles.seeMore}
+              className="text-primary d-flex flex-row-reverse"
+              href=""
+            >
+              See More
+            </a>
+          </div>
         </div>
 
         {/* our services container */}
@@ -1414,6 +1209,97 @@ export default class index extends Component {
 
         {/* our features container */}
 
+        {/* enquiry  container */}
+
+        <div className="container" id={styles.enquierycontainer}>
+          <div className="row">
+            <div className="col">
+              <h3 className={styles.enquieryh3}>Enquire Now </h3>
+              <p className={styles.enquierypara}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                iaculis auctor quis velit id pulvinar in.
+              </p>
+              <Image src={enquirycar} alt="enquiry car" />
+            </div>
+            <div className="col mt-5">
+              <form className={styles.enquieryform}>
+                <div class="form-group ">
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="City"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Car"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Request a service"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group ">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="How may we help you?"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        {/* enquiry  container */}
+
         {/* our workshopare covid safe container */}
         <div className={styles.covidContainer}>
           <h2 className={styles.covidh2}>Our workshops are COVID SAFE</h2>
@@ -1430,7 +1316,7 @@ export default class index extends Component {
         <div className="brands_container">
           <h3>Brands We Serve!</h3>
           <Swiper navigation={true} className="mySwiper">
-            <SwiperSlide className={styles.swiper_slide_designer}>
+            <SwiperSlide className={styles.swiper_slide_brands}>
               <div className="mt-3">
                 <Image src={honda} alt="honda" width="98px" height="80px" />
               </div>
@@ -1458,7 +1344,7 @@ export default class index extends Component {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide className={styles.swiper_slide_designer}>
+            <SwiperSlide className={styles.swiper_slide_brands}>
               <div className="mt-3">
                 <Image src={honda} alt="honda" width="98px" height="80px" />
               </div>

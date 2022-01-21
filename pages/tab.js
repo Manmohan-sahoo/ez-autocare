@@ -1,30 +1,50 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Modal, Button } from 'react-bootstrap';
+import React, { Component } from 'react';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+export default class tab extends Component {
+  constructor() {
+    super();
+    this.state = {
+      show: false,
+    };
+  }
 
-// import Swiper core and required modules
-import SwiperCore, { Navigation } from 'swiper';
+  handleModal() {
+    this.setState({ show: !this.state.show });
+  }
 
-// install Swiper modules
-SwiperCore.use([Navigation]);
-
-export default function Tab() {
-  return (
-    <>
-      <Swiper navigation={true} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </>
-  );
+  render() {
+    return (
+      <div>
+        <Button
+          onClick={() => {
+            this.handleModal();
+          }}
+        >
+          Open Modal
+        </Button>
+        <Modal
+           aria-labelledby="contained-modal-title-vcenter"
+              centered
+          show={this.state.show}
+          onHide={() => {
+            this.handleModal();
+          }}
+        >
+          <Modal.Header closeButton>Modal Head Part</Modal.Header>
+          <Modal.Body>hi, modal is here</Modal.Body>
+          <Modal.Footer>
+            <Button
+              onClick={() => {
+                this.handleModal();
+              }}
+            >
+              Close Modal
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+    );
+  }
 }
