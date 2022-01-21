@@ -70,6 +70,10 @@ import performance_car from '../public/Designer combo packages/performance-car.p
 import carside_view from '../public/Designer combo packages/car-side-view.png';
 import car_tyre from '../public/Designer combo packages/car tyre.png';
 import battery_check_thumb from '../public/Designer combo packages/battery-check-thumb 1.png';
+import car_repair from '../public/car_repair.png';
+import tecnician from '../public/tecnician.png';
+import Vector from '../public/Vector.png';
+import Star from '../public/Star.png';
 
 import Image from 'next/image';
 import Countup from 'react-countup';
@@ -1325,6 +1329,180 @@ export default class index extends Component {
           </p>
         </div>
         {/* our workshopare covid safe container */}
+
+        {/* Blog post container */}
+
+        <div>
+          <h1 className={styles.lux_care_h1}>Blog Posts</h1>
+          <Swiper navigation={true} className="mySwiper">
+            <div className="row" id={styles.combo_div}>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={tecnician.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>Choose the best!</h4>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={car_repair.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={tecnician.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>Choose the best!</h4>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={car_repair.src} alt="custom" />
+                  <div className={styles.combotext}>
+                    <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </div>
+          </Swiper>
+        </div>
+
+        {/* Blog post container */}
+
+        {/* Testimonials container */}
+
+        <div>
+          <h1 className={styles.lux_care_h1}>Testimonials</h1>
+          <Swiper navigation={true} className="mySwiper">
+            <SwiperSlide className={styles.swiper_slide_testimonials}>
+              <div className={styles.testimonials_div}>
+                <div className={styles.testimonials_img_div}>
+                  <img
+                    src={Vector.src}
+                    alt=""
+                    className={styles.testimonials_img}
+                  />
+                </div>
+                <p className={styles.testimonials_heading}>Lorem Ipsum</p>
+                <p className={styles.testimonials_para}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque faucibus.
+                </p>
+                <div>
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                </div>
+              </div>
+              <div className={styles.testimonials_div}>
+                <div className={styles.testimonials_img_div}>
+                  <img
+                    src={Vector.src}
+                    alt=""
+                    className={styles.testimonials_img}
+                  />
+                </div>
+                <p className={styles.testimonials_heading}>Lorem Ipsum</p>
+                <p className={styles.testimonials_para}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque faucibus.
+                </p>
+                <div>
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                </div>
+              </div>
+              <div className={styles.testimonials_div}>
+                <div className={styles.testimonials_img_div}>
+                  <img
+                    src={Vector.src}
+                    alt=""
+                    className={styles.testimonials_img}
+                  />
+                </div>
+                <p className={styles.testimonials_heading}>Lorem Ipsum</p>
+                <p className={styles.testimonials_para}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque faucibus.
+                </p>
+                <div>
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiper_slide_testimonials}>
+              <div className={styles.testimonials_div}>
+                <div className={styles.testimonials_img_div}>
+                  <img
+                    src={Vector.src}
+                    alt=""
+                    className={styles.testimonials_img}
+                  />
+                </div>
+                <p className={styles.testimonials_heading}>Lorem Ipsum</p>
+                <p className={styles.testimonials_para}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque faucibus.
+                </p>
+                <div>
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                </div>
+              </div>
+              <div className={styles.testimonials_div}>
+                <div className={styles.testimonials_img_div}>
+                  <img
+                    src={Vector.src}
+                    alt=""
+                    className={styles.testimonials_img}
+                  />
+                </div>
+                <p className={styles.testimonials_heading}>Lorem Ipsum</p>
+                <p className={styles.testimonials_para}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque faucibus.
+                </p>
+                <div>
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                </div>
+              </div>
+              <div className={styles.testimonials_div}>
+                <div className={styles.testimonials_img_div}>
+                  <img
+                    src={Vector.src}
+                    alt=""
+                    className={styles.testimonials_img}
+                  />
+                </div>
+                <p className={styles.testimonials_heading}>Lorem Ipsum</p>
+                <p className={styles.testimonials_para}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque faucibus.
+                </p>
+                <div>
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                  <img src={Star.src} alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
+        {/* Testimonials container */}
 
         {/* brands we  container */}
 
