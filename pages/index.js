@@ -74,6 +74,7 @@ import car_repair from '../public/car_repair.png';
 import tecnician from '../public/tecnician.png';
 import Vector from '../public/Vector.png';
 import Star from '../public/Star.png';
+import GIF from '../public/GIF.png';
 
 import Image from 'next/image';
 import Countup from 'react-countup';
@@ -1224,6 +1225,66 @@ export default class index extends Component {
 
         {/* our features container */}
 
+        {/*How Ez autocare works container */}
+        <div>
+          <h1 className={styles.lux_care_h1_d}>How EZ AutoCare works? </h1>
+          <div className="d-flex">
+            <div>
+              <div className={styles.how_ez_works_img_div}>
+                <img src={GIF.src} alt="" />
+              </div>
+              <div className={styles.how_ez_works_number_div}>1</div>
+              <h3 className={styles.how_ez_works_h3}>Select your car</h3>
+              <p className={styles.how_ez_works_para}>
+                From EZ AutoCare broad portfolio of services{' '}
+              </p>
+            </div>
+            <div className={styles.dots_box}></div>
+            <div>
+              <div className={styles.how_ez_works_img_div}>
+                <img src={GIF.src} alt="" />
+              </div>
+              <div className={styles.how_ez_works_number_div}>2</div>
+              <h3 className={styles.how_ez_works_h3}>Request a service</h3>
+            </div>
+            <div className={styles.dots_box}></div>
+
+            <div>
+              <div className={styles.how_ez_works_img_div}>
+                <img src={GIF.src} alt="" />
+              </div>
+              <div className={styles.how_ez_works_number_div}>3</div>
+              <h3 className={styles.how_ez_works_h3}>Free Doorstep Pick-up </h3>
+              <p className={styles.how_ez_works_para}>
+                We offer free pick up and drop for all services booked
+              </p>
+            </div>
+            <div className={styles.dots_box}></div>
+
+            <div>
+              <div className={styles.how_ez_works_img_div}>
+                <img src={GIF.src} alt="" />
+              </div>
+              <div className={styles.how_ez_works_number_div}>4</div>
+              <h3 className={styles.how_ez_works_h3}>Live tracking</h3>
+              <p className={styles.how_ez_works_para}>
+                We will take care of everything from here!
+              </p>
+            </div>
+            <div className={styles.dots_box}></div>
+
+            <div>
+              <div className={styles.how_ez_works_img_div}>
+                <img src={GIF.src} alt="" />
+              </div>
+              <div className={styles.how_ez_works_number_div}>5</div>
+              <h3 className={styles.how_ez_works_h3}>Free Doorstep Delivery</h3>
+            </div>
+          </div>
+        </div>
+
+        {/*How Ez autocare works container */}
+
         {/* enquiry  container */}
 
         <div className="container" id={styles.enquierycontainer}>
@@ -1339,7 +1400,7 @@ export default class index extends Component {
           <Swiper navigation={true} className="mySwiper">
             <div className="row" id={styles.combo_div}>
               <SwiperSlide className={styles.swiper_slide_designer}>
-                <div className="me-4" id={styles.comboContainer}>
+                <div className="me-4" id={styles.blogContainer}>
                   <img src={tecnician.src} alt="custom" />
                   <div className={styles.combotext}>
                     <h4 className={styles.comboh4}>Choose the best!</h4>
@@ -1354,7 +1415,11 @@ export default class index extends Component {
               </SwiperSlide>
               <SwiperSlide className={styles.swiper_slide_designer}>
                 <div className="me-4" id={styles.comboContainer}>
-                  <img src={tecnician.src} alt="custom" />
+                  <img
+                    src={tecnician.src}
+                    alt="custom"
+                    className={styles.blog_img}
+                  />
                   <div className={styles.combotext}>
                     <h4 className={styles.comboh4}>Choose the best!</h4>
                   </div>

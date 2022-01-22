@@ -109,7 +109,7 @@ export default class footer extends Component {
                       </a>
                     </p>
                     <p>
-                      <a href="#!" class="text-primary">
+                      <a class="text-primary" href="#!">
                         Show More...
                       </a>
                     </p>
