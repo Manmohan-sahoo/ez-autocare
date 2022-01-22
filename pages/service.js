@@ -18,97 +18,30 @@ export default class servics extends Component {
       <div>
         <img src={istockphoto.src} className={styles.istockphoto} />
         <div className={styles.desiredContainer}>
-          <h1 className={styles.h1}>Find Your Desired Services</h1>
+          <h1 className={styles.h1}>Create your own Package</h1>
 
           <div className="row" id={styles.desiredServicesRow}>
             <div className="col-6">
               <div className="desired_service_container">
-                <div className={styles.acfilterRepairContainer}>
-                  <input
-                    className={styles.acfilterrepair}
-                    type="text"
-                    placeholder="Air Filter Repair"
-                  />
-                </div>
-                <br />
                 <div className={styles.tagContainer}>
-                  <a href="#" className={styles.tagContainerPara}>
-                    Routine Services
-                    <FontAwesomeIcon icon={faTimesCircle} />
-                  </a>
-                  <a href="#" className={styles.tagContainerPara}>
-                    Tyre Replacement
-                    <FontAwesomeIcon icon={faTimesCircle} />
-                  </a>
-                  <a href="#" className={styles.tagContainerPara}>
-                    Windshield Repair
-                    <FontAwesomeIcon icon={faTimesCircle} />
-                  </a>
+                  <div className={styles.tagContainerPara1}>
+                    <div href="#" className={styles.tagContainerPara}>
+                      <p>Oil Filter Replacment</p>
+                      <FontAwesomeIcon className={styles.tagContainer_Icon} icon={faTimesCircle} />
+                    </div>
+                    <div href="#" className={styles.tagContainerPara}>
+                      <p>Air Filter Replacement</p>
+                      <FontAwesomeIcon className={styles.tagContainer_Icon} icon={faTimesCircle} />
+                    </div>
+                    <div href="#" className={styles.tagContainerPara}>
+                      <p>Air Filter Replacement</p>
+                      <FontAwesomeIcon className={styles.tagContainer_Icon} icon={faTimesCircle} />
+                    </div>
+                  </div>
+                    <button className={styles.tagContainerbutton}>Add To card</button>
                 </div>
-
                 <br />
-
-                <table className={styles.pricetable}>
-                  <thead>
-                    <tr>
-                      <th scope="col">Services Type</th>
-                      <th scope="col">Price Starts From(₹)</th>
-                      <th scope="col">Savings</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Car Service & Repair</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Car AC Service</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Premium wash & detailing</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Ceramic Coating</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Car Accessories</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Denting & Painting</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Engine Coating</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Tyres & batteries</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Wheel Alignment & Balancing</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                    <tr>
-                      <td>Anti Rust Coating</td>
-                      <td></td>
-                      <td>0%</td>
-                    </tr>
-                  </tbody>
-                </table>
+                
               </div>
             </div>
             <div className="col-6">
@@ -159,7 +92,7 @@ export default class servics extends Component {
                       <img src={swift.src} width="80px" height="80px" />
                     </div>
                     <div className="col-9">
-                      <table class="table table-borderless">
+                      <table className="table table-borderless">
                         <thead>
                           <tr>
                             <th scope="col">Brand</th>
@@ -189,7 +122,7 @@ export default class servics extends Component {
                       <img src={fortuner.src} width="80px" height="80px" />
                     </div>
                     <div className="col-9">
-                      <table class="table table-borderless">
+                      <table className="table table-borderless">
                         <thead>
                           <tr>
                             <th scope="col">Brand</th>

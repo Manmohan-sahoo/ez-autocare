@@ -528,11 +528,10 @@ export default class index extends Component {
         {/* ez autocare luxcare container */}
 
         <div className={styles.lux_care_container}>
-          <div className={styles.lux_care_line}></div>
           <div className={styles.lux_care}>
             <div className={styles.lux_care_line}></div>
             <div className={styles.lux_care_internal_div}>
-              <h1 className={styles.lux_care_h1}>EZ AutoCare Luxe Care</h1>
+              <h1 className={styles.lux_care_h1_d}>EZ AutoCare Luxe Care</h1>
               <p className={styles.elegant_service}>
                 Elegant services for your luxury car
               </p>
@@ -751,7 +750,7 @@ export default class index extends Component {
           <div className={styles.lux_care}>
             <div className={styles.lux_care_line}></div>
             <div className={styles.lux_care_internal_div}>
-              <h1 className={styles.lux_care_h1}>Trending Services</h1>
+              <h1 className={styles.lux_care_h1_d}>Trending Services</h1>
               <p className={styles.elegant_service}>
                 Most popular services in your city
               </p>
@@ -883,7 +882,7 @@ export default class index extends Component {
           <div className={styles.lux_care}>
             <div className={styles.lux_care_line}></div>
             <div className={styles.lux_care_internal_div}>
-              <h1 className={styles.lux_care_h1}>Designer Combo Packages</h1>
+              <h1 className={styles.lux_care_h1_d}>Designer Combo Packages</h1>
               <p className={styles.elegant_service}>
                 Personalised Packages offered by expert mechanics
               </p>
@@ -1088,7 +1087,7 @@ export default class index extends Component {
           <div className={styles.lux_care}>
             <div className={styles.lux_care_line}></div>
             <div className={styles.lux_care_internal_div}>
-              <h1 className={styles.lux_care_h1}>Our Features</h1>
+              <h1 className={styles.lux_care_h1_d}>Our Features</h1>
             </div>
           </div>
           <div className="row" id={styles.initial_state}>
@@ -1333,7 +1332,10 @@ export default class index extends Component {
         {/* Blog post container */}
 
         <div>
-          <h1 className={styles.lux_care_h1}>Blog Posts</h1>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <h1 className={styles.lux_care_h1}>Blog Posts</h1>
+          </div>
           <Swiper navigation={true} className="mySwiper">
             <div className="row" id={styles.combo_div}>
               <SwiperSlide className={styles.swiper_slide_designer}>
@@ -1373,7 +1375,10 @@ export default class index extends Component {
         {/* Testimonials container */}
 
         <div>
-          <h1 className={styles.lux_care_h1}>Testimonials</h1>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <h1 className={styles.lux_care_h1}>Testimonials</h1>
+          </div>
           <Swiper navigation={true} className="mySwiper">
             <SwiperSlide className={styles.swiper_slide_testimonials}>
               <div className={styles.testimonials_div}>
@@ -1506,8 +1511,11 @@ export default class index extends Component {
 
         {/* brands we  container */}
 
-        <div className="brands_container">
-          <h3>Brands We Serve!</h3>
+        <div className={styles.brands_container}>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line_brand}></div>
+            <h1 className={styles.lux_care_h1_brand}>Brands We Serve!</h1>
+          </div>
           <Swiper navigation={true} className="mySwiper">
             <SwiperSlide className={styles.swiper_slide_brands}>
               <div className="mt-3">
@@ -1572,37 +1580,37 @@ export default class index extends Component {
         {/* increament  container */}
 
         <div className={styles.increament_counter}>
-          <div class="row text-center ">
-            <div class="col">
-              <div class="counter">
+          <div className="row text-center ">
+            <div className="col">
+              <div className="counter">
                 <h2>
-                  <Countup end={200000} suffix=" +" duration={60} />
+                  <Countup end={200000} suffix=" +" duration={20} />
                 </h2>
-                <p class="count-text ">Car Serviced</p>
+                <p className="count-text ">Car Serviced</p>
               </div>
             </div>
-            <div class="col">
-              <div class="counter">
+            <div className="col">
+              <div className="counter">
                 <h2>
-                  <Countup end={100000} suffix=" +" duration={60} />
+                  <Countup end={100000} suffix=" +" duration={20} />
                 </h2>
-                <p class="count-text ">Happy Customers</p>
+                <p className="count-text ">Happy Customers</p>
               </div>
             </div>
-            <div class="col">
-              <div class="counter">
+            <div className="col">
+              <div className="counter">
                 <h2>
                   <Countup end={4.7} duration={60} decimals={1} />
                 </h2>
-                <p class="count-text ">Average Rating</p>
+                <p className="count-text ">Average Rating</p>
               </div>
             </div>
-            <div class="col">
-              <div class="counter">
+            <div className="col">
+              <div className="counter">
                 <h2>
-                  <Countup end={800} suffix="+" duration={60} />
+                  <Countup end={800} suffix="+" duration={20} />
                 </h2>
-                <p class="count-text ">Touch Points in India</p>
+                <p className="count-text ">Touch Points in India</p>
               </div>
             </div>
           </div>

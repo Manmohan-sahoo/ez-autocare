@@ -335,24 +335,56 @@ $phone: 480px; */
 }
 
 .lux_care {
-  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 70px;
   margin-bottom: 50px;
+  margin-left: 56px;
 }
 
 .lux_care_internal_div {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 36px;
   display: flex;
   flex-direction: column;
 }
 
 .lux_care_line {
-  width: 59px;
+  width: 0px;
+  height: 70px;
   border: 3px solid #20adb7;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
+}
+
+.lux_care_line_brand {
+  width: 0px;
+  height: 60px;
+  border: 3px solid #20adb7;
+  transform: rotate(180deg);
 }
 
 .lux_care_h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 75px;
+  color: #000000;
+  margin-left: 36px;
+}
+
+.lux_care_h1_brand {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 75px;
+  color: #000000;
+  margin-left: 36px;
+}
+
+.lux_care_h1_d {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: 500;
@@ -485,7 +517,7 @@ $phone: 480px; */
   align-items: center;
   margin-top: 30px;
   margin-bottom: 50px;
-  margin-left: -50px;
+  margin-left: -26px
 }
 
 .car_service_div {
@@ -770,24 +802,33 @@ $phone: 480px; */
   background: url('../public/Footer\ images/7.png') right bottom no-repeat,
     url('../public/Footer\ images/carrepair.png') left top no-repeat;
   padding: 15px;
-  height: 392px;
+  height: 494px;
+  width: 101.7%;
+  margin-left: -12px;
   margin-top: 50px;
   margin-bottom: 50px;
+  box-shadow: inset 0 0 0 1000px #64646448;
 }
 
 .covidh2 {
   color: #ffffff;
   font-weight: 500;
   margin-top: 100px;
+  font-size: 36px;
+  margin-left: 56px;
 }
 
 .covidpara {
   color: #ffffff;
-  width: 300px;
+  width: 450px;
+  font-size: 23px;
   font-weight: normal;
+  margin-left: 56px;
+  margin-top: 36px;
 }
 
 .testimonials_div {
+  position: relative;
   width: 361px;
   height: 410px;
   background: #ffffff;
@@ -795,6 +836,7 @@ $phone: 480px; */
   text-align: center;
   padding: 20px;
   margin-top: 87px;
+  z-index: -2;
 }
 
 .testimonials_in_div {
@@ -844,8 +886,9 @@ $phone: 480px; */
 .swiper_slide_testimonials {
   display: flex;
   gap: 20px;
-  padding: 30px;
+  padding-left: 50px;
   margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 #enquierycontainer {
@@ -887,19 +930,21 @@ $phone: 480px; */
 }
 
 .brands_container {
+  margin-bottom: 80px;
 }
 
 .swiper_slide_brands {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
-  padding: 50px;
-  margin-top: 30px;
   margin-left: 10px;
 }
 
 .increament_counter {
   padding: 10px;
-  width: 100%;
+  width: 101.63%;
+  margin-left: -12px;
   height: 100px;
   background: #20adb7;
   font-family: Roboto;
