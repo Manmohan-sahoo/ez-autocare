@@ -83,9 +83,11 @@ export default class header extends Component {
               <a href="" className="me-5 text-reset">
                 FAQ
               </a>
-              <a href="" className="me-5 text-reset">
-                BLOGS
-              </a>
+              <Link href="/blog">
+                <a href="" className="me-5 text-reset">
+                  BLOGS
+                </a>
+              </Link>
             </div>
           </div>
         </header>
