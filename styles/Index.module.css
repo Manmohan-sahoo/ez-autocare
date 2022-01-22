@@ -622,17 +622,28 @@ $phone: 480px; */
   position: relative;
 }
 
+.comboContainerImage {
+  position: relative;
+  opacity: .8;
+  z-index: -1;
+}
+
 .combotext {
+  background: linear-gradient(2.95deg, #000000 30.72%, rgba(255, 255, 255, 0) 80.68%);
+  width: 100%;
+  height: 30%;
   position: absolute;
-  bottom: 40px;
-  left: 16px;
+  bottom: 0px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
 
 .comboh4 {
-  color: #e8e8e8;
-  font-size: 22px;
+  color: #ffffff;
+  font-size: 30px;
   font-weight: 500;
-  text-align: left;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .combopara {

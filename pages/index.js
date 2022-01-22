@@ -1340,13 +1340,13 @@ export default class index extends Component {
             <div className="row" id={styles.combo_div}>
               <SwiperSlide className={styles.swiper_slide_designer}>
                 <div className="me-4" id={styles.comboContainer}>
-                  <img src={tecnician.src} alt="custom" />
+                  <img className={styles.comboContainerImage} src={tecnician.src} alt="custom" />
                   <div className={styles.combotext}>
                     <h4 className={styles.comboh4}>Choose the best!</h4>
                   </div>
                 </div>
                 <div className="me-4" id={styles.comboContainer}>
-                  <img src={car_repair.src} alt="custom" />
+                  <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
                   <div className={styles.combotext}>
                     <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
                   </div>
@@ -1354,13 +1354,13 @@ export default class index extends Component {
               </SwiperSlide>
               <SwiperSlide className={styles.swiper_slide_designer}>
                 <div className="me-4" id={styles.comboContainer}>
-                  <img src={tecnician.src} alt="custom" />
+                  <img className={styles.comboContainerImage} src={tecnician.src} alt="custom" />
                   <div className={styles.combotext}>
                     <h4 className={styles.comboh4}>Choose the best!</h4>
                   </div>
                 </div>
                 <div className="me-4" id={styles.comboContainer}>
-                  <img src={car_repair.src} alt="custom" />
+                  <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
                   <div className={styles.combotext}>
                     <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
                   </div>
