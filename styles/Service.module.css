@@ -2,12 +2,10 @@
   font-size: 36px;
   margin-left: 30px;
   margin-bottom: 50px;
-
 }
 .desiredContainer {
   width: 100%;
   margin-top: 50px;
-  margin-left: 60px;
 }
 
 .istockphoto {
@@ -41,17 +39,17 @@
 .tagContainerbutton {
   width: 173px;
   height: 42px;
-  background: #FFFFFF;
-  border: 1.5px solid #20ADB7;
-  color: #20ADB7;
+  background: #ffffff;
+  border: 1.5px solid #20adb7;
+  color: #20adb7;
   border-radius: 5px;
   margin-top: 85px;
   margin-left: 29rem;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .tagContainerbutton:hover {
-  background: #20ADB7;
+  background: #20adb7;
   color: #ffffff;
 }
 
