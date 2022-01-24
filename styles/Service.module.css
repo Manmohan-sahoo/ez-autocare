@@ -1,6 +1,6 @@
 .h1 {
   font-size: 36px;
-  margin-left: 30px;
+  margin-left: 80px;
   margin-bottom: 50px;
 }
 .desiredContainer {
@@ -15,7 +15,7 @@
 }
 
 #desiredServicesRow {
-  padding-left: 10px;
+  padding-left: 65px;
 }
 
 .tagContainer {

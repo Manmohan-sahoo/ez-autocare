@@ -1227,9 +1227,13 @@ export default class index extends Component {
 
         {/*How Ez autocare works container */}
         <div>
-          <h1 className={styles.lux_care_h1_d}>How EZ AutoCare works? </h1>
-          <div className="d-flex">
-            <div>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_internal_div_1}>
+              <h1 className={styles.lux_care_h1_d_1}>How EZ AutoCare works?</h1>
+            </div>
+          </div>
+          <div className={styles.autocare_works_container}>
+            <div className={styles.autocare_works_container_Internal_div}>
               <div className={styles.how_ez_works_img_div}>
                 <img src={GIF.src} alt="" />
               </div>
@@ -1240,20 +1244,20 @@ export default class index extends Component {
               </p>
             </div>
             <div className={styles.dots_box}></div>
-            <div>
+            <div className={styles.autocare_works_container_Internal_div}>
               <div className={styles.how_ez_works_img_div}>
                 <img src={GIF.src} alt="" />
               </div>
               <div className={styles.how_ez_works_number_div}>2</div>
-              <h3 className={styles.how_ez_works_h3}>Request a service</h3>
+              <h3 className={styles.how_ez_works_h3_1}>Request a service</h3>
             </div>
-            <div className={styles.dots_box}></div>
+            <div className={styles.dots_box_1}></div>
 
-            <div>
-              <div className={styles.how_ez_works_img_div}>
+            <div className={styles.autocare_works_container_Internal_div}>
+              <div className={styles.how_ez_works_img_div_1}>
                 <img src={GIF.src} alt="" />
               </div>
-              <div className={styles.how_ez_works_number_div}>3</div>
+              <div className={styles.how_ez_works_number_div_1}>3</div>
               <h3 className={styles.how_ez_works_h3}>Free Doorstep Pick-up </h3>
               <p className={styles.how_ez_works_para}>
                 We offer free pick up and drop for all services booked
@@ -1261,24 +1265,24 @@ export default class index extends Component {
             </div>
             <div className={styles.dots_box}></div>
 
-            <div>
+            <div className={styles.autocare_works_container_Internal_div}>
               <div className={styles.how_ez_works_img_div}>
                 <img src={GIF.src} alt="" />
               </div>
               <div className={styles.how_ez_works_number_div}>4</div>
-              <h3 className={styles.how_ez_works_h3}>Live tracking</h3>
-              <p className={styles.how_ez_works_para}>
+              <h3 className={styles.how_ez_works_h3_2}>Live tracking</h3>
+              <p className={styles.how_ez_works_para_2}>
                 We will take care of everything from here!
               </p>
             </div>
             <div className={styles.dots_box}></div>
 
-            <div>
+            <div className={styles.autocare_works_container_Internal_div}>
               <div className={styles.how_ez_works_img_div}>
                 <img src={GIF.src} alt="" />
               </div>
               <div className={styles.how_ez_works_number_div}>5</div>
-              <h3 className={styles.how_ez_works_h3}>Free Doorstep Delivery</h3>
+              <h3 className={styles.how_ez_works_h3_3}>Free Doorstep Delivery</h3>
             </div>
           </div>
         </div>

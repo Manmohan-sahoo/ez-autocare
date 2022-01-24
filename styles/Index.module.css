@@ -393,6 +393,16 @@ $phone: 480px; */
   color: #000000;
 }
 
+.lux_care_h1_d_1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  margin-left: 30px;
+  font-size: 42px;
+  line-height: 75px;
+  color: #000000;
+}
+
 .elegant_service {
   font-family: Roboto;
   font-style: italic;
@@ -824,7 +834,22 @@ $phone: 480px; */
   align-items: center;
 }
 
+.how_ez_works_img_div_1 {
+  width: 181px;
+  height: 136px;
+  border: 0.6px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
 .how_ez_works_number_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 38px;
   height: 38px;
   background: #d5d5d5;
@@ -838,6 +863,23 @@ $phone: 480px; */
   margin-left: 65px;
 }
 
+.how_ez_works_number_div_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background: #d5d5d5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  text-align: center;
+  color: #5e5e5e;
+  margin-top: 9px;
+  margin-left: 95px;
+}
+
 .dots_box {
   flex: 1 1 auto;
   position: relative;
@@ -848,11 +890,29 @@ $phone: 480px; */
 
 .dots_box:before {
   position: absolute;
-  width: 200px;
+  width: 250px;
   border-bottom: 1.5px dashed #9b9b9b;
   content: '';
-  margin-left: -46px;
-  margin-top: 25px;
+  margin-left: -60px;
+  margin-top: 10px;
+  z-index: -1;
+}
+.dots_box_1 {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots_box_1:before {
+  position: absolute;
+  width: 250px;
+  border-bottom: 1.5px dashed #9b9b9b;
+  content: '';
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: -1;
 }
 
 .how_ez_works_h3 {
@@ -863,10 +923,46 @@ $phone: 480px; */
   line-height: 28px;
   color: #000000;
   margin-top: 24px;
+  margin-left: 5px;
+}
+
+.how_ez_works_h3_1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 24px;
+  margin-left: -5px;
+}
+
+.how_ez_works_h3_2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 24px;
+  margin-left: 15px;
+}
+
+.how_ez_works_h3_3 {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 24px;
+  margin-left: -25px;
 }
 
 .how_ez_works_para {
   margin-top: 7px;
+  margin-left: 5px;
   width: 217px;
   height: 52px;
   font-family: Roboto;
@@ -876,6 +972,34 @@ $phone: 480px; */
   line-height: 21px;
   text-align: left;
   color: #676767;
+}
+
+.how_ez_works_para_2 {
+  margin-top: 7px;
+  margin-left: 15px;
+  width: 217px;
+  height: 52px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  color: #676767;
+}
+
+.autocare_works_container {
+  display: flex;
+  justify-content: center;
+  width: 94%;
+  margin-left: 70px;
+}
+
+.autocare_works_container_Internal_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .covidContainer {

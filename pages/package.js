@@ -35,13 +35,13 @@ export default class service extends Component {
     return (
       <div className={styles.serviceContainer}>
         <div>
-          <Image src={header} />
+          <img src={header.src} width="101.7%"/>
         </div>
 
         <div class="container" id={styles.serviceCategoriesContainer}>
-          <h3>Service Categories</h3>
+          <h3 className={styles.serviceCategoriesContainer_h3}>Service Categories</h3>
           <div className="d-flex" id={styles.serviceCategory}>
-            <div className={styles.servicecard} style={{ width: '250px' }}>
+            <div className={styles.servicecard} style={{ width: '268px' }}>
               <div class="row">
                 <div class="col-sm-6" id={styles.scCard}>
                   <Image
@@ -121,7 +121,7 @@ export default class service extends Component {
         </div>
         <div className={styles.servicePackagesContainer}>
           <div className="container">
-            <h2>Service Packages </h2>
+            <h2 className={styles.servicePackagesContainer_h2}>Service Packages </h2>
           </div>
 
           <div className="row" id={styles.servicePackageRow}>
@@ -132,72 +132,69 @@ export default class service extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Titanium Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
                       src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>
@@ -206,72 +203,69 @@ export default class service extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Gold Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
-                      src={rectangle28}
+                      src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>
@@ -280,72 +274,69 @@ export default class service extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Silver Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
-                      src={rectangle29}
+                      src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>
@@ -354,72 +345,69 @@ export default class service extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Bronze Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
-                      src={rectangle30}
+                      src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>

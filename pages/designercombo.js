@@ -31,8 +31,8 @@ import swift from '../public/Custom your package/swift.png';
 export default class designercombo extends Component {
   render() {
     return (
-      <div>
-        <img src={designerComboContainerImage.src} alt="" width="100%" />
+      <div className={styles.designermambership}>
+        <img src={designerComboContainerImage.src} alt="" width="101.7%" />
         <div className={styles.designercombo_container}>
           <img className={styles.vectorImage} src={vector9.src} alt="" />
           <h1 className={styles.designercomboh1}>Designer Combo Packages</h1>
@@ -41,7 +41,7 @@ export default class designercombo extends Component {
 
         {/* Designer Combo Section */}
 
-        <div className="combo_container">
+        <div className={styles.combo_container}>
           <div className="row">
             <div className="col" id={styles.comboContainer}>
               <Image src={combo3} alt="custom" />
@@ -91,8 +91,8 @@ export default class designercombo extends Component {
         {/* Designer Combo Section */}
 
         {/* speed combo section */}
-        <div className="speed_combo_container">
-          <h3>Speed Combo</h3>
+        <div className={styles.speed_combo_container}>
+          <h3 className={styles.speed_combo_container_h3}>Speed Combo</h3>
           <div className="row">
             <div className="col">
               <div className={styles.engineOilDiv}>

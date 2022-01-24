@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.designermambership {
+  width: 100%;
+  margin-left: -12px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .designercombo_container {
   position: relative;
   display: flex;
@@ -5,18 +13,17 @@
 }
 
 .vectorImage {
-  width: 770px;
+  width: 60%;
   height: 162px;
 }
 
 .designercomboh1 {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 25%;
   transform: translate(-50%, -50%);
   width: 544px;
   height: 53px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
@@ -25,6 +32,7 @@
 }
 
 .priceButton {
+  position: relative;
   width: 180px;
   height: 60px;
   background: #ffffff;
@@ -32,19 +40,24 @@
   box-sizing: border-box;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
   color: #000000;
   text-align: center;
-  margin-left: 320px;
-  margin-top: 50px;
+  left: 25%;
+  top: 50px;
+}
+
+.combo_container {
+  margin-top: 36px;
+  width: 95%;
+  margin-left: 40px;
 }
 
 #comboContainer {
   position: relative;
-  text-align: center;
+  text-align: start;
 }
 
 .combotext {
@@ -55,19 +68,20 @@
 
 .comboh4 {
   color: #e8e8e8;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 .combopara {
   color: #ffb30d;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   text-align: left;
 }
 
 .comboIcon {
   color: #ffffff;
+  margin-left: 8px;
 }
 
 .rightIcon {
@@ -83,6 +97,17 @@
 
 .icon {
   color: #d6d6d6;
+}
+
+.speed_combo_container {
+  margin-left: 43px;
+}
+
+.speed_combo_container_h3 {
+  font-size: 48px;
+  font-weight: 500;
+  padding-top: 43px;
+  padding-bottom: 43px;
 }
 
 .engineOilDiv {
