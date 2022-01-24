@@ -1400,7 +1400,7 @@ export default class index extends Component {
           <Swiper navigation={true} className="mySwiper">
             <div className="row" id={styles.combo_div}>
               <SwiperSlide className={styles.swiper_slide_designer}>
-                <div className="me-4" id={styles.blogContainer}>
+                <div className="me-4" id={styles.comboContainer}>
                   <img src={tecnician.src} alt="custom" />
                   <div className={styles.combotext}>
                     <h4 className={styles.comboh4}>Choose the best!</h4>
