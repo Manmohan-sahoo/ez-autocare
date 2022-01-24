@@ -165,9 +165,11 @@ export default class header extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-dark" href="#">
-                    GET A FRANCHISE
-                  </a>
+                  <Link href="/getAfranchise">
+                    <a className="nav-link text-dark" href="#">
+                      GET A FRANCHISE
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-dark" href="#">
