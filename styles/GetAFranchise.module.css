@@ -1,0 +1,39 @@
+.franchise_first_div {
+  width: 609px;
+  border-top: 1px solid #c0c0c0;
+}
+
+.franchise_icon {
+  margin-left: auto;
+}
+
+.franchise_para {
+  width: 582px;
+  height: 96px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+}
+
+#ez_autoCare_member_container {
+  width: 1307px;
+  height: 899px;
+  background: #ebf3fa;
+}
+
+.ez_autoCare_member_h3 {
+  width: 714px;
+  height: 59px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+}
+
+#franchise_img {
+  margin-top: 217px;
+}
