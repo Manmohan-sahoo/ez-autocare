@@ -85,12 +85,14 @@ import styles from '../styles/Index.module.css';
 import Modal from '../pages/modal';
 import ModelModal from '../pages/modelModal';
 import FuelModal from '../pages/fuelModal';
+import BrandModal from '../pages/brandModal';
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
 const index = () => {
   const [modalShow, setModalShow] = React.useState(false);
+  const [brand, setBrand] = React.useState(false);
   const [model, setModel] = React.useState(false);
   const [fuel, setFuel] = React.useState(false);
 
@@ -138,17 +140,22 @@ const index = () => {
           </div>
           <div className="col">
             <button
-              onClick={() => setModel(true)}
+              onClick={() => setBrand(true)}
               className={styles.modalButton}
             >
               Brand
             </button>
-            <ModelModal show={model} onHide={() => setModel(false)} />
+            <BrandModal show={brand} onHide={() => setBrand(false)} />
           </div>
           <div className="col">
-            <button className={styles.modalButton}>Model</button>
+            <button
+              onClick={() => setModel(true)}
+              className={styles.modalButton}
+            >
+              Model
+            </button>
+            <ModelModal show={model} onHide={() => setModel(false)} />
           </div>
-
           <div className="col">
             <button
               onClick={() => setFuel(true)}
