@@ -1,22 +1,22 @@
 import { useState } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
+import Modal from '../pages/modal';
+import styles from '../styles/Modal.module.css';
 
 export default function ControlledTabs() {
-  const [key, setKey] = useState('home');
+  const [show, setShow] = useState(false);
+
+  const closeModalHandler = () => setShow(false);
 
   return (
-    <Tabs
-      id="controlled-tab-example"
-      activeKey={key}
-      onSelect={(k) => setKey(k)}
-      className="mb-3"
-    >
-      <Tab eventKey="home" title="Home">
-        <h1>some text</h1>
-      </Tab>
-      <Tab eventKey="profile" title="Profile">
-        <h1>another some text</h1>
-      </Tab>
-    </Tabs>
+    <>
+      {show ? (
+        <div onClick={closeModalHandler} className={styles.back_drop}></div>
+      ) : null}
+      <button onClick={() => setShow(true)} className={styles.btn_openModal}>
+        Open Modal
+      </button>
+      <Modal show={show} close={closeModalHandler} />
+    </>
   );
 }
