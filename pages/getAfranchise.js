@@ -84,11 +84,11 @@ export default class getAfranchise extends Component {
                       placeholder="Name"
                     />
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <input
                     id={styles.ez_autoCare_member_form_input}
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Contact no"
                     />
                   </div>
@@ -97,7 +97,7 @@ export default class getAfranchise extends Component {
                   <input
                     id={styles.ez_autoCare_member_form_input}
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Mail id"
                   />
                 </div>
@@ -118,7 +118,7 @@ export default class getAfranchise extends Component {
                   </DropdownButton>
                 </div>
 
-                <div class="form-group ">
+                <div className="form-group ">
                   <textarea
                     className={styles.ez_autoCare_member_form_textarea}
                     id="exampleFormControlTextarea1"

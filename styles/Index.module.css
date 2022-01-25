@@ -650,9 +650,7 @@ $phone: 480px; */
   bottom: 0px;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
-<<<<<<< HEAD
   padding: 10px;
-=======
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -668,16 +666,13 @@ $phone: 480px; */
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
   
->>>>>>> 0830adb278e344bdd79d0953e2c96cfc17bdb72f
 }
 
 .comboh4 {
   color: #ffffff;
   font-size: 30px;
   font-weight: 500;
-<<<<<<< HEAD
   text-align: left;
-=======
   text-align: center;
   margin-top: -60px;
   margin-left: 25px;
@@ -689,7 +684,6 @@ $phone: 480px; */
   font-weight: 500;
   text-align: center;
   margin-top: 40px;
->>>>>>> 0830adb278e344bdd79d0953e2c96cfc17bdb72f
 }
 
 .combopara {
