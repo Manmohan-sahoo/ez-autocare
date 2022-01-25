@@ -150,8 +150,12 @@ const index = () => {
           </div>
 
           <div className="col">
-            onClick={() => setFuel(true)}
-            <button className={styles.modalButton}>Fuel Type</button>
+            <button
+              onClick={() => setFuel(true)}
+              className={styles.modalButton}
+            >
+              Fuel Type
+            </button>
             <FuelModal show={fuel} onHide={() => setFuel(false)} />
           </div>
           <div className="col">
