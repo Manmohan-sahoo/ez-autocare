@@ -1406,14 +1406,14 @@ export default class index extends Component {
               <SwiperSlide className={styles.swiper_slide_designer}>
                 <div className="me-4" id={styles.comboContainer}>
                   <img src={tecnician.src} alt="custom" />
-                  <div className={styles.combotext}>
-                    <h4 className={styles.comboh4}>Choose the best!</h4>
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Choose the best!</h4>
                   </div>
                 </div>
                 <div className="me-4" id={styles.comboContainer}>
                   <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
-                  <div className={styles.combotext}>
-                    <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Basic Maintenance Tips</h4>
                   </div>
                 </div>
               </SwiperSlide>
@@ -1424,14 +1424,14 @@ export default class index extends Component {
                     alt="custom"
                     className={styles.blog_img}
                   />
-                  <div className={styles.combotext}>
-                    <h4 className={styles.comboh4}>Choose the best!</h4>
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Choose the best!</h4>
                   </div>
                 </div>
                 <div className="me-4" id={styles.comboContainer}>
                   <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
-                  <div className={styles.combotext}>
-                    <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Basic Maintenance Tips</h4>
                   </div>
                 </div>
               </SwiperSlide>
