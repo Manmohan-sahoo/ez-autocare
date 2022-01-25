@@ -9,13 +9,13 @@ import { DropdownButton, Dropdown } from 'react-bootstrap';
 export default class getAfranchise extends Component {
   render() {
     return (
-      <div>
-        <h1>Benefits:</h1>
+      <div className={styles.get_a_franchise}>
+        <h1 className={styles.get_a_franchise_h1}>Benefits:</h1>
         <div className="row">
           <div className="col">
             <div className={styles.franchise_first_div}>
-              <div className="d-flex">
-                <h3>Lorem Ipsum</h3>
+              <div className={styles.franchise_first_internal_div}>
+                <h3 className={styles.get_a_franchise_h3}>Lorem Ipsum</h3>
                 <p className={styles.franchise_icon}>icon</p>
               </div>
               <p className={styles.franchise_para}>
@@ -25,8 +25,8 @@ export default class getAfranchise extends Component {
               </p>
             </div>
             <div className={styles.franchise_first_div}>
-              <div className="d-flex">
-                <h3>Lorem Ipsum</h3>
+              <div className={styles.franchise_first_internal_div}>
+                <h3 className={styles.get_a_franchise_h3}>Lorem Ipsum</h3>
                 <p className={styles.franchise_icon}>icon</p>
               </div>
               <p className={styles.franchise_para}>
@@ -38,8 +38,8 @@ export default class getAfranchise extends Component {
           </div>
           <div className="col">
             <div className={styles.franchise_first_div}>
-              <div className="d-flex">
-                <h3>Lorem Ipsum</h3>
+              <div className={styles.franchise_first_internal_div}>
+                <h3 className={styles.get_a_franchise_h3}>Lorem Ipsum</h3>
                 <p className={styles.franchise_icon}>icon</p>
               </div>
               <p className={styles.franchise_para}>
@@ -49,8 +49,8 @@ export default class getAfranchise extends Component {
               </p>
             </div>
             <div className={styles.franchise_first_div}>
-              <div className="d-flex">
-                <h3>Lorem Ipsum</h3>
+              <div className={styles.franchise_first_internal_div}>
+                <h3 className={styles.get_a_franchise_h3}>Lorem Ipsum</h3>
                 <p className={styles.franchise_icon}>icon</p>
               </div>
               <p className={styles.franchise_para}>
@@ -69,15 +69,16 @@ export default class getAfranchise extends Component {
               Become a EZ AutoCare Member{' '}
             </h3>
           </div>
-          <div className="row " id={styles.ez_autoCare_member_form}>
+          <div className="row " id={styles.ez_autoCare_member}>
             <div className="col" id={styles.franchise_img}>
-              <img src={franshise.src} alt="" />
+              <img id={styles.franchise_img_part} src={franshise.src} alt="" />
             </div>
             <div className="col mt-5">
               <form className={styles.ez_autoCare_member_form}>
                 <div className="row">
                   <div className="col">
                     <input
+                    id={styles.ez_autoCare_member_form_input}
                       type="text"
                       className="form-control"
                       placeholder="Name"
@@ -85,6 +86,7 @@ export default class getAfranchise extends Component {
                   </div>
                   <div class="col">
                     <input
+                    id={styles.ez_autoCare_member_form_input}
                       type="text"
                       class="form-control"
                       placeholder="Contact no"
@@ -93,6 +95,7 @@ export default class getAfranchise extends Component {
                 </div>
                 <div>
                   <input
+                    id={styles.ez_autoCare_member_form_input}
                     type="text"
                     class="form-control"
                     placeholder="Mail id"
@@ -100,9 +103,10 @@ export default class getAfranchise extends Component {
                 </div>
                 <div>
                   <DropdownButton
+                    className={styles.ez_autoCare_member_form_input}
                     variant="light"
                     id="dropdown-basic-button "
-                    title="Prefered Location"
+                    title="Preferred Location"
                   >
                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">
@@ -116,14 +120,14 @@ export default class getAfranchise extends Component {
 
                 <div class="form-group ">
                   <textarea
-                    class="form-control"
+                    className={styles.ez_autoCare_member_form_textarea}
                     id="exampleFormControlTextarea1"
                     rows="5"
                     placeholder="Ask a Query"
                   ></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className={styles.ez_autoCare_member_form_button}>
                   Submit
                 </button>
               </form>

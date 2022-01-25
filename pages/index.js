@@ -1287,10 +1287,54 @@ const index = () => {
 
       {/* Blog post container */}
 
+<<<<<<< HEAD
       <div>
         <div className={styles.lux_care}>
           <div className={styles.lux_care_line}></div>
           <h1 className={styles.lux_care_h1}>Blog Posts</h1>
+=======
+        <div>
+          <div className={styles.lux_care}>
+            <div className={styles.lux_care_line}></div>
+            <h1 className={styles.lux_care_h1}>Blog Posts</h1>
+          </div>
+          <Swiper navigation={true} className="mySwiper">
+            <div className="row" id={styles.combo_div}>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img src={tecnician.src} alt="custom" />
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Choose the best!</h4>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Basic Maintenance Tips</h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiper_slide_designer}>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img
+                    src={tecnician.src}
+                    alt="custom"
+                    className={styles.blog_img}
+                  />
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Choose the best!</h4>
+                  </div>
+                </div>
+                <div className="me-4" id={styles.comboContainer}>
+                  <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
+                  <div className={styles.combotext_1}>
+                    <h4 className={styles.comboh4_2}>Basic Maintenance Tips</h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </div>
+          </Swiper>
+>>>>>>> 0830adb278e344bdd79d0953e2c96cfc17bdb72f
         </div>
         <Swiper navigation={true} className="mySwiper">
           <div className="row" id={styles.combo_div}>
