@@ -1,0 +1,47 @@
+.form_group .search_icon {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.search_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.input_form {
+  width: 646px;
+  height: 55px;
+  left: 341px;
+  top: 226px;
+  border: 1px solid #6f6f6f;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #b8b8b8;
+}
+
+.form_group .input_form {
+  padding-left: 2.375rem;
+}
+
+.next_button {
+  width: 123px;
+  height: 55px;
+  background: #1cadb6;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  font-variant: small-caps;
+  color: #ffffff;
+  border: none;
+}

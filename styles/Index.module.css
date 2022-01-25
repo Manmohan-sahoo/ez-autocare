@@ -650,6 +650,7 @@ $phone: 480px; */
   bottom: 0px;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
