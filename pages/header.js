@@ -19,9 +19,11 @@ import styles from '../styles/Header.module.css';
 import car from '../public/header 7.jpg';
 
 import Modal from '../pages/signinModal';
+import CityModal from '../pages/selectCityModal';
 
 const header = () => {
   const [modalShow, setModalShow] = React.useState(false);
+  const [cityModal, setCityModal] = React.useState(false);
 
   return (
     <div>
@@ -99,13 +101,16 @@ const header = () => {
             <ul className="navbar-nav " id={styles.ul}>
               <li className="nav-item dropdown">
                 <button
-                  onClick={() => setModalShow(true)}
+                  onClick={() => setCityModal(true)}
                   className={styles.cityButton}
                 >
                   {' '}
                   Select City
                 </button>
-                <Modal show={modalShow} onHide={() => setModalShow(false)} />
+                <CityModal
+                  show={cityModal}
+                  onHide={() => setCityModal(false)}
+                />
               </li>
               <li className="nav-item active">
                 <Link href="/">
@@ -151,7 +156,13 @@ const header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <button className={styles.signin}>SIGN IN</button>
+                <button
+                  onClick={() => setModalShow(true)}
+                  className={styles.signin}
+                >
+                  SIGN IN
+                </button>
+                <Modal show={modalShow} onHide={() => setModalShow(false)} />
               </li>
             </ul>
           </div>

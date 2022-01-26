@@ -658,14 +658,17 @@ $phone: 480px; */
 }
 
 .combotext_1 {
-  background: linear-gradient(2.95deg, #000000 30.72%, rgba(255, 255, 255, 0) 80.68%);
+  background: linear-gradient(
+    2.95deg,
+    #000000 30.72%,
+    rgba(255, 255, 255, 0) 80.68%
+  );
   width: 100%;
   height: 30%;
   position: absolute;
   bottom: 0px;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
-  
 }
 
 .comboh4 {

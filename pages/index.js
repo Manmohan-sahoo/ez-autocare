@@ -83,12 +83,19 @@ import { NavDropdown, Button, Card } from 'react-bootstrap';
 import styles from '../styles/Index.module.css';
 
 import Modal from '../pages/modal';
+import ModelModal from '../pages/modelModal';
+import FuelModal from '../pages/fuelModal';
+import BrandModal from '../pages/brandModal';
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
 const index = () => {
   const [modalShow, setModalShow] = React.useState(false);
+  const [brand, setBrand] = React.useState(false);
+  const [model, setModel] = React.useState(false);
+  const [fuel, setFuel] = React.useState(false);
+
   return (
     <div id={styles.body}>
       {/* slider */}
@@ -132,14 +139,31 @@ const index = () => {
             <Modal show={modalShow} onHide={() => setModalShow(false)} />
           </div>
           <div className="col">
-            <button className={styles.modalButton}>Brand</button>
+            <button
+              onClick={() => setBrand(true)}
+              className={styles.modalButton}
+            >
+              Brand
+            </button>
+            <BrandModal show={brand} onHide={() => setBrand(false)} />
           </div>
           <div className="col">
-            <button className={styles.modalButton}>Model</button>
+            <button
+              onClick={() => setModel(true)}
+              className={styles.modalButton}
+            >
+              Model
+            </button>
+            <ModelModal show={model} onHide={() => setModel(false)} />
           </div>
-
           <div className="col">
-            <button className={styles.modalButton}>Fuel Type</button>
+            <button
+              onClick={() => setFuel(true)}
+              className={styles.modalButton}
+            >
+              Fuel Type
+            </button>
+            <FuelModal show={fuel} onHide={() => setFuel(false)} />
           </div>
           <div className="col">
             <button className={styles.findButton}> Find Services</button>
@@ -1287,49 +1311,56 @@ const index = () => {
 
       {/* Blog post container */}
 
-        <div>
-          <div className={styles.lux_care}>
-            <div className={styles.lux_care_line}></div>
-            <h1 className={styles.lux_care_h1}>Blog Posts</h1>
-          </div>
-          <Swiper navigation={true} className="mySwiper">
-            <div className="row" id={styles.combo_div}>
-              <SwiperSlide className={styles.swiper_slide_designer}>
-                <div className="me-4" id={styles.comboContainer}>
-                  <img src={tecnician.src} alt="custom" />
-                  <div className={styles.combotext_1}>
-                    <h4 className={styles.comboh4_2}>Choose the best!</h4>
-                  </div>
-                </div>
-                <div className="me-4" id={styles.comboContainer}>
-                  <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
-                  <div className={styles.combotext_1}>
-                    <h4 className={styles.comboh4_2}>Basic Maintenance Tips</h4>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={styles.swiper_slide_designer}>
-                <div className="me-4" id={styles.comboContainer}>
-                  <img
-                    src={tecnician.src}
-                    alt="custom"
-                    className={styles.blog_img}
-                  />
-                  <div className={styles.combotext_1}>
-                    <h4 className={styles.comboh4_2}>Choose the best!</h4>
-                  </div>
-                </div>
-                <div className="me-4" id={styles.comboContainer}>
-                  <img className={styles.comboContainerImage} src={car_repair.src} alt="custom" />
-                  <div className={styles.combotext_1}>
-                    <h4 className={styles.comboh4_2}>Basic Maintenance Tips</h4>
-                  </div>
-                </div>
-              </SwiperSlide>
-            </div>
-          </Swiper>
+      <div>
+        <div className={styles.lux_care}>
+          <div className={styles.lux_care_line}></div>
+          <h1 className={styles.lux_care_h1}>Blog Posts</h1>
         </div>
-        
+        <Swiper navigation={true} className="mySwiper">
+          <div className="row" id={styles.combo_div}>
+            <SwiperSlide className={styles.swiper_slide_designer}>
+              <div className="me-4" id={styles.comboContainer}>
+                <img src={tecnician.src} alt="custom" />
+                <div className={styles.combotext}>
+                  <h4 className={styles.comboh4}>Choose the best!</h4>
+                </div>
+              </div>
+              <div className="me-4" id={styles.comboContainer}>
+                <img
+                  className={styles.comboContainerImage}
+                  src={car_repair.src}
+                  alt="custom"
+                />
+                <div className={styles.combotext}>
+                  <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiper_slide_designer}>
+              <div className="me-4" id={styles.comboContainer}>
+                <img
+                  src={tecnician.src}
+                  alt="custom"
+                  className={styles.blog_img}
+                />
+                <div className={styles.combotext}>
+                  <h4 className={styles.comboh4}>Choose the best!</h4>
+                </div>
+              </div>
+              <div className="me-4" id={styles.comboContainer}>
+                <img
+                  className={styles.comboContainerImage}
+                  src={car_repair.src}
+                  alt="custom"
+                />
+                <div className={styles.combotext}>
+                  <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                </div>
+              </div>
+            </SwiperSlide>
+          </div>
+        </Swiper>
+      </div>
 
       {/* Blog post container */}
 
