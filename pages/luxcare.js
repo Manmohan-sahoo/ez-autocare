@@ -7,6 +7,7 @@ import {
   faClock,
   faChevronRight,
   faChevronDown,
+  faRupeeSign
 } from '@fortawesome/free-solid-svg-icons';
 
 import Image from 'next/image';
@@ -33,12 +34,12 @@ import rollsroyce from '../public/Ez auto luxe care/rolls_royce.png';
 export default class luxcare extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.serviceContainer}>
         <div className={styles.imageContainer}>
-          <img className={styles.luxcareImage} src={luxcareSlide.src} alt="" />
+          <img className={styles.luxcareImage} src={luxcareSlide.src} alt="" width="101.7%" />
         </div>
         <div class="container" id={styles.serviceCategoriesContainer}>
-          <h3>Service Categories</h3>
+          <h3 className={styles.serviceCategoriesContainer_h3}>Service Categories</h3>
           <div className="d-flex" id={styles.serviceCategory}>
             <div className={styles.servicecard} style={{ width: '250px' }}>
               <div class="row">
@@ -120,7 +121,7 @@ export default class luxcare extends Component {
         </div>
         <div className={styles.servicePackagesContainer}>
           <div className="container">
-            <h2>Service Packages </h2>
+            <h2 className={styles.servicePackagesContainer_h2}>Service Packages </h2>
           </div>
 
           <div className="row" id={styles.servicePackageRow}>
@@ -131,72 +132,69 @@ export default class luxcare extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Titanium Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
                       src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>
@@ -205,72 +203,69 @@ export default class luxcare extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Gold Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
-                      src={rectangle28}
+                      src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>
@@ -279,72 +274,69 @@ export default class luxcare extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Silver Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
-                      src={rectangle29}
+                      src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>
@@ -353,89 +345,82 @@ export default class luxcare extends Component {
                     <Image src={top} />
                     <p className={styles.topImagePara}>Bronze Pack</p>
                   </div>
-                  <div className="col-sm-3">
+                  <div className="col-sm-3" id={styles.second_ImageContainer}>
                     <Image
                       class="card-img"
-                      src={rectangle30}
+                      src={oil}
                       alt="Card image"
-                      width="170px"
-                      height="150px"
                     />
                     <p className="text-center">
                       <b>Rs. 3299</b>
                     </p>
                   </div>
 
-                  <div className="col-sm-4">
-                    <li className="d-flex">
-                      <FontAwesomeIcon icon={faClock} />6 Hours
+                  <div className="col-sm-4" id={styles.second_Container}>
+                    <li className={styles.second_Container_li}>
+                      <FontAwesomeIcon className={styles.second_Container_icon} icon={faClock} />
+                      <p className={styles.second_Container_text}>6 Hours</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilchangeicon} width="20%" height="20%" />
-                      Engine Oil Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image className={styles.second_Container_image} src={oilchangeicon} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Engine Oil Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={fuel} width="20%" height="20%" />
-                      Fuel Filter Checking
+                    <li className={styles.second_Container_li}>
+                      <Image src={fuel} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Fuel Filter Checking</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Oil Filter Replacment
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Oil Filter Replacment</p>
                     </li>
                     <br />
 
-                    <a href="#" className="text-info">
+                    <a href="#" className="text-info" id={styles.second_Container_a_tag}>
                       Show more..
                     </a>
                   </div>
 
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" id={styles.second_Container_part_2}>
                     {/* <Image src={top} /> */}
 
-                    <li className="d-flex">
-                      <Image src={oilrepla} width="20%" height="20%" />
-                      Air Filter Replacement
+                    <li className={styles.second_Container_li}>
+                      <Image src={oilrepla} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Air Filter Replacement</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={minorcha} width="20%" height="20%" />
-                      Minor Scratch Removal
+                    <li className={styles.second_Container_li}>
+                      <Image src={minorcha} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Minor Scratch Removal</p>
                     </li>
                     <br />
 
-                    <li className="d-flex">
-                      <Image src={car} width="20%" height="20%" />
-                      Car Cleaning
+                    <li className={styles.second_Container_li}>
+                      <Image src={car} width="15%" height="15%" />
+                      <p className={styles.second_Container_text_1}>Car Cleaning</p>
                     </li>
                   </div>
 
                   <div className={styles.buttoncontainer}>
-                    <button className={styles.sbutton}>ENQUIRY</button>
-                    <button className={styles.sbutton}>CALL</button>
                     <button className={styles.sbutton}>ADD TO CART</button>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-5" id={styles.bestTreatContainer}>
-              <h2 className="text-center mt-5 " id={styles.careh2}>
-                Best Care
-              </h2>
-              <p className="text-center" id={styles.carepara}>
-                <b>for your Luxury Car</b>
-                <br />
-                <img className="mt-5" src={rollsroyce.src} alt="" width="50%" />
+              <h1 className="text-center">Best Treat</h1>
+              <p className="text-center">
+                <b>for your vechile</b>
               </p>
               <div id={styles.dropdownBasic}>
                 <div className={styles.selectBrand}>
-                  Rolls-Royce
+                  Select Brand
                   <span className={styles.downIcon}>
                     <a href="#">
                       <FontAwesomeIcon icon={faChevronDown} />
@@ -446,7 +431,7 @@ export default class luxcare extends Component {
               <br />
               <div id={styles.dropdownBasic}>
                 <div className={styles.selectBrand}>
-                  Phantom
+                  Select Model
                   <span className={styles.downIcon}>
                     <a href="#">
                       <FontAwesomeIcon icon={faChevronDown} />
@@ -467,20 +452,80 @@ export default class luxcare extends Component {
                 </div>
               </div>
               <br />
-              <button className={styles.addNewCarButton}>Check Pricing</button>
+              <button className={styles.addNewCarButton}>Add New Car</button>
               <br />
-
+              <div className={styles.addNewCarContainer}>
+                <div className="row" id={styles.addNewCarRow}>
+                  <div className="col-3" id={styles.imageCol}>
+                    <Image src={swift} width="150px" height="100px" />
+                  </div>
+                  <div className="col-9">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Brand</th>
+                          <th scope="col">Model</th>
+                          <th scope="col">Fuel</th>
+                          <th scope="col">Activate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Maruti Suzuki</td>
+                          <td>Swift</td>
+                          <td>Diesel</td>
+                          <td className="text-center">
+                            <input type="checkbox" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div className={styles.addNewCarContainer}>
+                <div className="row" id={styles.addNewCarRow}>
+                  <div className="col-3" id={styles.imageCol}>
+                    <Image src={fortuner} width="150px" height="100px" />
+                  </div>
+                  <div className="col-9">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Brand</th>
+                          <th scope="col">Model</th>
+                          <th scope="col">Fuel</th>
+                          <th scope="col">Activate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Toyato</td>
+                          <td>Fortuner</td>
+                          <td>Diesel</td>
+                          <td className="text-center">
+                            <input type="checkbox" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <br />
               <div className={styles.goldPackContainer}>
-                <div id={styles.goldPackRow}>
-                  <div>
+                <div className="row" id={styles.goldPackRow}>
+                  <div className="col">
                     <p>
                       <b>Gold Pack</b>
                     </p>
                     <p>Lorem ipsum dolor sit amet.</p>
                   </div>
-                  <div id={styles.priceSide}>
-                    <p className={styles.priceSidePara}>
-                      <b>₹ 3299</b>
+                  <div className="col ">
+                    <p className="text-center">
+                      <FontAwesomeIcon icon={faRupeeSign} />
+                      <b>3299</b>
                     </p>
                     <p>No additional charges*</p>
                   </div>
@@ -488,10 +533,17 @@ export default class luxcare extends Component {
               </div>
               <br />
               <div className={styles.grandTotalContainer}>
-                <span className="d-flex">
-                  <p>Grand Total (1 item)</p>{' '}
-                  <span className={styles.rupee}>₹ 3299</span>
-                </span>
+                <div className="row" id={styles.grandTotalRow}>
+                  <div className="col">
+                    <p>Grand Total(1 item)</p>
+                  </div>
+                  <div className="col">
+                    <p className="text-center">
+                      <FontAwesomeIcon icon={faRupeeSign} />
+                      <b>3299</b>
+                    </p>
+                  </div>
+                </div>
               </div>
               <br />
               <button className={styles.singinCheckoutButton}>
