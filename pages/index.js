@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
+import Link from 'next/link';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -452,9 +454,11 @@ const index = () => {
               </div>
             </div>
           </div>
-          <a id={styles.seeMore} className="d-flex flex-row-reverse" href="">
-            See More
-          </a>
+          <Link href="/service">
+            <a id={styles.seeMore} className="d-flex flex-row-reverse">
+              See More
+            </a>
+          </Link>
         </div>
       </div>
 

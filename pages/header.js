@@ -151,9 +151,11 @@ const header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark" href="#">
-                  CONTACT
-                </a>
+                <Link href="/contact">
+                  <a className="nav-link text-dark" href="#">
+                    CONTACT
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <button
