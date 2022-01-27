@@ -1232,7 +1232,7 @@ const index = () => {
               <div className="form-group ">
                 <input
                   type="name"
-                  className="form-control"
+                  className={styles.enquieryform_form_control}
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Full Name"
@@ -1242,54 +1242,38 @@ const index = () => {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control"
+                    className={styles.enquieryform_form_control_1}
                     placeholder="Phone Number"
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    class="form-control"
+                    className={styles.enquieryform_form_control_1}
                     placeholder="Email address"
                   />
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="State" />
+                  <input type="text" className={styles.enquieryform_form_control_1} placeholder="What’s your car?" />
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="City" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Car"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Request a service"
-                  />
+                  <input type="text" className={styles.enquieryform_form_control_1} placeholder="Which service do you want?" />
                 </div>
               </div>
 
               <div class="form-group ">
                 <textarea
-                  class="form-control"
+                  className={styles.enquieryform_form_control_2}
                   id="exampleFormControlTextarea1"
                   rows="5"
                   placeholder="How may we help you?"
                 ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary">
-                Submit
+              <button type="submit" className={styles.enquiry_now_button}>
+                Request a call back
               </button>
             </form>
           </div>
@@ -1321,8 +1305,8 @@ const index = () => {
             <SwiperSlide className={styles.swiper_slide_designer}>
               <div className="me-4" id={styles.comboContainer}>
                 <img src={tecnician.src} alt="custom" />
-                <div className={styles.combotext}>
-                  <h4 className={styles.comboh4}>Choose the best!</h4>
+                <div className={styles.combotext_container}>
+                  <h4 className={styles.comboh4_h4_heading}>Choose the best!</h4>
                 </div>
               </div>
               <div className="me-4" id={styles.comboContainer}>
@@ -1331,8 +1315,8 @@ const index = () => {
                   src={car_repair.src}
                   alt="custom"
                 />
-                <div className={styles.combotext}>
-                  <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                <div className={styles.combotext_container}>
+                  <h4 className={styles.comboh4_h4_heading}>Basic Maintenance Tips</h4>
                 </div>
               </div>
             </SwiperSlide>
@@ -1343,8 +1327,8 @@ const index = () => {
                   alt="custom"
                   className={styles.blog_img}
                 />
-                <div className={styles.combotext}>
-                  <h4 className={styles.comboh4}>Choose the best!</h4>
+                <div className={styles.combotext_container}>
+                  <h4 className={styles.comboh4_h4_heading}>Choose the best!</h4>
                 </div>
               </div>
               <div className="me-4" id={styles.comboContainer}>
@@ -1353,8 +1337,8 @@ const index = () => {
                   src={car_repair.src}
                   alt="custom"
                 />
-                <div className={styles.combotext}>
-                  <h4 className={styles.comboh4}>Basic Maintenance Tips</h4>
+                <div className={styles.combotext_container}>
+                  <h4 className={styles.comboh4_h4_heading}>Basic Maintenance Tips</h4>
                 </div>
               </div>
             </SwiperSlide>

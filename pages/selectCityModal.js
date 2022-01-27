@@ -16,72 +16,72 @@ import punjab from '../public/city/punjab.png';
 
 const selectCityModal = (props) => {
   return (
-    <div>
+    <div className={styles.model_city_main_div}>
       <Modal
         {...props}
-        size="lg"
+        className={styles.model_city}
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
         <Modal.Header closeButton>
-          <h4>Select City</h4>
+          <h4 className={styles.model_city_head_h4}>Select City</h4>
         </Modal.Header>
         <Modal.Body>
-          <div className="row">
-            <div className="col">
-              <a href="">
+          <div className={styles.model_city_image}>
+            <div className={styles.model_city_Image_div}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={mumbai.src} alt="" />
                 <p>Mumbai</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.model_city_Image_div}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={jaipur.src} alt="" />
                 <p>Jaipur</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.model_city_Image_div}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={agra.src} alt="" />
                 <p>Agra</p>
               </a>
             </div>
           </div>
-          <div className="row">
-            <div className="col">
-              <a href="">
+          <div className={styles.model_city_image_1}>
+            <div className={styles.model_city_Image_div_1}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={hyderabad.src} alt="" />
                 <p>Hyderabad</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.model_city_Image_div_1}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={mysore.src} alt="" />
                 <p>Mysore</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.model_city_Image_div_1}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={punjab.src} alt="" />
                 <p>Punjab</p>
               </a>
             </div>
           </div>
-          <div className="row">
-            <div className="col">
-              <a href="">
+          <div className={styles.model_city_image_2}>
+            <div className={styles.model_city_Image_div_2}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={kolkata.src} alt="" />
                 <p>Kolkata</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.model_city_Image_div_3}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={bangalore.src} alt="" />
                 <p>Bangalore</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.model_city_Image_div_4}>
+              <a href="" className={styles.model_city_icon}>
                 <img src={delhi.src} alt="" />
                 <p>Delhi</p>
               </a>

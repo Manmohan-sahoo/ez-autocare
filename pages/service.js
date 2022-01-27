@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -14,7 +14,6 @@ import swift from '../public/Custom your package/swift.png';
 import { Accordion, Card } from 'react-bootstrap';
 
 const servics = () => {
-  const [desiredList, setDesiredList] = useState([]);
 
   return (
     <div>

@@ -33,7 +33,7 @@ $phone: 480px; */
 .carButton {
   background-color: #20adb7;
   width: 150px;
-  height: 48px;
+  height: 49px;
   border: none;
   border-right: 0.7px solid #000000;
   color: #ffffff;
@@ -46,7 +46,7 @@ $phone: 480px; */
 .findButton {
   background-color: #20adb7;
   width: 150px;
-  height: 48px;
+  height: 49px;
   border: none;
   border-left: 0.7px solid #000000;
   color: #ffffff;
@@ -541,6 +541,9 @@ $phone: 480px; */
 }
 
 .car_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 65%;
   height: 47px;
   margin-left: -15px;
@@ -553,7 +556,8 @@ $phone: 480px; */
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 66.51px;
+  margin-top: 80.51px;
+  margin-bottom: -7%;
 }
 
 .car_p_tag {
@@ -650,11 +654,30 @@ $phone: 480px; */
   bottom: 0px;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.combotext_container {
+  background: linear-gradient(
+    2.95deg,
+    #000000 30.72%,
+    rgba(255, 255, 255, 0) 80.68%
+  );
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .combotext_1 {
@@ -679,6 +702,14 @@ $phone: 480px; */
   text-align: center;
   margin-top: -60px;
   margin-left: 25px;
+}
+
+.comboh4_h4_heading {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2%;
 }
 
 .comboh4_2 {
@@ -1154,6 +1185,57 @@ $phone: 480px; */
   color: #ffffff;
   font-weight: 600;
   font-size: 54px;
+}
+
+.enquieryform_form_control {
+  width: 100%;
+  height: 59px;
+  background: #FFFFFF;
+  border-radius: 11px;
+  color: #A0A0A0;
+  font-size: 20px;
+  padding-left: 4%;
+  border: none;
+}
+
+.enquieryform_form_control_1 {
+  width: 100%;
+  height: 59px;
+  background: #FFFFFF;
+  border-radius: 11px;
+  color: #A0A0A0;
+  font-size: 17px;
+  padding-left: 6%;
+  border: none;
+}
+
+.enquieryform_form_control_2 {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 11px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 5%;
+  padding-top: 3%;
+  color: #adadad;
+}
+
+.enquiry_now_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 59px;
+  background: #0080FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 10%;
 }
 
 .enquierypara {

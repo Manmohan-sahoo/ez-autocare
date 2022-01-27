@@ -19,11 +19,14 @@ const modeldModal = (props) => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <FontAwesomeIcon icon={faArrowLeft} /> Maruti Suzuki
-        </Modal.Title>
-      </Modal.Header>
+      <div className={styles.brand_model}>
+        <Modal.Header closeButton>
+
+          <Modal.Title id="contained-modal-title-vcenter">
+            <FontAwesomeIcon className={styles.brand_model_icon} icon={faArrowLeft} /> Maruti Suzuki
+          </Modal.Title>
+        </Modal.Header>
+      </div>
       <Modal.Body>
         <div className="d-flex">
           <div className={styles.form_group}>
@@ -37,24 +40,24 @@ const modeldModal = (props) => {
 
           <button className={styles.next_button}>NEXT</button>
         </div>
-        <div>
-          <div className="row">
-            <div className="col">
+        <div className={styles.brand_model_car_brands}>
+          <div className={styles.brand_model_car_brands_div_1}>
+            <div className={styles.brand_model_car_brands_logo}>
               <a href="">
                 <img src={swift.src} alt="" width="82px" height="56px" />
               </a>
             </div>
-            <div className="col">
+            <div className={styles.brand_model_car_brands_logo}>
               <a href="">
                 <img src={alto.src} alt="" width="82px" height="56px" />
               </a>
             </div>
-            <div className="col">
+            <div className={styles.brand_model_car_brands_logo}>
               <a href="">
                 <img src={dezire.src} alt="" width="82px" height="56px" />
               </a>
             </div>
-            <div className="col">
+            <div className={styles.brand_model_car_brands_logo}>
               <a href="">
                 <img src={unnamed.src} alt="" width="82px" height="56px" />
               </a>

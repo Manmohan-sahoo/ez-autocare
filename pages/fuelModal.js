@@ -18,11 +18,14 @@ const fuelModal = (props) => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <FontAwesomeIcon icon={faArrowLeft} /> Maruti Suzuki,Swift
-        </Modal.Title>
-      </Modal.Header>
+      <div className={styles.brand_model}>
+        <Modal.Header closeButton>
+
+          <Modal.Title id="contained-modal-title-vcenter">
+            <FontAwesomeIcon className={styles.brand_model_icon} icon={faArrowLeft} /> Select Your brand
+          </Modal.Title>
+        </Modal.Header>
+      </div>
       <Modal.Body>
         <div className="d-flex">
           <div className={styles.form_group}>
@@ -36,24 +39,24 @@ const fuelModal = (props) => {
 
           <button className={styles.next_button}>NEXT</button>
         </div>
-        <div>
-          <div className="row">
-            <div className="col">
-              <a href="">
+        <div className={styles.brand_model_car_brands}>
+          <div className={styles.brand_model_car_brands_div_1}>
+            <div className={styles.brand_model_car_brands_logo}>
+              <a href="" className={styles.brand_model_car_brands_logo_tag}>
                 <img src={petrol.src} alt="" width="82px" height="56px" />
-                <p>Petrol</p>
+                <p className={styles.brand_model_car_brands_p_tag}>Petrol</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.brand_model_car_brands_logo}>
+              <a href="" className={styles.brand_model_car_brands_logo_tag}>
                 <img src={disel.src} alt="" width="82px" height="56px" />
-                <p>Disel</p>
+                <p className={styles.brand_model_car_brands_p_tag}>Diesel</p>
               </a>
             </div>
-            <div className="col">
-              <a href="">
+            <div className={styles.brand_model_car_brands_logo}>
+              <a href="" className={styles.brand_model_car_brands_logo_tag}>
                 <img src={cng.src} alt="" width="82px" height="56px" />
-                <p>CNG</p>
+                <p className={styles.brand_model_car_brands_p_tag}>CNG</p>
               </a>
             </div>
           </div>
