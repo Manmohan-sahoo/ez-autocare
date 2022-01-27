@@ -13,7 +13,7 @@ export default class contact extends Component {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15552.438003415431!2d77.7573448!3d12.9648444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c5aeff831c5a8fd!2sEZ%20Auto%20Care%20Whitefield!5e0!3m2!1sen!2sin!4v1643255532688!5m2!1sen!2sin"
           width="100%"
-          height="450"
+          height="650"
           allowfullscreen=""
           loading="lazy"
         ></iframe>
@@ -41,7 +41,6 @@ export default class contact extends Component {
                 +91 7544001292
               </p>
             </div>
-            <div className={styles.border}></div>
             <div className="col">
               <h3 className={styles.ez_autoCare}> EZ Auto Care Bellandur</h3>
               <p className={styles.ez_autoCare_p_tag}>
@@ -58,7 +57,6 @@ export default class contact extends Component {
                 +91 7544001292
               </p>
             </div>
-            <div className={styles.border}></div>
 
             <div className="col">
               <h3 className={styles.ez_autoCare}>
@@ -97,6 +95,7 @@ export default class contact extends Component {
                 </p>
               </Accordion.Body>
             </Accordion.Item>
+            <br />
             <Accordion.Item eventKey="1">
               <Accordion.Header className={styles.accordion_header_1}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit Metus
@@ -109,6 +108,8 @@ export default class contact extends Component {
                 </p>
               </Accordion.Body>
             </Accordion.Item>
+            <br />
+
             <Accordion.Item eventKey="2">
               <Accordion.Header className={styles.accordion_header}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit Metus
@@ -121,6 +122,8 @@ export default class contact extends Component {
                 </p>
               </Accordion.Body>
             </Accordion.Item>
+            <br />
+
             <Accordion.Item eventKey="3">
               <Accordion.Header className={styles.accordion_header_1}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit Metus
@@ -133,6 +136,7 @@ export default class contact extends Component {
                 </p>
               </Accordion.Body>
             </Accordion.Item>
+            <br />
           </Accordion>
         </div>
 
