@@ -1,0 +1,105 @@
+.get_in_touch {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+  color: #000000;
+  text-align: center;
+}
+
+.contact_p_tag {
+  width: 864px;
+  height: 84px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  border-bottom: 1px dashed #989898;
+}
+
+#ez_autocare_row {
+  background: rgba(161, 209, 249, 0.15);
+  margin-top: 34px;
+}
+
+.ez_autoCare {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 41px;
+  color: #000000;
+}
+
+.ez_autoCare_p_tag {
+  width: 328px;
+  height: 69px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.border {
+}
+
+#enquiry_container {
+  width: 1300px;
+  height: 1033px;
+  background: #b3ebff;
+  border-radius: 16px;
+}
+
+.enquiry_h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #000000;
+}
+
+.enquiry_para {
+  width: 598px;
+  height: 61px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: auto;
+  color: #000000;
+}
+
+.textarea {
+  width: 493px;
+  height: 241px;
+  background: #ffffff;
+  border-radius: 11px;
+}
+
+.enquiry_submit_button {
+  width: 493px;
+  height: 59px;
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}

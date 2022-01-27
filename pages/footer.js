@@ -19,6 +19,9 @@ import apple from '../public/Footer images/app.png';
 
 const footer = () => {
   const [showMore, setShowMore] = useState(false);
+  const [services, setServices] = useState(false);
+  const [popularbrands, setPopularbrands] = useState(false);
+  const [city, setCity] = useState(false);
 
   const extraContent = (
     <div>
@@ -84,9 +87,27 @@ const footer = () => {
     </div>
   );
 
+  const extraContentC = (
+    <div>
+      <p class="text-reset">
+        <a href="">Bangalore</a>
+      </p>
+      <p class="text-reset">
+        <a href="">Chennai</a>
+      </p>
+      <p class="text-reset">
+        <a href="">Mangalore</a>
+      </p>
+      <p class="text-reset">
+        <a href="">Pune</a>
+      </p>
+    </div>
+  );
+
   const linkName = showMore ? 'Show Less ' : 'Show More... ';
-  const linkNameA = showMore ? 'Show Less ' : 'Show More... ';
-  const linkNameB = showMore ? 'Show Less ' : 'Show More... ';
+  const linkNameA = services ? 'Show Less ' : 'Show More... ';
+  const linkNameB = popularbrands ? 'Show Less ' : 'Show More... ';
+  const linkNameC = city ? 'Show Less ' : 'Show More... ';
 
   return (
     <div>
@@ -207,13 +228,13 @@ const footer = () => {
                     </a>
                   </p>
                   <p>
-                    {showMore && extraContentA}
+                    {services && extraContentA}
 
                     <a
                       class="text-primary"
                       href="#!"
                       onClick={() => {
-                        setShowMore(!showMore);
+                        setServices(!services);
                       }}
                     >
                       <p>{linkNameA}</p>
@@ -242,13 +263,13 @@ const footer = () => {
                     </a>
                   </p>
                   <p>
-                    {showMore && extraContent}
+                    {popularbrands && extraContentB}
 
                     <a
                       class="text-primary"
                       href="#!"
                       onClick={() => {
-                        setShowMore(!showMore);
+                        setPopularbrands(!popularbrands);
                       }}
                     >
                       <p>{linkNameB}</p>
@@ -265,8 +286,16 @@ const footer = () => {
                   <p>Mumbai</p>
                   <p>Delhi</p>
                   <p>
-                    <a href="#!" class="text-primary">
-                      Show More...
+                    {city && extraContentC}
+
+                    <a
+                      href="#!"
+                      class="text-primary"
+                      onClick={() => {
+                        setCity(!city);
+                      }}
+                    >
+                      <p>{linkNameC}</p>
                     </a>
                   </p>
                 </div>
