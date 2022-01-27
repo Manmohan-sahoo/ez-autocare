@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.recent_articles_main_div {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .recent_articles_p {
   font-family: Roboto;
   font-style: normal;
@@ -6,15 +19,19 @@
   line-height: 42px;
   color: #070707;
   text-align: center;
+  padding-bottom: 1.5%;
   border-bottom: 2px solid #20adb7;
   width: 301px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4%;
 }
 
 .blog_row {
   display: flex;
+  justify-content: center;
+  align-items: center;
   column-gap: 30px;
   text-align: center;
 }
@@ -34,6 +51,7 @@
   font-size: 36px;
   line-height: 42px;
   color: #000000;
+  margin-top: 5.5%;
 }
 
 .blog_p_text_area {
@@ -43,15 +61,18 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
+  text-align: start;
   font-size: 29px;
   line-height: 34px;
+  margin-top: 2.5%;
   color: #313131;
 }
 
 .view_all_button {
-  width: 226px;
+  width: 20%;
   height: 90px;
-  border: 1.2px solid #777777;
+  border: 1.5px solid #777777;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 7px;
   margin-top: 10%;
@@ -63,6 +84,8 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 37px;
+  margin-top: 20%;
+  margin-bottom: 9%;
   /* identical to box height */
 
   color: #787878;

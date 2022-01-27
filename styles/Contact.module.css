@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.contact_info_data {
+    width: 100%;
+    margin-left: -12px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .get_in_touch {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -8,12 +15,13 @@
   font-variant: small-caps;
   color: #000000;
   text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .contact_p_tag {
-  width: 864px;
-  height: 84px;
-  font-family: Roboto;
+  width: 70%;
+  height: 124px;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -22,26 +30,47 @@
   color: #000000;
   margin: auto;
   border-bottom: 1px dashed #989898;
+  margin-bottom: 3.5%;
 }
 
 #ez_autocare_row {
   background: rgba(161, 209, 249, 0.15);
   margin-top: 34px;
+  width: 102.6%;
+  height: 354px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3.5%;
+  padding-left: 2%;
+}
+
+.ez_autoCare_internal_div {
+  display: flex;
+}
+
+.ez_autoCare_internal_div_number {
+  display: flex;
+  margin-top: -10%;
 }
 
 .ez_autoCare {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 33px;
   line-height: 41px;
+  margin-bottom: 10%;
   color: #000000;
+}
+
+.ez_autoCare_p_tag_icon {
+  margin-right: 3%;
+  margin-top: .5%;
 }
 
 .ez_autoCare_p_tag {
   width: 328px;
   height: 69px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -49,20 +78,36 @@
   color: #000000;
 }
 
+.contact_information_accordion {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.contact_information_accordion_head_h2 {
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 3%;
+}
+
 .border {
 }
 
 #enquiry_container {
-  width: 1300px;
-  height: 1033px;
+  width: 92%;
+  height: 100%;
+  margin-top: 8%;
+  margin-left: 5%;
+  margin-bottom: 10%;
   background: #b3ebff;
   border-radius: 16px;
 }
 
 .enquiry_h3 {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
+  padding-top: 3%;
+  margin-bottom: 2%;
   font-size: 64px;
   line-height: 75px;
   text-align: center;
@@ -72,7 +117,6 @@
 .enquiry_para {
   width: 598px;
   height: 61px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -82,24 +126,72 @@
   color: #000000;
 }
 
+.enquiry_form {
+  margin-top: 10%;
+}
+
+.form_fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form_fields_div {
+  display: flex;
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.form_fields_lebel {
+  width: 100%;
+  height: 59px;
+  padding-left: 3%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  color: #A0A0A0;
+  font-size: 20px;
+  border: none;
+}
+
+.form_fields_lebel_1 {
+  width: 100%;
+  height: 59px;
+  margin-right: 5%;
+  padding-left: 3%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  color: #A0A0A0;
+  font-size: 20px;
+  border: none;
+}
+
 .textarea {
-  width: 493px;
+  width: 90%;
   height: 241px;
   background: #ffffff;
-  border-radius: 11px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 3%;
+  border: none;
 }
 
 .enquiry_submit_button {
-  width: 493px;
+  width: 90%;
   height: 59px;
   background: #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  margin-top: 5%;
+  margin-bottom: 15%;
 
   color: #ffffff;
+}
+
+.enquiry_form_image {
+  margin-top: 30%;
 }
