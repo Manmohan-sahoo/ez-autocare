@@ -237,137 +237,135 @@ export default class designercombo extends Component {
               </div>
             </div>
 
-            <div className="col">
-              <div className="col-5" id={styles.bestTreatContainer}>
-                <h1 className="text-center">Best Treat</h1>
-                <p className="text-center">
-                  <b>for your vechile</b>
-                </p>
-                <div id={styles.dropdownBasic}>
-                  <div className={styles.selectBrand}>
-                    Select Brand
-                    <span className={styles.downIcon}>
-                      <a href="#">
-                        <FontAwesomeIcon icon={faChevronDown} />
-                      </a>
-                    </span>
-                  </div>
-                </div>
-                <br />
-                <div id={styles.dropdownBasic}>
-                  <div className={styles.selectBrand}>
-                    Select Model
-                    <span className={styles.downIcon}>
-                      <a href="#">
-                        <FontAwesomeIcon icon={faChevronDown} />
-                      </a>
-                    </span>
-                  </div>
-                </div>
-                <br />
-
-                <div id={styles.dropdownBasic}>
-                  <div className={styles.selectBrand}>
-                    Select Fuel Type
-                    <span className={styles.fueldownIcon}>
-                      <a href="#">
-                        <FontAwesomeIcon icon={faChevronDown} />
-                      </a>
-                    </span>
-                  </div>
-                </div>
-                <br />
-                <button className={styles.addNewCarButton}>Add New Car</button>
-                <br />
-                <div className={styles.addNewCarContainer}>
-                  <div className="row" id={styles.addNewCarRow}>
-                    <div className="col-3" id={styles.imageCol}>
-                      <img src={swift.src} width="80px" height="80px" />
-                    </div>
-                    <div className="col-9">
-                      <table class="table table-borderless">
-                        <thead>
-                          <tr>
-                            <th scope="col">Brand</th>
-                            <th scope="col">Model</th>
-                            <th scope="col">Fuel</th>
-                            <th scope="col">Activate</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Maruti Suzuki</td>
-                            <td>Swift</td>
-                            <td>Diesel</td>
-                            <td className="text-center">
-                              <input type="checkbox" />
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <div className={styles.addNewCarContainer}>
-                  <div className="row" id={styles.addNewCarRow}>
-                    <div className="col-3" id={styles.imageCol}>
-                      <img src={fortuner.src} width="80px" height="80px" />
-                    </div>
-                    <div className="col-9">
-                      <table class="table table-borderless">
-                        <thead>
-                          <tr>
-                            <th scope="col">Brand</th>
-                            <th scope="col">Model</th>
-                            <th scope="col">Fuel</th>
-                            <th scope="col">Activate</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Toyato</td>
-                            <td>Fortuner</td>
-                            <td>Diesel</td>
-                            <td className="text-center">
-                              <input type="checkbox" />
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <div className={styles.goldPackContainer}>
-                  <div id={styles.goldPackRow}>
-                    <div>
-                      <p>
-                        <b>Speed Combo</b>
-                      </p>
-                      <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div id={styles.priceSide}>
-                      <p className={styles.priceSidePara}>
-                        <b>₹ 3299</b>
-                      </p>
-                      <p>No additional charges*</p>
-                    </div>
-                  </div>
-                </div>
-                <br />
-
-                <div className={styles.grandTotalContainer}>
-                  <span className="d-flex" id={styles.routineServicestext}>
-                    <p>Grand Total (1 item)</p>{' '}
-                    <span className={styles.rupee}>₹ 3,299</span>
+            <div className="col" id={styles.bestTreatContainer}>
+              <h1 className="text-center">Best Treat</h1>
+              <p className="text-center">
+                <b>for your vechile</b>
+              </p>
+              <div id={styles.dropdownBasic}>
+                <div className={styles.selectBrand}>
+                  Select Brand
+                  <span className={styles.downIcon}>
+                    <a href="#">
+                      <FontAwesomeIcon icon={faChevronDown} />
+                    </a>
                   </span>
                 </div>
-                <br />
-                <button className={styles.singinCheckoutButton}>
-                  Sign in & Checkout
-                </button>
               </div>
+              <br />
+              <div id={styles.dropdownBasic}>
+                <div className={styles.selectBrand}>
+                  Select Model
+                  <span className={styles.downIcon}>
+                    <a href="#">
+                      <FontAwesomeIcon icon={faChevronDown} />
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <br />
+
+              <div id={styles.dropdownBasic}>
+                <div className={styles.selectBrand}>
+                  Select Fuel Type
+                  <span className={styles.fueldownIcon}>
+                    <a href="#">
+                      <FontAwesomeIcon icon={faChevronDown} />
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <br />
+              <button className={styles.addNewCarButton}>Add New Car</button>
+              <br />
+              <div className={styles.addNewCarContainer}>
+                <div className="row" id={styles.addNewCarRow}>
+                  <div className="col-3" id={styles.imageCol}>
+                    <img src={swift.src} width="80px" height="80px" />
+                  </div>
+                  <div className="col-9">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Brand</th>
+                          <th scope="col">Model</th>
+                          <th scope="col">Fuel</th>
+                          <th scope="col">Activate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Maruti Suzuki</td>
+                          <td>Swift</td>
+                          <td>Diesel</td>
+                          <td className="text-center">
+                            <input type="checkbox" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div className={styles.addNewCarContainer}>
+                <div className="row" id={styles.addNewCarRow}>
+                  <div className="col-3" id={styles.imageCol}>
+                    <img src={fortuner.src} width="80px" height="80px" />
+                  </div>
+                  <div className="col-9">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Brand</th>
+                          <th scope="col">Model</th>
+                          <th scope="col">Fuel</th>
+                          <th scope="col">Activate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Toyato</td>
+                          <td>Fortuner</td>
+                          <td>Diesel</td>
+                          <td className="text-center">
+                            <input type="checkbox" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div className={styles.goldPackContainer}>
+                <div id={styles.goldPackRow}>
+                  <div>
+                    <p>
+                      <b>Speed Combo</b>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div id={styles.priceSide}>
+                    <p className={styles.priceSidePara}>
+                      <b>₹ 3299</b>
+                    </p>
+                    <p>No additional charges*</p>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <div className={styles.grandTotalContainer}>
+                <span className="d-flex" id={styles.routineServicestext}>
+                  <p>Grand Total (1 item)</p>{' '}
+                  <span className={styles.rupee}>₹ 3,299</span>
+                </span>
+              </div>
+              <br />
+              <button className={styles.singinCheckoutButton}>
+                Sign in & Checkout
+              </button>
             </div>
           </div>
         </div>
