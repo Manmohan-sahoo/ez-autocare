@@ -8,9 +8,9 @@ import {
   faInstagram,
   faLinkedin,
   faTwitter,
-  faEnvelope,
-  faPhone,
 } from '@fortawesome/free-brands-svg-icons';
+
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import logo from '../public/headerimg.png';
 import Image from 'next/image';
@@ -61,12 +61,14 @@ const header = () => {
           </div>
           <div className="d-flex" id={styles.subHeaderIcon}>
             <p className="me-5 text-reset">
-              <i className="fa fa-phone"> 0755001292</i>
+              <FontAwesomeIcon icon={faPhone} style={{ color: 'white' }} />
+              0755001292
             </p>
             <p className="me-5 text-reset">
-              <i className="fa fa-envelope-o text-light">
-                <a href="">dm@ezautocare.in</a>
-              </i>
+              <a href="">
+                <FontAwesomeIcon icon={faEnvelope} style={{ color: 'white' }} />
+                dm@ezautocare.in
+              </a>
             </p>
             <a href="" className="me-5 text-reset">
               FAQ

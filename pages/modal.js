@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Modal } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faSearch } from '@fortawesome/free-solid-svg-icons';
+
 import styles from '../styles/Modal.module.css';
+import ModelModal from '../pages/modelModal';
 
 import audilogo from '../public/Brands/Audi.png';
 import bentely from '../public/Brands/bentely.png';
@@ -14,6 +16,8 @@ import maruti from '../public/Brands/maruti.png';
 import nissan from '../public/Brands/nissan.png';
 
 const modal = (props) => {
+  const [model, setModel] = React.useState(false);
+
   return (
     <Modal
       {...props}
@@ -23,9 +27,12 @@ const modal = (props) => {
     >
       <div className={styles.brand_model}>
         <Modal.Header closeButton>
-
           <Modal.Title id="contained-modal-title-vcenter">
-            <FontAwesomeIcon className={styles.brand_model_icon} icon={faArrowLeft} /> Select Your brand
+            <FontAwesomeIcon
+              className={styles.brand_model_icon}
+              icon={faArrowLeft}
+            />{' '}
+            Select Your brand
           </Modal.Title>
         </Modal.Header>
       </div>
@@ -45,9 +52,10 @@ const modal = (props) => {
         <div className={styles.brand_model_car_brands}>
           <div className={styles.brand_model_car_brands_div_1}>
             <div className={styles.brand_model_car_brands_logo}>
-              <a href="" >
+              <a onClick={() => setModel(true)}>
                 <img src={honda.src} alt="" width="82px" height="56px" />
               </a>
+              <ModelModal show={model} onHide={() => setModel(false)} />
             </div>
             <div className={styles.brand_model_car_brands_logo}>
               <a href="">
